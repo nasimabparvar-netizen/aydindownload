@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aydin Download | دانلود بازی و نرم افزار</title>
+
+<link rel="icon" href="logo.pag.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Tahoma,sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#111827;
+color:white;
+}
+
+header{
+background:#2563eb;
+padding:18px;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+.header{
+width:90%;
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.logo-area{
+display:flex;
+align-items:center;
+}
+
+.logo{
+width:60px;
+height:60px;
+border-radius:15px;
+margin-left:12px;
+}
+
+.logo-area h1{
+font-size:34px;
+}
+
+nav{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:19px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#22c55e;
+}
+
+.search{
+width:90%;
+max-width:700px;
+margin:35px auto;
+}
+
+.search input{
+width:100%;
+padding:16px;
+font-size:20px;
+border:none;
+border-radius:12px;
+outline:none;
+background:#1c2333;
+color:white;
+}
+
+.search input::placeholder{
+color:#9ca3af;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+.section-title{
+font-size:34px;
+margin:35px 0 20px;
+color:#60a5fa;
+}
+
+.games{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1c2333;
+border-radius:18px;
+overflow:hidden;
+transition:.3s;
+box-shadow:0 8px 20px rgba(0,0,0,.3);
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.card h2{
+margin-bottom:15px;
+}
+
+.card p{
+line-height:32px;
+margin-bottom:20px;
+}
+
+.button{
+display:inline-block;
+background:#22c55e;
+color:white;
+text-decoration:none;
+padding:14px 28px;
+border-radius:10px;
+transition:.3s;
+}
+
+.button:hover{
+background:#16a34a;
+}
+
+.info{
+display:flex;
+justify-content:space-between;
+margin-top:18px;
+font-size:15px;
+color:#cbd5e1;
+}
+
+footer{
+margin-top:60px;
+background:#0b1220;
+padding:35px;
+text-align:center;
+color:#cbd5e1;
+}
+
+@media(max-width:768px){
+
+.header{
+flex-direction:column;
+gap:20px;
+}
+
+.logo-area h1{
+font-size:28px;
+}
+
+nav{
+justify-content:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="header">
+
+<div class="logo-area">
+
+<img src="logo.pag.png" class="logo">
+
+<h1>Aydin Download</h1>
+
+</div>
+
+<nav>
+
+<a href="#">خانه</a>
+
+<a href="#">بازی‌ها</a>
+
+<a href="#">نرم افزارها</a>
+
+<a href="#">درباره ما</a>
+
+<a href="#">تماس با ما</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<div class="search">
+
+<input type="text" id="searchInput" placeholder="🔍 جستجوی بازی...">
+
+</div>
+
+<div class="container">
+
+<h2 class="section-title">🎮 جدیدترین بازی‌ها</h2>
+
+<div class="games">
+    <div class="card">
+
+<img src="minecraft.jpg" alt="Minecraft">
+
+<div class="card-content">
+
+<h2>Minecraft</h2>
+
+<p>
+
+یکی از محبوب‌ترین بازی‌های جهان با امکان ساخت، بقا و بازی آنلاین.
+
+</p>
+
+<a href="minecraft.html" class="button">ادامه و دانلود</a>
+
+<div class="info">
+
+<span>🎮 Sandbox</span>
+
+<span>💾 850 MB</span>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="gta.jpg" alt="GTA V">
+
+<div class="card-content">
+
+<h2>GTA V</h2>
+
+<p>
+
+تجربه دنیای آزاد، مأموریت‌های هیجان‌انگیز و بخش آنلاین GTA Online.
+
+</p>
+
+<a href="gta.html" class="button">ادامه و دانلود</a>
+
+<div class="info">
+
+<span>🚗 Action</span>
+
+<span>💾 110 GB</span>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="roblox.jpg" alt="Roblox">
+
+<div class="card-content">
+
+<h2>Roblox</h2>
+
+<p>
+
+بازی آنلاین محبوب با میلیون‌ها بازی و امکان ساخت دنیای اختصاصی.
+
+</p>
+
+<a href="roblox.html" class="button">ادامه و دانلود</a>
+
+<div class="info">
+
+<span>🌍 Online</span>
+
+<span>💾 300 MB</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<h2 class="section-title">⭐ محبوب‌ترین بازی‌ها</h2>
+
+<div class="games">
+
+<div class="card">
+
+<img src="minecraft1.jpg" alt="Minecraft">
+
+<div class="card-content">
+
+<h2>Minecraft</h2>
+
+<p>پرفروش‌ترین بازی جهان.</p>
+
+<a href="minecraft.html" class="button">ادامه و دانلود</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="gta1.jpg" alt="GTA V">
+
+<div class="card-content">
+
+<h2>GTA V</h2>
+
+<p>یکی از محبوب‌ترین بازی‌های اکشن.</p>
+
+<a href="gta.html" class="button">ادامه و دانلود</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="roblox1.jpg" alt="Roblox">
+
+<div class="card-content">
+
+<h2>Roblox</h2>
+
+<p>بیش از میلیون‌ها بازیکن فعال در سراسر جهان.</p>
+
+<a href="roblox.html" class="button">ادامه و دانلود</a>
+
+</div>
+
+</div>
+
+</div>
+<footer>
+
+<p>© 2026 Aydin Download | تمامی حقوق محفوظ است.</p>
+
+<p style="margin-top:10px;">
+دانلود بازی و نرم‌افزار برای ویندوز
+</p>
+
+</footer>
+
+</div>
+
+<script>
+
+const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("keyup", function(){
+
+let value = this.value.toLowerCase();
+
+let cards = document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+let title = card.querySelector("h2").textContent.toLowerCase();
+
+if(title.includes(value)){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
+});
+
+</script>
+
+</body>
+
+</html>
