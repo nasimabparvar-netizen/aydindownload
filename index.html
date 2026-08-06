@@ -8,6 +8,12 @@
 
 <title>Aydin Download | دانلود بازی و نرم افزار</title>
 
+<meta name="description" content="دانلود جدیدترین بازی‌ها و نرم‌افزارهای ویندوز با لینک مستقیم از Aydin Download">
+
+<meta name="keywords" content="دانلود بازی, دانلود نرم افزار, GTA V, Minecraft, Roblox, Aydin Download">
+
+<meta name="author" content="Aydin Download">
+
 <link rel="icon" href="logo.pag.png">
 
 <style>
@@ -34,7 +40,7 @@ padding:18px;
 position:sticky;
 top:0;
 z-index:1000;
-box-shadow:0 5px 20px rgba(0,0,0,.3);
+box-shadow:0 5px 20px rgba(0,0,0,.35);
 }
 
 .header{
@@ -65,7 +71,7 @@ font-size:34px;
 
 nav{
 display:flex;
-gap:20px;
+gap:30px;
 flex-wrap:wrap;
 }
 
@@ -73,6 +79,7 @@ nav a{
 color:white;
 text-decoration:none;
 font-size:19px;
+font-weight:bold;
 transition:.3s;
 }
 
@@ -109,7 +116,7 @@ margin:auto;
 
 .section-title{
 font-size:34px;
-margin:35px 0 20px;
+margin:40px 0 20px;
 color:#60a5fa;
 }
 
@@ -123,18 +130,23 @@ gap:25px;
 background:#1c2333;
 border-radius:18px;
 overflow:hidden;
-transition:.3s;
+transition:.35s;
 box-shadow:0 8px 20px rgba(0,0,0,.3);
 }
 
 .card:hover{
-transform:translateY(-8px);
+transform:translateY(-8px) scale(1.02);
+box-shadow:0 15px 35px rgba(0,0,0,.45);
 }
 
 .card img{
 width:100%;
 height:220px;
 object-fit:cover;
+transition:.35s;
+}
+.card:hover img{
+transform:scale(1.06);
 }
 
 .card-content{
@@ -150,109 +162,279 @@ line-height:32px;
 margin-bottom:20px;
 }
 
+
 .button{
 display:inline-block;
 background:#22c55e;
-color:white;
-text-decoration:none;
 padding:14px 28px;
 border-radius:10px;
-transition:.3s;
+text-decoration:none;
+color:white;
+transition:0.3s;
 }
 
 .button:hover{
 background:#16a34a;
+transform:translateY(-3px);
+box-shadow:0 8px 20px rgba(34,197,94,.45);
 }
 
 .info{
 display:flex;
 justify-content:space-between;
 margin-top:18px;
-font-size:15px;
 color:#cbd5e1;
+font-size:15px;
 }
 
 footer{
-margin-top:60px;
+margin-top:70px;
 background:#0b1220;
-padding:35px;
+padding:40px;
 text-align:center;
 color:#cbd5e1;
 }
 
-@media(max-width:768px){
+.top-btn{
+position:fixed;
+bottom:20px;
+left:20px;
+background:#2563eb;
+color:white;
+width:50px;
+height:50px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+font-size:24px;
+box-shadow:0 5px 15px rgba(0,0,0,.4);
+}
+
+.top-btn:hover{
+background:#1d4ed8;
+}
+.menu-btn{
+display:none;
+position:absolute;
+top:10px;
+left:10px;
+background:#1c2333;
+color:white;
+border:none;
+padding:8px 12px;
+font-size:24px;
+border-radius:10px;
+cursor:pointer;
+z-index:1001;
+}
+@media (max-width:768px){
+
+nav{
+display:none;
+}
+
+.menu-btn{
+display:block;
+}
 
 .header{
-flex-direction:column;
-gap:20px;
+padding:10px 15px;
+}
+
+.logo{
+width:45px;
+height:45px;
 }
 
 .logo-area h1{
-font-size:28px;
+font-size:22px;
+}
+
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:10px;
 }
 
 nav{
-justify-content:center;
+    display:flex;
+    gap:25px;
 }
 
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#61a8ff;
+}
+
+.menu-btn{
+    display:none;
+}
+
+@media (max-width:768px){
+
+
+.logo-area h1{
+    font-size:22px;
+}
+
+.logo{
+    width:45px;
+    height:45px;
+}
+
+nav{
+    display:none;
+}
+
+.menu-btn{
+    display:block;
+    position:static;
+}
+
+.search{
+    width:95%;
+}
+
+.games{
+    grid-template-columns:1fr;
+}
+
+.card img{
+    height:200px;
+}
+
+}
+
+
+.sidebar{
+position:fixed;
+top:0;
+left:-280px;
+width:260px;
+height:100%;
+background:#111827;
+padding:30px 20px;
+transition:.35s;
+z-index:2000;
+box-shadow:5px 0 20px rgba(0,0,0,.4);
+}
+
+.sidebar.show{
+left:0;
+}
+
+.sidebar a{
+display:block;
+color:white;
+text-decoration:none;
+padding:15px;
+margin:10px 0;
+background:#1c2333;
+border-radius:12px;
+font-size:18px;
+font-weight:bold;
+transition:.3s;
+}
+
+.sidebar a:hover{
+background:#2563eb;
+transform:translateX(5px);
+}
+
+.close-btn{
+font-size:32px;
+cursor:pointer;
+margin-bottom:20px;
+display:block;
 }
 
 </style>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6P9EQMMYV0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-6P9EQMMYV0');
+<script>
+
+window.dataLayer=window.dataLayer||[];
+
+function gtag(){dataLayer.push(arguments);}
+
+gtag('js',new Date());
+
+gtag('config','G-6P9EQMMYV0');
+
 </script>
+
 </head>
 
-<body>
+<body id="top">
+
+<div class="sidebar" id="sidebar">
+
+<span class="close-btn" onclick="toggleMenu()">✖</span>
+
+<a href="#top">🏠 خانه</a>
+<a href="#games">🎮 بازی‌ها</a>
+<a href="#software">💻 نرم‌افزارها</a>
+<a href="#about">ℹ️ درباره ما</a>
+<a href="#contact">📞 تماس با ما</a>
+
+</div>
 
 <header>
+    <div class="header">
 
-<div class="header">
+        <div class="logo-area">
+            <img src="logo.pag.png" class="logo">
+            <h1>Aydin Download</h1>
+        </div>
 
-<div class="logo-area">
+        <nav id="navMenu">
+            <a href="#top">🏠 خانه</a>
+            <a href="#games">🎮 بازی‌ها</a>
+            <a href="#software">💻 نرم‌افزارها</a>
+            <a href="#about">ℹ️ درباره ما</a>
+            <a href="#contact">📞 تماس با ما</a>
+        </nav>
 
-<img src="logo.pag.png" class="logo">
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
-<h1>Aydin Download</h1>
+    </div>
 
-</div>
-
-<nav>
-
-<a href="#">خانه</a>
-
-<a href="#">بازی‌ها</a>
-
-<a href="#">نرم افزارها</a>
-
-<a href="#">درباره ما</a>
-
-<a href="#">تماس با ما</a>
-
-</nav>
-
-</div>
 
 </header>
 
 <div class="search">
 
-<input type="text" id="searchInput" placeholder="🔍 جستجوی بازی...">
+<input type="text" id="searchInput" placeholder="🔍 جستجوی بازی یا نرم‌افزار...">
 
 </div>
 
 <div class="container">
 
-<h2 class="section-title">🎮 جدیدترین بازی‌ها</h2>
+<h2 id="games" class="section-title">🎮 جدیدترین بازی‌ها</h2>
 
 <div class="games">
-    <div class="card">
+
+<div class="card">
 
 <img src="minecraft.jpg" alt="Minecraft">
 
@@ -261,9 +443,7 @@ justify-content:center;
 <h2>Minecraft</h2>
 
 <p>
-
 یکی از محبوب‌ترین بازی‌های جهان با امکان ساخت، بقا و بازی آنلاین.
-
 </p>
 
 <a href="minecraft.html" class="button">ادامه و دانلود</a>
@@ -289,9 +469,7 @@ justify-content:center;
 <h2>GTA V</h2>
 
 <p>
-
 تجربه دنیای آزاد، مأموریت‌های هیجان‌انگیز و بخش آنلاین GTA Online.
-
 </p>
 
 <a href="gta.html" class="button">ادامه و دانلود</a>
@@ -317,9 +495,7 @@ justify-content:center;
 <h2>Roblox</h2>
 
 <p>
-
 بازی آنلاین محبوب با میلیون‌ها بازی و امکان ساخت دنیای اختصاصی.
-
 </p>
 
 <a href="roblox.html" class="button">ادامه و دانلود</a>
@@ -337,7 +513,6 @@ justify-content:center;
 </div>
 
 </div>
-
 <h2 class="section-title">⭐ محبوب‌ترین بازی‌ها</h2>
 
 <div class="games">
@@ -350,7 +525,7 @@ justify-content:center;
 
 <h2>Minecraft</h2>
 
-<p>پرفروش‌ترین بازی جهان.</p>
+<p>پرفروش‌ترین بازی جهان با میلیون‌ها بازیکن.</p>
 
 <a href="minecraft.html" class="button">ادامه و دانلود</a>
 
@@ -366,7 +541,7 @@ justify-content:center;
 
 <h2>GTA V</h2>
 
-<p>یکی از محبوب‌ترین بازی‌های اکشن.</p>
+<p>یکی از محبوب‌ترین بازی‌های اکشن جهان.</p>
 
 <a href="gta.html" class="button">ادامه و دانلود</a>
 
@@ -382,7 +557,7 @@ justify-content:center;
 
 <h2>Roblox</h2>
 
-<p>بیش از میلیون‌ها بازیکن فعال در سراسر جهان.</p>
+<p>بازی آنلاین با میلیون‌ها کاربر فعال.</p>
 
 <a href="roblox.html" class="button">ادامه و دانلود</a>
 
@@ -391,33 +566,180 @@ justify-content:center;
 </div>
 
 </div>
+
+<h2 id="software" class="section-title">💻 نرم‌افزارها</h2>
+
+<div class="games">
+
+<div class="card">
+
+<div class="card-content">
+
+<div class="card">
+
+<img src="vlc.jpg" alt="VLC Media Player">
+
+<div class="card-content">
+
+<h2>VLC Media Player</h2>
+
+<p>
+پخش‌کننده رایگان و قدرتمند برای اجرای انواع فایل‌های صوتی و تصویری.
+</p>
+
+<a href="https://www.videolan.org/vlc/download-android.html" target="_blank">
+<a href="vlc.html" class="button">ادامه و دانلود</a>
+</a>
+
+<div class="info">
+
+<span>🎬 Media Player</span>
+
+<span>💾 45 MB</span>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<div class="card">
+
+<img src="chrome.jpg" alt="Google Chrome">
+
+<div class="card-content">
+
+<h2>Google Chrome</h2>
+
+<p>
+مرورگر سریع، امن و محبوب گوگل برای وب‌گردی و دانلود فایل‌ها.
+</p>
+
+<a href="chrome.html" class="button">ادامه و دانلود</a>
+
+<div class="info">
+
+<span>🌐 Browser</span>
+
+<span>💾 120 MB</span>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="winrar.jpg" alt="WinRAR">
+
+<div class="card-content">
+
+<h2>WinRAR</h2>
+
+<p>
+نرم‌افزار محبوب برای فشرده‌سازی و استخراج فایل‌های ZIP، RAR و فرمت‌های دیگر.
+</p>
+
+<a href="winrar.html" class="button">ادامه و دانلود</a>
+
+<div class="info">
+
+<span>📦 File Manager</span>
+
+<span>💾 4 MB</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<h2 id="about" class="section-title">ℹ️ درباره ما</h2>
+
+<div class="card">
+
+<div class="card-content">
+
+<p>
+
+Aydin Download یک وب‌سایت دانلود بازی و نرم‌افزار برای ویندوز است.
+هدف ما ارائه فایل‌های سالم، لینک‌های مستقیم و آموزش‌های ساده برای کاربران است.
+
+</p>
+
+</div>
+
+</div>
+
+<h2 id="contact" class="section-title">📞 تماس با ما</h2>
+
+<div class="card">
+
+<div class="card-content">
+
+<p>
+📧 ایمیل:
+Aydin.k.1403@gmail.com
+</p>
+
+<p style="margin-top:15px;">
+🌐 وب‌سایت:
+Aydin Download
+</p>
+
+<p style="margin-top:15px;">
+💬 راه‌های ارتباطی دیگر به‌زودی اضافه می‌شوند.
+</p>
+
+</div>
+
+</div>
+
 <footer>
 
-<p>© 2026 Aydin Download | تمامی حقوق محفوظ است.</p>
+<p>
+© 2026 Aydin Download | تمامی حقوق محفوظ است.
+</p>
 
-<p style="margin-top:10px;">
+<p style="margin-top:12px;">
 دانلود بازی و نرم‌افزار برای ویندوز
 </p>
 
 </footer>
 
+<a href="#top" class="top-btn">⬆</a>
 </div>
 
 <script>
 
 const searchInput = document.getElementById("searchInput");
 
-searchInput.addEventListener("keyup", function(){
+searchInput.addEventListener("keyup", function () {
 
-let value = this.value.toLowerCase();
+let value = this.value.toLowerCase().trim();
 
 let cards = document.querySelectorAll(".card");
 
 cards.forEach(function(card){
 
-let title = card.querySelector("h2").textContent.toLowerCase();
+let text = card.innerText.toLowerCase();
 
-if(title.includes(value)){
+if(text.includes(value) || value===""){
 
 card.style.display="block";
 
@@ -431,6 +753,25 @@ card.style.display="none";
 
 });
 
+window.addEventListener("scroll",function(){
+
+const btn=document.querySelector(".top-btn");
+
+if(window.scrollY>300){
+
+btn.style.display="flex";
+
+}else{
+
+btn.style.display="none";
+
+}
+
+});
+
+function toggleMenu() {
+    document.getElementById("sidebar").classList.toggle("show");
+}
 </script>
 
 </body>
