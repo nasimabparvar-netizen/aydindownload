@@ -11,138 +11,75 @@
 <link rel="icon" href="logo.pag.png">
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Tahoma,sans-serif;
+:root{
+ --bg:#020817;--panel:#07172d;--panel2:#0a1d37;--line:rgba(37,132,255,.30);
+ --blue:#147cff;--text:#f8fbff;--muted:#aebbd0;--green:#18d66b;
 }
-
-html{
-scroll-behavior:smooth;
-}
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:Tahoma,Arial,sans-serif}
+html{scroll-behavior:smooth}
 body{
-background:#111827;
-color:white;
+ background:radial-gradient(circle at 15% 20%,rgba(0,102,255,.13),transparent 28%),
+ radial-gradient(circle at 85% 10%,rgba(0,75,180,.15),transparent 25%),
+ linear-gradient(180deg,#020817 0%,#061126 45%,#020817 100%);
+ color:var(--text);min-height:100vh;overflow-x:hidden
 }
-
+body:before,body:after{content:"";position:fixed;z-index:-1;border:1px solid rgba(0,116,255,.13);pointer-events:none}
+body:before{width:240px;height:130px;left:-80px;top:190px;transform:rotate(-25deg);border-radius:28px}
+body:after{width:260px;height:150px;right:-100px;top:100px;transform:rotate(28deg);border-radius:40px}
 header{
-background:#2563eb;
-padding:20px;
-text-align:center;
-position:sticky;
-top:0;
-z-index:999;
+ position:sticky;top:0;z-index:1000;background:rgba(2,10,27,.88);
+ backdrop-filter:blur(18px);border-bottom:1px solid rgba(37,124,255,.25);
+ box-shadow:0 10px 40px rgba(0,0,0,.28);padding:0
 }
-
-.logo{
-width:55px;
-height:55px;
-vertical-align:middle;
-margin-left:10px;
-border-radius:12px;
-}
-
-header h1{
-font-size:40px;
-}
-
-nav{
-margin-top:15px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:0 15px;
-font-size:20px;
-}
-
-nav a:hover{
-color:#22c55e;
-}
-
-.container{
-width:90%;
-max-width:1100px;
-margin:40px auto;
-}
-
+.header-inner{width:min(1180px,94%);height:84px;margin:auto;display:flex;align-items:center;gap:28px}
+.logo-area{display:flex;align-items:center;gap:12px;min-width:250px}
+.logo{width:58px;height:58px;border-radius:16px;object-fit:cover}
+.brand{font-weight:900;line-height:.9;font-size:27px;letter-spacing:-1px}
+.brand span{display:block;color:#197dff;margin-top:5px}
+nav{display:flex;align-items:center;gap:30px;flex:1;justify-content:center}
+nav a{color:#f5f8ff;text-decoration:none;font-size:15px;font-weight:800;padding:31px 0}
+nav a:hover{color:#3994ff}
+.container{width:min(1120px,92%);margin:38px auto}
+.hero-title{text-align:center;margin:30px 0 28px}
+.hero-title h1{font-size:42px;font-weight:900;margin-bottom:10px}
+.hero-title h1 span{color:#2084ff}
+.hero-title p{color:var(--muted);font-size:15px}
 .banner{
-width:100%;
-height:420px;
-object-fit:cover;
-border-radius:15px;
+ width:100%;height:430px;object-fit:cover;border-radius:16px;
+ border:1px solid rgba(37,132,255,.28);box-shadow:0 20px 60px rgba(0,0,0,.35)
 }
-
 .box{
-background:#1c2333;
-padding:25px;
-border-radius:15px;
-margin-top:30px;
+ background:linear-gradient(180deg,rgba(7,25,48,.98),rgba(4,17,35,.98));
+ border:1px solid rgba(37,132,255,.24);padding:25px;border-radius:15px;
+ margin-top:22px;box-shadow:0 12px 35px rgba(0,0,0,.25)
 }
-
-.box h3{
-color:#60a5fa;
-margin-bottom:20px;
-font-size:28px;
+.box h3{color:#2084ff;margin-bottom:18px;font-size:23px}
+.box ul{padding-right:25px}.box li{margin:12px 0;font-size:15px;color:#d7e2f0;line-height:1.8}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.download-buttons{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+button,.download,.server,.lite{
+ border:none;padding:13px 22px;font-size:14px;border-radius:10px;cursor:pointer;
+ color:white;text-decoration:none;font-weight:900;display:inline-flex;align-items:center;
+ justify-content:center;min-height:44px
 }
-
-.box ul{
-padding-right:25px;
+.download{background:linear-gradient(180deg,#20dc72,#0cb858)}
+.server{background:linear-gradient(180deg,#2489ff,#1264db)}
+.lite{background:linear-gradient(180deg,#ffb52e,#e78b00)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+.gallery img{width:100%;height:190px;object-fit:cover;border-radius:12px;border:1px solid rgba(37,132,255,.22);transition:.25s}
+.gallery img:hover{transform:translateY(-4px);border-color:rgba(40,143,255,.62)}
+footer{margin-top:65px;border-top:1px solid rgba(37,132,255,.2);background:#020a18;padding:35px;text-align:center;color:#6f819b}
+.download,.server,.lite{position:relative;transform-origin:center;transition:transform .12s ease-out,box-shadow .2s ease;will-change:transform}
+.download:hover{box-shadow:0 10px 35px rgba(24,214,107,.35)}
+.server:hover{box-shadow:0 10px 35px rgba(20,124,255,.30)}
+.lite:hover{box-shadow:0 10px 35px rgba(245,158,11,.30)}
+@media(max-width:800px){
+ .header-inner{height:70px}.logo-area{min-width:auto}.brand{font-size:20px}
+ nav{gap:12px}nav a{font-size:11px;padding:27px 0}
+ .banner{height:280px}.hero-title h1{font-size:29px}.info-grid{grid-template-columns:1fr}
+ .gallery{grid-template-columns:1fr}.gallery img{height:210px}
+ .download-buttons{flex-direction:column}.download-buttons a{width:100%}
 }
-
-.box li{
-margin:12px 0;
-font-size:21px;
-}
-
-button{
-background:#22c55e;
-color:white;
-border:none;
-padding:15px 40px;
-font-size:20px;
-border-radius:10px;
-cursor:pointer;
-margin:8px;
-}
-
-.download{
-background:#22c55e;
-}
-
-.server{
-background:#3b82f6;
-}
-
-.lite{
-background:#f59e0b;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:20px;
-}
-
-.gallery img{
-width:100%;
-height:180px;
-object-fit:cover;
-border-radius:12px;
-}
-
-footer{
-background:#0b1220;
-padding:30px;
-text-align:center;
-margin-top:50px;
-}
-
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YE98P0S526"></script>
@@ -168,40 +105,34 @@ gtag('config','G-YE98P0S526');
 <div id="pos-article-display-121960"></div>
 
 <header>
-
-<h1>
-
-<img src="logo.pag.png" class="logo">
-
-Aydin Download
-
-</h1>
-
-<nav>
-
-<a href="index.html">خانه</a>
-
-<a href="index.html">بازی‌ها</a>
-
-<a href="index.html">نرم افزارها</a>
-
-<a href="index.html">تماس با ما</a>
-
-</nav>
-
+<div class="header-inner">
+  <div class="logo-area">
+    <img src="logo.pag.png" class="logo" alt="Aydin Download">
+    <div class="brand">Aydin<span>Download</span></div>
+  </div>
+  <nav>
+    <a href="index.html">خانه</a>
+    <a href="index.html#games">بازی‌ها</a>
+    <a href="index.html#software">نرم‌افزارها</a>
+    <a href="index.html#contact">تماس با ما</a>
+  </nav>
+</div>
 </header>
 
 <div class="container">
 
+<div class="hero-title"><h1><span>Roblox</span> | Aydin Download</h1><p>دانلود و معرفی بازی محبوب Roblox</p></div>
 <img src="roblox.jpg" class="banner">
 
-<h2 style="font-size:40px;margin:25px 0;">Roblox</h2>
+<h2 style="font-size:0;margin:0;"></h2>
 
 <p style="font-size:22px;line-height:42px;">
 
 Roblox یکی از محبوب‌ترین بازی‌های آنلاین جهان است که میلیون‌ها نفر هر روز آن را بازی می‌کنند. در Roblox می‌توانید هزاران بازی مختلف را تجربه کنید یا حتی بازی خودتان را بسازید.
 
 </p>
+
+<div id="pos-article-display-121960"></div>
 
 <div class="box">
 
@@ -346,6 +277,23 @@ Roblox یکی از محبوب‌ترین بازی‌های آنلاین جهان
 </footer>
 
 </div>
+
+<script>
+document.querySelectorAll('.download,.server,.lite').forEach(function(button){
+  button.addEventListener('mousemove',function(e){
+    const rect=button.getBoundingClientRect();
+    const x=(e.clientX-rect.left-rect.width/2)/(rect.width/2);
+    const y=(e.clientY-rect.top-rect.height/2)/(rect.height/2);
+    const moveX=x*9, moveY=y*6;
+    const scaleX=1+Math.abs(x)*0.16, scaleY=1+Math.abs(y)*0.16;
+    const rotate=x*4;
+    button.style.transform=`translate(${moveX}px,${moveY}px) scale(${scaleX},${scaleY}) rotate(${rotate}deg)`;
+  });
+  button.addEventListener('mouseleave',function(){
+    button.style.transform='translate(0,0) scale(1,1) rotate(0deg)';
+  });
+});
+</script>
 
 </body>
 

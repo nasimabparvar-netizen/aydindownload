@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Counter-Strike 2 | Aydin Download</title>
+
+<meta name="description" content="دانلود و اطلاعات Counter-Strike 2 برای ویندوز از Aydin Download">
+
+<link rel="icon" href="logo.pag.png">
+
+<style>
+:root{
+    --bg:#020817;
+    --panel:#071a33;
+    --panel2:#081f3c;
+    --line:rgba(37,132,255,.30);
+    --blue:#147cff;
+    --text:#f8fbff;
+    --muted:#aebbd0;
+    --green:#18d66b;
+    --green2:#0fb957;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Tahoma,Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:
+        radial-gradient(circle at 15% 20%,rgba(0,102,255,.13),transparent 28%),
+        radial-gradient(circle at 85% 10%,rgba(0,75,180,.15),transparent 25%),
+        linear-gradient(180deg,#020817 0%,#061126 45%,#020817 100%);
+    color:var(--text);
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(2,10,27,.88);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(37,124,255,.25);
+    box-shadow:0 10px 40px rgba(0,0,0,.28);
+}
+
+.header-inner{
+    width:min(1180px,94%);
+    height:84px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    gap:28px;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    min-width:250px;
+}
+
+.logo{
+    width:58px;
+    height:58px;
+    border-radius:16px;
+    object-fit:cover;
+}
+
+.brand{
+    font-weight:900;
+    line-height:.9;
+    font-size:27px;
+    letter-spacing:-1px;
+}
+
+.brand span{
+    display:block;
+    color:#197dff;
+    margin-top:5px;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    flex:1;
+    justify-content:center;
+}
+
+nav a{
+    color:#f5f8ff;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:800;
+    position:relative;
+    padding:31px 0;
+    white-space:nowrap;
+}
+
+nav a:hover{
+    color:#3994ff;
+}
+
+.header-actions{
+    display:flex;
+    gap:12px;
+    align-items:center;
+}
+
+.icon-btn{
+    width:42px;
+    height:42px;
+    border:1px solid rgba(58,143,255,.35);
+    background:rgba(5,20,42,.8);
+    color:white;
+    border-radius:12px;
+    display:grid;
+    place-items:center;
+    font-size:19px;
+}
+
+/* ================= MAIN ================= */
+
+.container{
+    width:min(1120px,92%);
+    margin:45px auto;
+}
+
+/* ================= GAME HEADER ================= */
+
+.game-header{
+    background:linear-gradient(
+        180deg,
+        rgba(7,25,48,.98),
+        rgba(4,17,35,.98)
+    );
+
+    border:1px solid rgba(37,132,255,.30);
+    border-radius:18px;
+    overflow:hidden;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.35),
+        0 0 50px rgba(0,82,210,.08);
+}
+
+.game-image{
+    width:100%;
+    height:430px;
+    overflow:hidden;
+    position:relative;
+}
+
+.game-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.game-image:after{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent 35%,
+            rgba(2,8,20,.85) 100%
+        );
+}
+
+.game-title{
+    position:relative;
+    margin-top:-95px;
+    z-index:2;
+    padding:30px;
+}
+
+.game-title h1{
+    font-size:42px;
+    margin-bottom:12px;
+}
+
+.game-title h1 span{
+    color:#2185ff;
+}
+
+.game-title p{
+    color:#aebbd0;
+    font-size:15px;
+    line-height:2;
+}
+
+/* ================= INFO ================= */
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin-top:25px;
+}
+
+.info-box{
+    background:#071a33;
+    border:1px solid rgba(37,132,255,.28);
+    border-radius:14px;
+    padding:22px;
+    text-align:center;
+}
+
+.info-box .icon{
+    font-size:25px;
+    margin-bottom:10px;
+}
+
+.info-box small{
+    display:block;
+    color:#8195b0;
+    margin-bottom:8px;
+}
+
+.info-box strong{
+    font-size:15px;
+}
+
+/* ================= DESCRIPTION ================= */
+
+.content-box{
+    margin-top:25px;
+    background:linear-gradient(
+        180deg,
+        #071a33,
+        #051227
+    );
+
+    border:1px solid rgba(37,132,255,.24);
+    border-radius:15px;
+    padding:28px;
+
+    line-height:2.2;
+}
+
+.content-box h2{
+    font-size:25px;
+    margin-bottom:15px;
+}
+
+.content-box h2 span{
+    color:#2185ff;
+}
+
+.content-box p{
+    color:#aebbd0;
+    font-size:14px;
+}
+
+/* ================= DOWNLOAD ================= */
+
+.download-section{
+    margin-top:28px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #081f3c,
+            #06162c
+        );
+
+    border:1px solid rgba(37,132,255,.32);
+    border-radius:16px;
+
+    padding:35px;
+
+    text-align:center;
+}
+
+.download-section h2{
+    font-size:27px;
+    margin-bottom:10px;
+}
+
+.download-section h2 span{
+    color:#2185ff;
+}
+
+.download-section p{
+    color:#9eafc6;
+    margin-bottom:28px;
+}
+
+/* محل قرارگیری دکمه */
+
+.download-area{
+    width:100%;
+    height:100px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    position:relative;
+}
+
+/* دکمه */
+
+.download-button{
+    width:80%;
+    max-width:900px;
+
+    height:62px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:
+        linear-gradient(
+            180deg,
+            var(--green),
+            var(--green2)
+        );
+
+    color:white;
+    text-decoration:none;
+
+    border-radius:12px;
+
+    font-size:17px;
+    font-weight:900;
+
+    position:relative;
+
+    box-shadow:
+        0 10px 30px rgba(24,214,107,.18);
+
+    transition:
+        transform .12s ease-out,
+        box-shadow .2s ease,
+        filter .2s ease;
+
+    will-change:transform;
+
+    cursor:pointer;
+}
+
+.download-button:hover{
+    box-shadow:
+        0 15px 45px rgba(24,214,107,.35);
+
+    filter:brightness(1.08);
+}
+
+/* ================= SYSTEM ================= */
+
+.system{
+    margin-top:30px;
+}
+
+.system h2{
+    font-size:26px;
+    margin-bottom:18px;
+}
+
+.system h2 span{
+    color:#2185ff;
+}
+
+.system-box{
+    background:#071a33;
+    border:1px solid rgba(37,132,255,.24);
+    border-radius:15px;
+    padding:25px;
+}
+
+.system-box p{
+    color:#aebbd0;
+    margin:12px 0;
+    font-size:14px;
+}
+
+.system-box strong{
+    color:white;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    margin-top:70px;
+
+    border-top:1px solid rgba(37,132,255,.2);
+
+    background:#020a18;
+
+    padding:40px 0 22px;
+}
+
+.footer-inner{
+    width:min(1120px,92%);
+    margin:auto;
+    text-align:center;
+}
+
+.footer-brand{
+    font-size:27px;
+    font-weight:900;
+}
+
+.footer-brand span{
+    color:#2183ff;
+}
+
+.footer-text{
+    color:#7f91aa;
+    font-size:12px;
+    margin-top:12px;
+}
+
+.copyright{
+    margin-top:25px;
+    padding-top:18px;
+
+    border-top:1px solid rgba(255,255,255,.06);
+
+    color:#667993;
+    font-size:11px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+    nav{
+        display:none;
+    }
+
+    .header-inner{
+        justify-content:space-between;
+    }
+
+    .info-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .game-image{
+        height:300px;
+    }
+
+    .game-title h1{
+        font-size:32px;
+    }
+}
+
+@media(max-width:600px){
+
+    .header-inner{
+        height:70px;
+    }
+
+    .logo{
+        width:48px;
+        height:48px;
+    }
+
+    .brand{
+        font-size:21px;
+    }
+
+    .container{
+        width:94%;
+    }
+
+    .game-image{
+        height:220px;
+    }
+
+    .game-title{
+        margin-top:-60px;
+        padding:20px;
+    }
+
+    .game-title h1{
+        font-size:25px;
+    }
+
+    .game-title p{
+        font-size:12px;
+    }
+
+    .info-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .download-section{
+        padding:22px 14px;
+    }
+
+    .download-button{
+        width:100%;
+        font-size:14px;
+    }
+}
+</style>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE98P0S526"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YE98P0S526');
+</script>
+
+<script>
+            !function(e,t,n){e.yektanetAnalyticsObject=n,e[n]=e[n]||function(){e[n].q.push(arguments)},e[n].q=e[n].q||[];var a=t.getElementsByTagName("head")[0],r=new Date,c="https://cdn.yektanet.com/superscript/2DnuihXn/native-nasimabparvar-netizen.github.io-47823/yn_pub.js?v="+r.getFullYear().toString()+"0"+r.getMonth()+"0"+r.getDate()+"0"+r.getHours(),s=t.createElement("link");s.rel="preload",s.as="script",s.href=c,a.appendChild(s);var l=t.createElement("script");l.async=!0,l.src=c,a.appendChild(l)}(window,document,"yektanet");
+        </script>
+
+</head>
+
+<body id="top">
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="header-inner">
+
+<div class="logo-area">
+
+<img src="logo.pag.png"
+     class="logo"
+     alt="Aydin Download">
+
+<div class="brand">
+Aydin
+<span>Download</span>
+</div>
+
+</div>
+
+<nav>
+
+<a href="index.html">خانه</a>
+<a href="index.html#games">بازی‌ها</a>
+<a href="index.html#software">نرم‌افزارها</a>
+<a href="index.html#about">درباره ما</a>
+<a href="index.html#contact">تماس با ما</a>
+
+</nav>
+
+<div class="header-actions">
+
+<div class="icon-btn">⌕</div>
+
+</div>
+
+</div>
+
+</header>
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="container">
+
+
+<!-- GAME HEADER -->
+
+<section class="game-header">
+
+<div class="game-image">
+
+<img src="counter.jpg"
+     alt="Counter-Strike 2">
+
+</div>
+
+
+<div class="game-title">
+
+<h1>
+Counter-Strike <span>2</span>
+</h1>
+
+<p>
+Counter-Strike 2 یکی از محبوب‌ترین بازی‌های تیراندازی آنلاین جهان است
+که توسط Valve ساخته شده و تجربه‌ای رقابتی و هیجان‌انگیز را ارائه می‌دهد.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- Yektanet - CS2 Download -->
+<div class="ad-wrap">
+    <div id="pos-article-display-122057"></div>
+</div>
+
+<!-- DOWNLOAD -->
+<section class="download-section">
+
+<!-- INFO -->
+
+<div class="info-grid">
+
+<div class="info-box">
+
+<div class="icon">🎮</div>
+
+<small>ژانر</small>
+
+<strong>FPS / Action</strong>
+
+</div>
+
+
+<div class="info-box">
+
+<div class="icon">💾</div>
+
+<small>حجم</small>
+
+<strong>تقریباً 35 GB</strong>
+
+</div>
+
+
+<div class="info-box">
+
+<div class="icon">🖥️</div>
+
+<small>سیستم</small>
+
+<strong>Windows 10 / 11</strong>
+
+</div>
+
+
+<div class="info-box">
+
+<div class="icon">🌐</div>
+
+<small>حالت بازی</small>
+
+<strong>Online</strong>
+
+</div>
+
+</div>
+
+
+<!-- DESCRIPTION -->
+
+<section class="content-box">
+
+<h2>
+درباره <span>Counter-Strike 2</span>
+</h2>
+
+<p>
+Counter-Strike 2 یک بازی تیراندازی اول‌شخص رقابتی است.
+بازیکنان در دو تیم Terrorist و Counter-Terrorist قرار می‌گیرند
+و در حالت‌های مختلف با یکدیگر رقابت می‌کنند.
+</p>
+
+</section>
+
+
+<!-- DOWNLOAD -->
+
+<section class="download-section">
+
+<h2>
+دانلود <span>Counter-Strike 2</span> ⬇️
+</h2>
+
+<p>
+برای دریافت بازی از لینک رسمی، روی دکمه زیر کلیک کنید.
+</p>
+
+
+<div class="download-area">
+
+<a
+href="https://store.steampowered.com/app/730/CounterStrike_2/"
+target="_blank"
+rel="noopener noreferrer"
+class="download-button"
+id="downloadButton">
+
+⬇ دانلود رسمی Counter-Strike 2
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- SYSTEM -->
+
+<section class="system">
+
+<h2>
+⚙️ سیستم مورد نیاز
+</h2>
+
+
+<div class="system-box">
+
+<p>
+<strong>سیستم‌عامل:</strong>
+Windows 10 / 11
+</p>
+
+<p>
+<strong>پردازنده:</strong>
+Intel Core i5 یا مشابه
+</p>
+
+<p>
+<strong>RAM:</strong>
+حداقل 8 GB
+</p>
+
+<p>
+<strong>کارت گرافیک:</strong>
+کارت گرافیک سازگار با DirectX
+</p>
+
+<p>
+<strong>فضای ذخیره‌سازی:</strong>
+فضای کافی برای نصب بازی
+</p>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-inner">
+
+<div class="footer-brand">
+Aydin <span>Download</span>
+</div>
+
+<div class="footer-text">
+مرجع دانلود بازی‌ها و نرم‌افزارهای ویندوز
+</div>
+
+<div class="copyright">
+© 2026 Aydin Download | تمامی حقوق محفوظ است.
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- ================= MOUSE FOLLOW ================= -->
+
+<script>
+
+const button = document.getElementById("downloadButton");
+
+button.addEventListener("mousemove", function(e){
+
+    const rect = button.getBoundingClientRect();
+
+    const x =
+        (e.clientX - rect.left - rect.width / 2)
+        /
+        (rect.width / 2);
+
+    const y =
+        (e.clientY - rect.top - rect.height / 2)
+        /
+        (rect.height / 2);
+
+
+    /* میزان حرکت */
+
+    const moveX = x * 12;
+    const moveY = y * 8;
+
+
+    /* کش آمدن دکمه */
+
+    const scaleX = 1 + Math.abs(x) * 0.08;
+    const scaleY = 1 + Math.abs(y) * 0.08;
+
+
+    /* چرخش خیلی کم */
+
+    const rotate = x * 2;
+
+
+    button.style.transform =
+        `translate(${moveX}px, ${moveY}px)
+         scale(${scaleX}, ${scaleY})
+         rotate(${rotate}deg)`;
+
+});
+
+
+button.addEventListener("mouseleave", function(){
+
+    button.style.transform =
+        "translate(0,0) scale(1,1) rotate(0deg)";
+
+});
+
+</script>
+
+
+</body>
+</html>

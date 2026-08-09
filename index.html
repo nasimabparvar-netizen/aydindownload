@@ -1,790 +1,316 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Aydin Download | دانلود بازی و نرم افزار</title>
-
 <meta name="description" content="دانلود جدیدترین بازی‌ها و نرم‌افزارهای ویندوز با لینک مستقیم از Aydin Download">
-
 <meta name="keywords" content="دانلود بازی, دانلود نرم افزار, GTA V, Minecraft, Roblox, Aydin Download">
-
 <meta name="author" content="Aydin Download">
-
 <link rel="icon" href="logo.pag.png">
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Tahoma,sans-serif;
+:root{
+  --bg:#020817;
+  --bg2:#071329;
+  --panel:#07172d;
+  --panel2:#0a1d37;
+  --line:rgba(37,132,255,.30);
+  --blue:#147cff;
+  --blue2:#0066ff;
+  --text:#f8fbff;
+  --muted:#aebbd0;
+  --green:#18d66b;
+  --green2:#0fb957;
+  --shadow:0 20px 60px rgba(0,0,0,.38);
 }
-
-html{
-scroll-behavior:smooth;
-}
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:Tahoma,Arial,sans-serif}
+html{scroll-behavior:smooth}
 body{
-background:#111827;
-color:white;
+  background:
+    radial-gradient(circle at 15% 20%,rgba(0,102,255,.13),transparent 28%),
+    radial-gradient(circle at 85% 10%,rgba(0,75,180,.15),transparent 25%),
+    linear-gradient(180deg,#020817 0%,#061126 45%,#020817 100%);
+  color:var(--text);min-height:100vh;overflow-x:hidden;
 }
+body:before,body:after{content:"";position:fixed;z-index:-1;border:1px solid rgba(0,116,255,.13);filter:blur(.2px);pointer-events:none}
+body:before{width:240px;height:130px;left:-80px;top:190px;transform:rotate(-25deg);border-radius:28px}
+body:after{width:260px;height:150px;right:-100px;top:100px;transform:rotate(28deg);border-radius:40px}
 
-header{
-background:#2563eb;
-padding:18px;
-position:sticky;
-top:0;
-z-index:1000;
-box-shadow:0 5px 20px rgba(0,0,0,.35);
-}
+.topbar{height:34px;border-bottom:1px solid rgba(37,124,255,.22);display:flex;align-items:center;justify-content:space-between;padding:0 28px;color:#dce8f8;font-size:12px;background:rgba(1,8,22,.85)}
+.top-links{display:flex;gap:25px}.top-links a{color:#e7f0ff;text-decoration:none}.top-links a:hover{color:#3e94ff}
 
-.header{
-width:90%;
-max-width:1200px;
-margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
-}
+header{position:sticky;top:0;z-index:1000;background:rgba(2,10,27,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(37,124,255,.25);box-shadow:0 10px 40px rgba(0,0,0,.28)}
+.header-inner{width:min(1180px,94%);height:84px;margin:auto;display:flex;align-items:center;gap:28px}
+.logo-area{display:flex;align-items:center;gap:12px;min-width:250px}.logo{width:58px;height:58px;border-radius:16px;object-fit:cover}.brand{font-weight:900;line-height:.9;font-size:27px;letter-spacing:-1px}.brand span{display:block;color:#197dff;margin-top:5px}
+nav{display:flex;align-items:center;gap:30px;flex:1;justify-content:center}nav a{color:#f5f8ff;text-decoration:none;font-size:15px;font-weight:800;position:relative;padding:31px 0;white-space:nowrap}nav a:after{content:"";position:absolute;bottom:13px;right:0;left:0;height:2px;background:transparent;border-radius:5px}nav a:hover{color:#3994ff}nav a.active:after{background:var(--blue)}
+.header-actions{display:flex;gap:12px;align-items:center}.icon-btn,.menu-btn{width:42px;height:42px;border:1px solid rgba(58,143,255,.35);background:rgba(5,20,42,.8);color:white;border-radius:12px;display:grid;place-items:center;font-size:19px;cursor:pointer}.menu-btn{display:none}
 
-.logo-area{
-display:flex;
-align-items:center;
-}
+.sidebar{position:fixed;top:0;right:-300px;width:285px;height:100%;background:#061226;border-left:1px solid var(--line);padding:28px 20px;transition:.3s;z-index:2000;box-shadow:-20px 0 60px rgba(0,0,0,.45)}.sidebar.show{right:0}.close-btn{font-size:28px;cursor:pointer;display:block;margin-bottom:20px}.sidebar a{display:block;color:#fff;text-decoration:none;padding:14px 16px;margin:9px 0;background:#0a1b34;border:1px solid rgba(37,132,255,.18);border-radius:12px;font-weight:bold}.sidebar a:hover{background:#0c2d57}
 
-.logo{
-width:60px;
-height:60px;
-border-radius:15px;
-margin-left:12px;
-}
+.ad-wrap{width:min(1180px,94%);margin:14px auto 0;overflow:hidden;border-radius:14px}
 
-.logo-area h1{
-font-size:34px;
-}
+.hero{width:min(1120px,92%);margin:42px auto 32px;text-align:center;position:relative}.hero:before{content:"";position:absolute;inset:-60px 10% auto;height:220px;background:radial-gradient(circle,rgba(0,111,255,.17),transparent 68%);z-index:-1}.eyebrow{font-size:18px;color:#eaf3ff;margin-bottom:10px}.hero h2{font-size:42px;line-height:1.45;font-weight:900}.hero h2 span{color:#1d82ff}.hero p{margin-top:8px;color:var(--muted);font-size:16px}
 
-nav{
-display:flex;
-gap:30px;
-flex-wrap:wrap;
-}
+.search{width:min(700px,92%);margin:30px auto 34px;position:relative}.search input{width:100%;height:60px;border:1.5px solid #1581ff;border-radius:34px;background:rgba(5,20,42,.9);box-shadow:0 0 0 5px rgba(21,129,255,.05),0 0 30px rgba(0,103,255,.16);color:#fff;padding:0 58px 0 24px;font-size:16px;outline:none}.search input::placeholder{color:#98a8c0}.search-icon{position:absolute;right:22px;top:16px;font-size:24px;color:#fff}
 
-nav a{
-color:white;
-text-decoration:none;
-font-size:19px;
-font-weight:bold;
-transition:.3s;
-}
+.features{width:min(1080px,92%);margin:0 auto 28px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(7,28,55,.92),rgba(4,18,38,.92));border-radius:15px;display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden;box-shadow:var(--shadow)}.feature{padding:20px 18px;display:flex;align-items:center;gap:13px;justify-content:center;border-left:1px solid rgba(37,124,255,.17)}.feature:last-child{border-left:0}.feature .ico{width:45px;height:45px;border:1px solid rgba(37,132,255,.45);border-radius:50%;display:grid;place-items:center;color:#2386ff;font-size:22px}.feature b{display:block;font-size:14px;margin-bottom:5px}.feature small{color:#8fa2bc;font-size:11px}
 
-nav a:hover{
-color:#22c55e;
-}
+.container{width:min(1120px,92%);margin:auto}.section{margin:38px 0 22px;display:flex;align-items:center;justify-content:space-between}.section h2{font-size:27px}.section h2 span{color:#2084ff}.section a{font-size:12px;color:#2490ff;text-decoration:none;border:1px solid rgba(37,132,255,.4);padding:8px 14px;border-radius:9px}.section a:hover{background:rgba(22,117,255,.12)}
+.grid-games{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.grid-soft{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:linear-gradient(180deg,rgba(7,25,48,.98),rgba(4,17,35,.98));border:1px solid rgba(37,132,255,.24);border-radius:14px;overflow:hidden;box-shadow:0 12px 35px rgba(0,0,0,.28);transition:.28s;position:relative}.card:hover{transform:translateY(-6px);border-color:rgba(40,143,255,.62);box-shadow:0 18px 45px rgba(0,87,210,.18)}
+.card-media{height:175px;overflow:hidden;position:relative;background:#0a1a31}.card-media img{width:100%;height:100%;object-fit:cover;display:block;transition:.35s}.card:hover .card-media img{transform:scale(1.045)}.badge{position:absolute;top:12px;right:12px;background:#167dff;color:white;border-radius:9px;padding:6px 10px;font-size:11px;font-weight:bold;box-shadow:0 5px 15px rgba(0,0,0,.25)}
+.card-content{padding:16px}.card h3{font-size:20px;margin-bottom:9px}.card p{color:#aab8cc;font-size:12px;line-height:2;min-height:48px}.meta{display:flex;justify-content:space-between;gap:12px;margin-top:14px;color:#d7e2f0;font-size:12px}.download{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:15px;height:40px;border-radius:9px;background:linear-gradient(180deg,#20dc72,#0cb858);color:#fff;text-decoration:none;font-size:13px;font-weight:900;transition:.2s}.download:hover{filter:brightness(1.08);transform:translateY(-2px)}
 
-.search{
-width:90%;
-max-width:700px;
-margin:35px auto;
-}
+.soft-card{min-height:240px;text-align:center;padding:18px}.soft-icon{width:88px;height:88px;margin:0 auto 13px;border-radius:20px;display:grid;place-items:center;background:linear-gradient(145deg,#0a2547,#07152a);border:1px solid rgba(37,132,255,.35);overflow:hidden}.soft-icon img{width:70px;height:70px;object-fit:contain}.soft-card h3{font-size:17px}.soft-card p{min-height:42px;margin-top:7px}
 
-.search input{
-width:100%;
-padding:16px;
-font-size:20px;
-border:none;
-border-radius:12px;
-outline:none;
-background:#1c2333;
-color:white;
-}
+.trust{margin:38px 0;border:1px solid rgba(37,132,255,.38);border-radius:15px;padding:23px 25px;background:linear-gradient(90deg,rgba(5,25,52,.96),rgba(4,16,34,.96));display:flex;align-items:center;justify-content:space-between;gap:20px}.trust-icon{font-size:42px;color:#2185ff}.trust h3{font-size:20px;margin-bottom:7px}.trust p{color:#a6b6cc;font-size:12px}.trust a{background:#147dff;color:white;text-decoration:none;padding:13px 22px;border-radius:9px;font-size:12px;font-weight:bold;white-space:nowrap}
 
-.search input::placeholder{
-color:#9ca3af;
-}
+.info-card{margin-top:18px;background:linear-gradient(180deg,#071a33,#051227);border:1px solid rgba(37,132,255,.24);border-radius:14px;padding:25px;line-height:2;color:#b8c5d7}.info-card strong{color:white}
 
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
+footer{margin-top:65px;border-top:1px solid rgba(37,132,255,.2);background:#020a18;padding:40px 0 22px}.footer-grid{width:min(1120px,92%);margin:auto;display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:30px}.footer-brand{font-size:27px;font-weight:900}.footer-brand span{color:#2183ff}.footer-col h4{margin-bottom:14px}.footer-col a{display:block;color:#98a9c0;text-decoration:none;margin:9px 0;font-size:12px}.footer-col a:hover{color:#288bff}.footer-about{color:#94a5bd;font-size:12px;line-height:2;margin-top:12px}.copyright{width:min(1120px,92%);margin:30px auto 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.06);text-align:center;color:#6f819b;font-size:11px}
 
-.section-title{
-font-size:34px;
-margin:40px 0 20px;
-color:#60a5fa;
-}
+.top-btn{position:fixed;bottom:22px;left:22px;width:48px;height:48px;border-radius:50%;display:none;align-items:center;justify-content:center;background:#0a1b34;border:1px solid rgba(37,132,255,.45);color:white;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.4);z-index:900}.top-btn:hover{background:#0d2c52}
 
-.games{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
-}
+@media(max-width:900px){.header-inner{height:72px}.logo-area{min-width:auto}.brand{font-size:22px}nav{gap:15px}nav a{font-size:12px}.features{grid-template-columns:repeat(2,1fr)}.feature:nth-child(2){border-left:0}.grid-games,.grid-soft{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.topbar{padding:0 14px}.top-links{gap:12px}.header-inner{height:68px}.logo{width:47px;height:47px}.brand{font-size:20px}.menu-btn{display:grid}nav,.icon-btn{display:none}.hero{margin-top:28px}.hero h2{font-size:29px}.hero p{font-size:13px}.search{margin-top:22px}.search input{height:54px;font-size:13px}.features{grid-template-columns:1fr 1fr;border-radius:12px}.feature{padding:15px 8px;gap:8px}.feature .ico{width:38px;height:38px;font-size:18px}.feature b{font-size:11px}.feature small{font-size:9px}.section{margin-top:30px}.section h2{font-size:21px}.grid-games,.grid-soft{grid-template-columns:1fr;gap:14px}.card-media{height:190px}.soft-card{min-height:220px}.trust{align-items:flex-start;flex-direction:column}.trust a{width:100%;text-align:center}.footer-grid{grid-template-columns:1fr 1fr;gap:22px}.footer-grid>div:first-child{grid-column:1/-1}}
+
+/* ===== MOUSE FOLLOW CARD EFFECT ===== */
 
 .card{
-background:#1c2333;
-border-radius:18px;
-overflow:hidden;
-transition:.35s;
-box-shadow:0 8px 20px rgba(0,0,0,.3);
+    transform-origin:center center;
+    transition:transform .12s ease-out, box-shadow .2s ease;
+    will-change:transform;
 }
-
-.card:hover{
-transform:translateY(-8px) scale(1.02);
-box-shadow:0 15px 35px rgba(0,0,0,.45);
-}
-
-.card img{
-width:100%;
-height:220px;
-object-fit:cover;
-transition:.35s;
-}
-.card:hover img{
-transform:scale(1.06);
-}
-
-.card-content{
-padding:20px;
-}
-
-.card h2{
-margin-bottom:15px;
-}
-
-.card p{
-line-height:32px;
-margin-bottom:20px;
-}
-
-
-.button{
-display:inline-block;
-background:#22c55e;
-padding:14px 28px;
-border-radius:10px;
-text-decoration:none;
-color:white;
-transition:0.3s;
-}
-
-.button:hover{
-background:#16a34a;
-transform:translateY(-3px);
-box-shadow:0 8px 20px rgba(34,197,94,.45);
-}
-
-.info{
-display:flex;
-justify-content:space-between;
-margin-top:18px;
-color:#cbd5e1;
-font-size:15px;
-}
-
-footer{
-margin-top:70px;
-background:#0b1220;
-padding:40px;
-text-align:center;
-color:#cbd5e1;
-}
-
-.top-btn{
-position:fixed;
-bottom:20px;
-left:20px;
-background:#2563eb;
-color:white;
-width:50px;
-height:50px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-text-decoration:none;
-font-size:24px;
-box-shadow:0 5px 15px rgba(0,0,0,.4);
-}
-
-.top-btn:hover{
-background:#1d4ed8;
-}
-.menu-btn{
-display:none;
-position:absolute;
-top:10px;
-left:10px;
-background:#1c2333;
-color:white;
-border:none;
-padding:8px 12px;
-font-size:24px;
-border-radius:10px;
-cursor:pointer;
-z-index:1001;
-}
-@media (max-width:768px){
-
-nav{
-display:none;
-}
-
-.menu-btn{
-display:block;
-}
-
-.header{
-padding:10px 15px;
-}
-
-.logo{
-width:45px;
-height:45px;
-}
-
-.logo-area h1{
-font-size:22px;
-}
-
-}
-
-.header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 30px;
-}
-
-.logo-area{
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
-
-nav{
-    display:flex;
-    gap:25px;
-}
-
-nav a{
-    color:#fff;
-    text-decoration:none;
-    font-size:18px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#61a8ff;
-}
-
-.menu-btn{
-    display:none;
-}
-
-@media (max-width:768px){
-
-
-.logo-area h1{
-    font-size:22px;
-}
-
-.logo{
-    width:45px;
-    height:45px;
-}
-
-nav{
-    display:none;
-}
-
-.menu-btn{
-    display:block;
-    position:static;
-}
-
-.search{
-    width:95%;
-}
-
-.games{
-    grid-template-columns:1fr;
-}
-
-.card img{
-    height:200px;
-}
-
-}
-
-
-.sidebar{
-position:fixed;
-top:0;
-left:-280px;
-width:260px;
-height:100%;
-background:#111827;
-padding:30px 20px;
-transition:.35s;
-z-index:2000;
-box-shadow:5px 0 20px rgba(0,0,0,.4);
-}
-
-.sidebar.show{
-left:0;
-}
-
-.sidebar a{
-display:block;
-color:white;
-text-decoration:none;
-padding:15px;
-margin:10px 0;
-background:#1c2333;
-border-radius:12px;
-font-size:18px;
-font-weight:bold;
-transition:.3s;
-}
-
-.sidebar a:hover{
-background:#2563eb;
-transform:translateX(5px);
-}
-
-.close-btn{
-font-size:32px;
-cursor:pointer;
-margin-bottom:20px;
-display:block;
-}
-
 </style>
 
-<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) - kept from the current site -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YE98P0S526"></script>
 
 <script>
-
-window.dataLayer=window.dataLayer||[];
-
+window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
-
-gtag('js',new Date());
-
-gtag('config','G-YE98P0S526');
-
+gtag('js', new Date());
+gtag('config', 'G-YE98P0S526');
 </script>
+
+<!-- Yektanet initialization - kept from the current site -->
+<script>
+            !function(e,t,n){e.yektanetAnalyticsObject=n,e[n]=e[n]||function(){e[n].q.push(arguments)},e[n].q=e[n].q||[];var a=t.getElementsByTagName("head")[0],r=new Date,c="https://cdn.yektanet.com/superscript/2DnuihXn/native-nasimabparvar-netizen.github.io-47823/yn_pub.js?v="+r.getFullYear().toString()+"0"+r.getMonth()+"0"+r.getDate()+"0"+r.getHours(),s=t.createElement("link");s.rel="preload",s.as="script",s.href=c,a.appendChild(s);var l=t.createElement("script");l.async=!0,l.src=c,a.appendChild(l)}(window,document,"yektanet");
+        </script>
 
 <script>
+document.addEventListener("DOMContentLoaded", function () {
 
+    document.querySelectorAll("a, button").forEach(function (element) {
 
-!function(e,t,n){e.yektanetAnalyticsObject=n,e[n]=e[n]||function(){e[n].q.push(arguments)},e[n].q=e[n].q||[];var a=t.getElementsByTagName("head")[0],r=new Date,c="https://cdn.yektanet.com/superscript/2DnuihXn/native-nasimabparvar-netizen.github.io-47823/yn_pub.js?v="+r.getFullYear().toString()+"0"+r.getMonth()+"0"+r.getDate()+"0"+r.getHours(),s=t.createElement("link");s.rel="preload";s.as="script";s.href=c;a.appendChild(s);var l=t.createElement("script");l.async=!0;l.src=c;a.appendChild(l)}(window,document,"yektanet");
+        const text = element.textContent.trim();
+
+        if (
+            text.includes("دانلود") ||
+            text.includes("ادامه") ||
+            text.includes("Download") ||
+            text.includes("Continue")
+        ) {
+            element.classList.add("btn-sand");
+        }
+
+    });
+
+});
 </script>
-        </script>
 
 </head>
 
 <body id="top">
 
+<div class="topbar">
+  <div>به <strong>Aydin Download</strong> خوش آمدید!</div>
+  <div class="top-links"><a href="#about">ⓘ درباره ما</a><a href="#contact">▢ تماس با ما</a></div>
+</div>
+
 <div class="sidebar" id="sidebar">
-
-<span class="close-btn" onclick="toggleMenu()">✖</span>
-
-<a href="#top">🏠 خانه</a>
-<a href="#games">🎮 بازی‌ها</a>
-<a href="#software">💻 نرم‌افزارها</a>
-<a href="#about">ℹ️ درباره ما</a>
-<a href="#contact">📞 تماس با ما</a>
-
+  <span class="close-btn" onclick="toggleMenu()">✕</span>
+  <a href="#top">🏠 خانه</a>
+  <a href="#games">🎮 بازی‌ها</a>
+  <a href="#software">💻 نرم‌افزارها</a>
+  <a href="#about">ℹ️ درباره ما</a>
+  <a href="#contact">📞 تماس با ما</a>
 </div>
 
 <header>
-    <div class="header">
-
-        <div class="logo-area">
-            <img src="logo.pag.png" class="logo">
-            <h1>Aydin Download</h1>
-        </div>
-
-        <nav id="navMenu">
-            <a href="#top">🏠 خانه</a>
-            <a href="#games">🎮 بازی‌ها</a>
-            <a href="#software">💻 نرم‌افزارها</a>
-            <a href="#about">ℹ️ درباره ما</a>
-            <a href="#contact">📞 تماس با ما</a>
-        </nav>
-
-        <button class="menu-btn" onclick="toggleMenu()">☰</button>
-
+  <div class="header-inner">
+    <div class="logo-area">
+      <img src="logo.pag.png" class="logo" alt="Aydin Download">
+      <div class="brand">Aydin<span>Download</span></div>
     </div>
-
-
+    <nav id="navMenu">
+      <a class="active" href="#top">خانه</a>
+      <a href="#games">بازی‌ها⌄</a>
+      <a href="#software">نرم افزارها⌄</a>
+      <a href="#software">آموزش‌ها</a>
+      <a href="#games">درخواست بازی</a>
+    </nav>
+    <button class="icon-btn" aria-label="جستجو" onclick="document.getElementById('searchInput').focus()">⌕</button>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </div>
 </header>
 
+<!-- Existing Yektanet placement: unchanged -->
 <div id="pos-article-display-121903"></div>
 
+<section class="hero">
+  <div class="eyebrow">جدیدترین بازی‌ها و نرم افزارها</div>
+  <h2><span>دانلود</span> جدیدترین بازی ها و نرم افزارها</h2>
+  <p>بهترین‌ها را از <span style="color:#2184ff">Aydin Download</span> دریافت کنید...</p>
+</section>
+
 <div class="search">
+  <span class="search-icon">⌕</span>
+  <input type="text" id="searchInput" placeholder="جستجو برای بازی یا نرم افزار...">
+</div>
 
-<input type="text" id="searchInput" placeholder="🔍 جستجوی بازی یا نرم‌افزار...">
-
+<div class="features">
+  <div class="feature"><div class="ico">∞</div><div><b>بدون محدودیت</b><small>دانلود نامحدود و آسان</small></div></div>
+  <div class="feature"><div class="ico">✓</div><div><b>آخرین نسخه</b><small>همیشه به‌روز و آپدیت</small></div></div>
+  <div class="feature"><div class="ico">↓</div><div><b>لینک مستقیم</b><small>دانلود با سریع‌ترین سرورها</small></div></div>
+  <div class="feature"><div class="ico">🎁</div><div><b>کاملاً رایگان</b><small>همه فایل‌ها رایگان هستند</small></div></div>
 </div>
 
 <div class="container">
 
-<h2 id="games" class="section-title">🎮 جدیدترین بازی‌ها</h2>
+  <div class="section" id="games">
+    <h2>🎮 <span>بازی‌های</span> جدید</h2>
+    <a href="#games">مشاهده همه</a>
+  </div>
 
-<div class="games">
+  <div class="grid-games">
+    <article class="card searchable">
+      <div class="card-media"><img src="minecraft.jpg" alt="Minecraft"><span class="badge">محبوب</span></div>
+      <div class="card-content"><h3>Minecraft</h3><p>یکی از محبوب‌ترین بازی‌های جهان با امکان ساخت، بقا و بازی آنلاین.</p><div class="meta"><span>نسخه 1.21</span><span>850 MB</span></div><a href="minecraft.html" class="download">دانلود ↓</a></div>
+    </article>
+    <article class="card searchable">
+      <div class="card-media"><img src="gta.jpg" alt="GTA V"><span class="badge">محبوب</span></div>
+      <div class="card-content"><h3>GTA V</h3><p>تجربه دنیای آزاد، مأموریت‌های هیجان‌انگیز و بخش آنلاین GTA Online.</p><div class="meta"><span>Action</span><span>110 GB</span></div><a href="gta.html" class="download">دانلود ↓</a></div>
+    </article>
+    <article class="card searchable">
+      <div class="card-media"><img src="roblox.jpg" alt="Roblox"><span class="badge">محبوب</span></div>
+      <div class="card-content"><h3>Roblox</h3><p>بازی آنلاین محبوب با میلیون‌ها بازی و امکان ساخت دنیای اختصاصی.</p><div class="meta"><span>Online</span><span>300 MB</span></div><a href="roblox.html" class="download">دانلود ↓</a></div>
+    </article>
+  </div>
 
-<div class="card">
+  <!-- Existing Yektanet placement: unchanged -->
+  <div class="ad-wrap"><div id="pos-article-display-121903"></div></div>
 
-<img src="minecraft.jpg" alt="Minecraft">
-
-<div class="card-content">
-
-<h2>Minecraft</h2>
-
-<p>
-یکی از محبوب‌ترین بازی‌های جهان با امکان ساخت، بقا و بازی آنلاین.
-</p>
-
-<a href="minecraft.html" class="button">ادامه و دانلود</a>
-
-<div class="info">
-
-<span>🎮 Sandbox</span>
-
-<span>💾 850 MB</span>
-
+  <!-- Yektanet - Native Middle -->
+<div class="ad-wrap">
+    <div id="pos-article-display-121916"></div>
 </div>
 
+<div class="section">
+    <h2>⭐ <span>محبوب‌ترین</span> بازی‌ها</h2>
+    <a href="#games">مشاهده همه</a>
 </div>
-
-</div>
-
-<div class="card">
-
-<img src="gta.jpg" alt="GTA V">
-
-<div class="card-content">
-
-<h2>GTA V</h2>
-
-<p>
-تجربه دنیای آزاد، مأموریت‌های هیجان‌انگیز و بخش آنلاین GTA Online.
-</p>
-
-<a href="gta.html" class="button">ادامه و دانلود</a>
-
-<div class="info">
-
-<span>🚗 Action</span>
-
-<span>💾 110 GB</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="roblox.jpg" alt="Roblox">
-
-<div class="card-content">
-
-<h2>Roblox</h2>
-
-<p>
-بازی آنلاین محبوب با میلیون‌ها بازی و امکان ساخت دنیای اختصاصی.
-</p>
-
-<a href="roblox.html" class="button">ادامه و دانلود</a>
-
-<div class="info">
-
-<span>🌍 Online</span>
-
-<span>💾 300 MB</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<h2 class="section-title">⭐ محبوب‌ترین بازی‌ها</h2>
-
-<div class="games">
-
-<div class="card">
-
-<img src="minecraft1.jpg" alt="Minecraft">
-
-<div class="card-content">
-
-<h2>Minecraft</h2>
-
-<p>پرفروش‌ترین بازی جهان با میلیون‌ها بازیکن.</p>
-
-<a href="minecraft.html" class="button">ادامه و دانلود</a>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="gta1.jpg" alt="GTA V">
-
-<div class="card-content">
-
-<h2>GTA V</h2>
-
-<p>یکی از محبوب‌ترین بازی‌های اکشن جهان.</p>
-
-<a href="gta.html" class="button">ادامه و دانلود</a>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="roblox1.jpg" alt="Roblox">
-
-<div class="card-content">
-
-<h2>Roblox</h2>
-
-<p>بازی آنلاین با میلیون‌ها کاربر فعال.</p>
-
-<a href="roblox.html" class="button">ادامه و دانلود</a>
-
-</div>
-
-</div>
-
-</div>
-
-<div id="pos-article-display-121916"></div>
-
-<h2 id="software" class="section-title">💻 نرم‌افزارها</h2>
-
-<div class="games">
-
-<div class="card">
-
-<div class="card-content">
-
-<div class="card">
-
-<img src="vlc.jpg" alt="VLC Media Player">
-
-<div class="card-content">
-
-<h2>VLC Media Player</h2>
-
-<p>
-پخش‌کننده رایگان و قدرتمند برای اجرای انواع فایل‌های صوتی و تصویری.
-</p>
-
-<a href="https://www.videolan.org/vlc/download-android.html" target="_blank">
-<a href="vlc.html" class="button">ادامه و دانلود</a>
-</a>
-
-<div class="info">
-
-<span>🎬 Media Player</span>
-
-<span>💾 45 MB</span>
-
-</div>
-
-</div>
-
-</div>
-
-
-
-</div>
-
-</div>
-
-<div class="card">
-
-<div class="card-content">
-
-<div class="card">
-
-<img src="chrome.jpg" alt="Google Chrome">
-
-<div class="card-content">
-
-<h2>Google Chrome</h2>
-
-<p>
-مرورگر سریع، امن و محبوب گوگل برای وب‌گردی و دانلود فایل‌ها.
-</p>
-
-<a href="chrome.html" class="button">ادامه و دانلود</a>
-
-<div class="info">
-
-<span>🌐 Browser</span>
-
-<span>💾 120 MB</span>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="winrar.jpg" alt="WinRAR">
-
-<div class="card-content">
-
-<h2>WinRAR</h2>
-
-<p>
-نرم‌افزار محبوب برای فشرده‌سازی و استخراج فایل‌های ZIP، RAR و فرمت‌های دیگر.
-</p>
-
-<a href="winrar.html" class="button">ادامه و دانلود</a>
-
-<div class="info">
-
-<span>📦 File Manager</span>
-
-<span>💾 4 MB</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<h2 id="about" class="section-title">ℹ️ درباره ما</h2>
-
-<div class="card">
-
-<div class="card-content">
-
-<p>
-
-Aydin Download یک وب‌سایت دانلود بازی و نرم‌افزار برای ویندوز است.
-هدف ما ارائه فایل‌های سالم، لینک‌های مستقیم و آموزش‌های ساده برای کاربران است.
-
-</p>
-
-</div>
-
-</div>
-
-<h2 id="contact" class="section-title">📞 تماس با ما</h2>
-
-<div class="card">
-
-<div class="card-content">
-
-<p>
-📧 ایمیل:
-Aydin.k.1403@gmail.com
-</p>
-
-<p style="margin-top:15px;">
-🌐 وب‌سایت:
-Aydin Download
-</p>
-
-<p style="margin-top:15px;">
-💬 راه‌های ارتباطی دیگر به‌زودی اضافه می‌شوند.
-</p>
-
-</div>
-
+  <div class="grid-games">
+    <article class="card searchable"><div class="card-media"><img src="minecraft1.jpg" alt="Minecraft"></div><div class="card-content"><h3>Minecraft</h3><p>پرفروش‌ترین بازی جهان با میلیون‌ها بازیکن.</p><a href="minecraft.html" class="download">دانلود ↓</a></div></article>
+    <article class="card searchable"><div class="card-media"><img src="gta1.jpg" alt="GTA V"></div><div class="card-content"><h3>GTA V</h3><p>یکی از محبوب‌ترین بازی‌های اکشن جهان.</p><a href="gta.html" class="download">دانلود ↓</a></div></article>
+    <article class="card searchable"><div class="card-media"><img src="roblox1.jpg" alt="Roblox"></div><div class="card-content"><h3>Roblox</h3><p>بازی آنلاین با میلیون‌ها کاربر فعال.</p><a href="roblox.html" class="download">دانلود ↓</a></div></article>
+    <article class="card searchable"><div class="card-media"><img src="forza.jpg" alt="Forza Horizon 5"></div><div class="card-content"><h3>Forza Horizon 5</h3><p>یکی از محبوب‌ترین بازی‌های مسابقه‌ای جهان با خودروهای متنوع و دنیای آزاد.</p><a href="forza.html" class="download">دانلود ↓</a></div></article>
+    <article class="card searchable"><div class="card-media"><img src="ets2.jpg" alt="Euro Truck Simulator 2"></div><div class="card-content"><h3>Euro Truck Simulator 2</h3><p>شبیه‌ساز رانندگی کامیون با جاده‌های گسترده و سفرهای هیجان‌انگیز.</p><a href="ets2.html" class="download">دانلود ↓</a></div></article>
+    <article class="card searchable"><div class="card-media"><img src="cs2.jpg" alt="Counter-Strike 2"></div><div class="card-content"><h3>Counter-Strike 2</h3><p>یکی از محبوب‌ترین بازی‌های تیراندازی رقابتی و آنلاین جهان.</p><a href="cs2.html" class="download">دانلود ↓</a></div></article>
+  </div>
+
+  <div class="section" id="software">
+    <h2>💻 <span>نرم‌افزارهای</span> پرطرفدار</h2>
+    <a href="#software">مشاهده همه</a>
+  </div>
+  <div class="grid-soft">
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="vlc.jpg" alt="VLC"></div><h3>VLC Media Player</h3><p>پخش‌کننده رایگان و قدرتمند برای اجرای انواع فایل‌های صوتی و تصویری.</p><a href="vlc.html" class="download">دانلود ↓</a></article>
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="chrome.jpg" alt="Google Chrome"></div><h3>Google Chrome</h3><p>مرورگر سریع، امن و محبوب گوگل برای وب‌گردی و دانلود فایل‌ها.</p><a href="chrome.html" class="download">دانلود ↓</a></article>
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="winrar.jpg" alt="WinRAR"></div><h3>WinRAR</h3><p>نرم‌افزار محبوب برای فشرده‌سازی و استخراج فایل‌های ZIP و RAR.</p><a href="winrar.html" class="download">دانلود ↓</a></article>
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="firefox.jpg" alt="Mozilla Firefox"></div><h3>Mozilla Firefox</h3><p>مرورگر سریع، امن و محبوب برای وب‌گردی و استفاده از اینترنت.</p><a href="firefox.html" class="download">دانلود ↓</a></article>
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="7zip.jpg" alt="7-Zip"></div><h3>7-Zip</h3><p>نرم‌افزار رایگان و قدرتمند برای فشرده‌سازی و استخراج فایل‌ها با فرمت‌های مختلف.</p><a href="7zip.html" class="download">دانلود ↓</a></article>
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="acrobat.jpg" alt="Adobe Acrobat Reader"></div><h3>Adobe Acrobat Reader</h3><p>نرم‌افزار محبوب برای مشاهده، خواندن و کار با فایل‌های PDF.</p><a href="acrobat.html" class="download">دانلود ↓</a></article>
+  </div>
+
+  <section class="trust">
+    <div class="trust-icon">♢</div>
+    <div><h3>فایل‌ها کاملاً تست شده و سالم هستند</h3><p>تیم Aydin Download تمام فایل‌ها را قبل از انتشار بررسی می‌کند.</p></div>
+    <a href="#about">اطلاعات بیشتر</a>
+  </section>
+
+  <div class="section" id="about"><h2>ℹ️ درباره ما</h2></div>
+  <div class="info-card"><strong>Aydin Download</strong> یک وب‌سایت دانلود بازی و نرم‌افزار برای ویندوز است. هدف ما ارائه فایل‌های سالم، لینک‌های مستقیم و آموزش‌های ساده برای کاربران است.</div>
+
+  <div class="section" id="contact"><h2>📞 تماس با ما</h2></div>
+  <div class="info-card"><p>📧 ایمیل: Aydin.k.1403@gmail.com</p><p>🌐 وب‌سایت: Aydin Download</p><p>💬 راه‌های ارتباطی دیگر به‌زودی اضافه می‌شوند.</p></div>
 </div>
 
 <footer>
-
-<p>
-© 2026 Aydin Download | تمامی حقوق محفوظ است.
-</p>
-
-<p style="margin-top:12px;">
-دانلود بازی و نرم‌افزار برای ویندوز
-</p>
-
+  <div class="footer-grid">
+    <div><div class="footer-brand">Aydin <span>Download</span></div><p class="footer-about">بهترین‌ها را از ما بخواهید...<br>مرجع دانلود جدیدترین بازی‌ها و نرم‌افزارهای ویندوز با لینک مستقیم و رایگان.</p></div>
+    <div class="footer-col"><h4>لینک‌های مفید</h4><a href="#about">درباره ما</a><a href="#contact">تماس با ما</a><a href="#top">قوانین سایت</a><a href="#top">حریم خصوصی</a></div>
+    <div class="footer-col"><h4>بازی‌های محبوب</h4><a href="minecraft.html">Minecraft</a><a href="roblox.html">Roblox</a><a href="gta.html">GTA V</a></div>
+    <div class="footer-col"><h4>دسترسی سریع</h4><a href="#games">بازی‌ها</a><a href="#software">نرم‌افزارها</a><a href="#top">آموزش‌ها</a><a href="#games">درخواست بازی</a></div>
+  </div>
+  <div class="copyright">© 2026 Aydin Download | تمامی حقوق محفوظ است.</div>
 </footer>
 
-<a href="#top" class="top-btn">⬆</a>
-</div>
+<a href="#top" class="top-btn" id="topBtn">⌃</a>
 
 <script>
+/* ===== MOUSE FOLLOW CARD STRETCH ===== */
 
-const searchInput = document.getElementById("searchInput");
+document.querySelectorAll('.card').forEach(function(card) {
 
-searchInput.addEventListener("keyup", function () {
+    card.addEventListener('mousemove', function(e) {
 
-let value = this.value.toLowerCase().trim();
+        const rect = card.getBoundingClientRect();
 
-let cards = document.querySelectorAll(".card");
+        const x = (e.clientX - rect.left - rect.width / 2)
+                  / (rect.width / 2);
 
-cards.forEach(function(card){
+        const y = (e.clientY - rect.top - rect.height / 2)
+                  / (rect.height / 2);
 
-let text = card.innerText.toLowerCase();
+        /* حرکت در همان جهت موس */
+        const moveX = x * 8;
+        const moveY = y * 8;
 
-if(text.includes(value) || value===""){
+        /* کش آمدن */
+        const scaleX = 1 + Math.abs(x) * 0.10;
+        const scaleY = 1 + Math.abs(y) * 0.10;
 
-card.style.display="block";
+        /* کج شدن کارت */
+        const rotateX = -y * 5;
+        const rotateY = x * 5;
 
-}else{
+        card.style.transform =
+            `translate(${moveX}px, ${moveY}px)
+             scale(${scaleX}, ${scaleY})
+             rotateX(${rotateX}deg)
+             rotateY(${rotateY}deg)`;
+    });
 
-card.style.display="none";
+    card.addEventListener('mouseleave', function() {
 
-}
-
-});
-
-});
-
-window.addEventListener("scroll",function(){
-
-const btn=document.querySelector(".top-btn");
-
-if(window.scrollY>300){
-
-btn.style.display="flex";
-
-}else{
-
-btn.style.display="none";
-
-}
+        card.style.transform =
+            'translate(0,0) scale(1,1) rotateX(0deg) rotateY(0deg)';
+    });
 
 });
-
-function toggleMenu() {
-    document.getElementById("sidebar").classList.toggle("show");
-}
 </script>
 
+<script>
+const searchInput=document.getElementById('searchInput');
+searchInput.addEventListener('input',function(){
+  const value=this.value.toLowerCase().trim();
+  document.querySelectorAll('.searchable').forEach(card=>{
+    card.style.display=(!value || card.innerText.toLowerCase().includes(value))?'':'none';
+  });
+});
+window.addEventListener('scroll',()=>{document.getElementById('topBtn').style.display=window.scrollY>300?'flex':'none'});
+function toggleMenu(){document.getElementById('sidebar').classList.toggle('show')}
+</script>
 </body>
-
 </html>
