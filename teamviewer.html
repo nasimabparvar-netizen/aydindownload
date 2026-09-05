@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TeamViewer | Aydin Download</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Tahoma,Arial,sans-serif;
+}
+
+body{
+    background:
+    radial-gradient(circle at 20% 20%,rgba(0,110,255,.12),transparent 30%),
+    linear-gradient(180deg,#020817,#061126,#020817);
+
+    color:#fff;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+
+/* ================= HEADER ================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:rgba(2,10,27,.94);
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(37,124,255,.25);
+}
+
+.header-inner{
+    width:min(1180px,94%);
+    height:84px;
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    min-width:250px;
+}
+
+.logo{
+    width:58px;
+    height:58px;
+
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+}
+
+.brand{
+    font-weight:900;
+    line-height:.9;
+    font-size:27px;
+}
+
+.brand span{
+    display:block;
+    color:#197dff;
+    margin-top:5px;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    flex:1;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:800;
+    transition:.2s;
+}
+
+nav a:hover{
+    color:#2787ff;
+}
+
+.back-btn{
+    color:#fff;
+    text-decoration:none;
+
+    border:1px solid rgba(58,143,255,.35);
+
+    background:#071a33;
+
+    padding:11px 16px;
+
+    border-radius:10px;
+
+    font-size:13px;
+
+    transition:.2s;
+}
+
+.back-btn:hover{
+    background:#0b2b50;
+}
+
+
+/* ================= MAIN ================= */
+
+.container{
+    width:min(1120px,92%);
+    margin:45px auto;
+}
+
+.software-card{
+    background:
+    linear-gradient(
+        180deg,
+        rgba(7,25,48,.98),
+        rgba(4,17,35,.98)
+    );
+
+    border:1px solid rgba(37,132,255,.30);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.38);
+}
+
+
+/* ================= IMAGE ================= */
+
+.software-image{
+    width:100%;
+    height:390px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    background:#07172d;
+}
+
+.software-image img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.5s;
+}
+
+.software-card:hover .software-image img{
+    transform:scale(1.025);
+}
+
+.image-overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        180deg,
+        rgba(0,0,0,.03),
+        rgba(2,8,23,.92)
+    );
+}
+
+
+/* ================= CONTENT ================= */
+
+.content{
+    padding:30px;
+
+    margin-top:-75px;
+
+    position:relative;
+
+    z-index:2;
+}
+
+.badge{
+    display:inline-block;
+
+    background:#f97316;
+
+    padding:7px 13px;
+
+    border-radius:9px;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    margin-bottom:14px;
+}
+
+h1{
+    font-size:38px;
+    margin-bottom:14px;
+}
+
+h1 span{
+    color:#2084ff;
+}
+
+.description{
+    color:#aebbd0;
+
+    font-size:14px;
+
+    line-height:2.1;
+
+    max-width:900px;
+}
+
+
+/* ================= INFO ================= */
+
+.info-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:14px;
+
+    margin-top:28px;
+}
+
+.info{
+    background:#071a33;
+
+    border:1px solid rgba(37,132,255,.22);
+
+    border-radius:13px;
+
+    padding:17px;
+
+    text-align:center;
+}
+
+.info-title{
+    color:#2185ff;
+
+    font-size:12px;
+
+    margin-bottom:8px;
+}
+
+.info-value{
+    color:#fff;
+
+    font-size:13px;
+}
+
+
+/* ================= DOWNLOAD ================= */
+
+.download-area{
+    margin-top:30px;
+
+    padding:25px;
+
+    background:
+    linear-gradient(
+        180deg,
+        rgba(7,28,55,.92),
+        rgba(4,18,38,.92)
+    );
+
+    border:1px solid rgba(37,132,255,.28);
+
+    border-radius:15px;
+
+    text-align:center;
+}
+
+.download-area h2{
+    font-size:22px;
+    margin-bottom:8px;
+}
+
+.download-area p{
+    color:#9eafc5;
+
+    font-size:12px;
+
+    margin-bottom:22px;
+}
+
+
+/* ================= MOVING BUTTON ================= */
+
+.download-btn{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:9px;
+
+    min-width:320px;
+
+    height:55px;
+
+    background:
+    linear-gradient(
+        180deg,
+        #20dc72,
+        #0cb858
+    );
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:11px;
+
+    font-size:14px;
+
+    font-weight:900;
+
+    box-shadow:
+    0 10px 25px rgba(24,214,107,.20);
+
+    transition:
+    box-shadow .2s,
+    filter .2s;
+
+    will-change:transform;
+}
+
+.download-btn:hover{
+    filter:brightness(1.08);
+
+    box-shadow:
+    0 15px 35px rgba(24,214,107,.40);
+}
+
+.notice{
+    margin-top:18px;
+
+    color:#8296b0;
+
+    font-size:11px;
+}
+
+.notice span{
+    color:#2185ff;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+    margin-top:70px;
+
+    border-top:
+    1px solid rgba(37,132,255,.2);
+
+    background:#020a18;
+
+    padding:35px 0;
+
+    text-align:center;
+}
+
+footer h3{
+    font-size:20px;
+}
+
+footer h3 span{
+    color:#2183ff;
+}
+
+footer p{
+    color:#71839b;
+
+    font-size:11px;
+
+    margin-top:10px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:800px){
+
+    .header-inner{
+        height:70px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .logo{
+        width:47px;
+        height:47px;
+    }
+
+    .brand{
+        font-size:21px;
+    }
+
+    .software-image{
+        height:250px;
+    }
+
+    .content{
+        padding:20px;
+        margin-top:-45px;
+    }
+
+    h1{
+        font-size:27px;
+    }
+
+    .info-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .download-btn{
+        width:100%;
+        min-width:0;
+    }
+}
+
+</style>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6P9EQMMYV0"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-6P9EQMMYV0');
+</script>
+
+<script>
+            !function(e,t,n){e.yektanetAnalyticsObject=n,e[n]=e[n]||function(){e[n].q.push(arguments)},e[n].q=e[n].q||[];var a=t.getElementsByTagName("head")[0],r=new Date,c="https://cdn.yektanet.com/superscript/2DnuihXn/native-nasimabparvar-netizen.github.io-47823/yn_pub.js?v="+r.getFullYear().toString()+"0"+r.getMonth()+"0"+r.getDate()+"0"+r.getHours(),s=t.createElement("link");s.rel="preload",s.as="script",s.href=c,a.appendChild(s);var l=t.createElement("script");l.async=!0,l.src=c,a.appendChild(l)}(window,document,"yektanet");
+        </script>
+
+</head>
+
+<body id="top">
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="header-inner">
+
+
+<div class="logo-area">
+
+<img
+src="logo.pag.png"
+class="logo"
+alt="Aydin Download"
+>
+
+<div class="brand">
+
+Aydin
+
+<span>
+Download
+</span>
+
+</div>
+
+</div>
+
+
+<nav>
+
+<a href="index.html">
+خانه
+</a>
+
+<a href="index.html#games">
+بازی‌ها
+</a>
+
+<a href="index.html#software">
+نرم‌افزارها
+</a>
+
+</nav>
+
+
+<a
+href="index.html"
+class="back-btn"
+>
+← بازگشت
+</a>
+
+
+</div>
+
+</header>
+
+
+
+<!-- ================= MAIN ================= -->
+
+<div class="container">
+
+
+<div class="software-card">
+
+
+<!-- IMAGE -->
+
+<div class="software-image">
+
+<img
+src="teamviewer.jpg"
+alt="TeamViewer"
+>
+
+<div class="image-overlay"></div>
+
+</div>
+
+
+
+<!-- CONTENT -->
+
+<div class="content">
+
+
+<div class="badge">
+🖥️ دسترسی از راه دور
+</div>
+
+
+<h1>
+
+Team<span>Viewer</span>
+
+</h1>
+
+
+<p class="description">
+
+TeamViewer نرم‌افزاری برای دسترسی و کنترل از راه دور به کامپیوترهای دیگر است که برای پشتیبانی فنی، کار تیمی و مدیریت سیستم‌ها به‌طور گسترده استفاده می‌شود. برای استفاده‌ی شخصی رایگان است.
+
+</p>
+
+<!-- تبلیغ یکتانت TeamViewer -->
+<div id="pos-article-display-122700"></div>
+
+<!-- INFO -->
+
+<div class="info-grid">
+
+
+<div class="info">
+
+<div class="info-title">
+🌐 نوع
+</div>
+
+<div class="info-value">
+Remote Access
+</div>
+
+</div>
+
+
+<div class="info">
+
+<div class="info-title">
+🏢 سازنده
+</div>
+
+<div class="info-value">
+TeamViewer Germany GmbH
+</div>
+
+</div>
+
+
+<div class="info">
+
+<div class="info-title">
+💻 سیستم
+</div>
+
+<div class="info-value">
+Windows 10 / 11
+</div>
+
+</div>
+
+
+<div class="info">
+
+<div class="info-title">
+💰 قیمت
+</div>
+
+<div class="info-value">
+رایگان (شخصی)
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<!-- ================= DOWNLOAD ================= -->
+
+<div class="download-area">
+
+
+<h2>
+دانلود TeamViewer
+</h2>
+
+
+<p>
+برای دریافت آخرین نسخه TeamViewer از سایت رسمی استفاده کنید.
+</p>
+
+
+<a
+href="https://www.teamviewer.com/en-us/download/windows/"
+target="_blank"
+rel="noopener noreferrer"
+
+class="download-btn"
+
+id="downloadBtn"
+>
+
+🖥️ دانلود از سایت رسمی TeamViewer
+
+</a>
+
+
+<div class="notice">
+
+🔒 لینک به
+<span>
+سایت رسمی TeamViewer
+</span>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h3>
+Aydin
+<span>
+Download
+</span>
+</h3>
+
+<p>
+مرجع دانلود بازی و نرم‌افزار
+</p>
+
+<p>
+© 2026 Aydin Download
+</p>
+
+</footer>
+
+
+
+<!-- ================= MOUSE FOLLOW ================= -->
+
+<script>
+
+const button =
+document.getElementById("downloadBtn");
+
+let mouseX =
+window.innerWidth / 2;
+
+let mouseY =
+window.innerHeight / 2;
+
+let buttonX = 0;
+
+let buttonY = 0;
+
+
+document.addEventListener(
+"mousemove",
+function(e){
+
+mouseX = e.clientX;
+mouseY = e.clientY;
+
+});
+
+
+function animateButton(){
+
+const rect =
+button.getBoundingClientRect();
+
+const centerX =
+rect.left +
+rect.width / 2;
+
+const centerY =
+rect.top +
+rect.height / 2;
+
+const dx =
+mouseX - centerX;
+
+const dy =
+mouseY - centerY;
+
+const distance =
+Math.sqrt(
+dx * dx +
+dy * dy
+);
+
+
+/* حرکت دکمه به سمت موس */
+
+if(distance < 320){
+
+buttonX += dx * 0.08;
+buttonY += dy * 0.08;
+
+buttonX =
+Math.max(
+-80,
+Math.min(80,buttonX)
+);
+
+buttonY =
+Math.max(
+-50,
+Math.min(50,buttonY)
+);
+
+}
+
+else{
+
+buttonX *= 0.90;
+buttonY *= 0.90;
+
+}
+
+
+button.style.transform =
+`translate(${buttonX}px,${buttonY}px)`;
+
+requestAnimationFrame(
+animateButton
+);
+
+}
+
+animateButton();
+
+
+document.addEventListener(
+"mouseleave",
+function(){
+
+buttonX = 0;
+buttonY = 0;
+
+});
+
+</script>
+
+
+</body>
+
+</html>
