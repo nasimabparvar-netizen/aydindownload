@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GTA V | Aydin Download</title>
+
+<meta name="description" content="دانلود GTA V برای ویندوز با لینک مستقیم از Aydin Download">
+<meta name="keywords" content="دانلود GTA V, GTA 5, Grand Theft Auto V, دانلود جی تی ای وی">
+<meta name="author" content="Aydin Download">
+
+<link rel="icon" href="logo.pag.png">
+
+<style>
+:root{
+  --bg:#020817;
+  --bg2:#071329;
+  --panel:#07172d;
+  --panel2:#0a1d37;
+  --line:rgba(37,132,255,.30);
+  --blue:#147cff;
+  --text:#f8fbff;
+  --muted:#aebbd0;
+  --green:#18d66b;
+  --green2:#0fb957;
+  --shadow:0 20px 60px rgba(0,0,0,.38);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Tahoma,Arial,sans-serif;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:
+    radial-gradient(circle at 15% 20%,rgba(0,102,255,.13),transparent 28%),
+    radial-gradient(circle at 85% 10%,rgba(0,75,180,.15),transparent 25%),
+    linear-gradient(180deg,#020817 0%,#061126 45%,#020817 100%);
+  color:var(--text);
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+body:before,
+body:after{
+  content:"";
+  position:fixed;
+  z-index:-1;
+  border:1px solid rgba(0,116,255,.13);
+  filter:blur(.2px);
+  pointer-events:none;
+}
+
+body:before{
+  width:240px;
+  height:130px;
+  left:-80px;
+  top:190px;
+  transform:rotate(-25deg);
+  border-radius:28px;
+}
+
+body:after{
+  width:260px;
+  height:150px;
+  right:-100px;
+  top:100px;
+  transform:rotate(28deg);
+  border-radius:40px;
+}
+
+/* TOP BAR */
+
+.topbar{
+  height:34px;
+  border-bottom:1px solid rgba(37,124,255,.22);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 28px;
+  color:#dce8f8;
+  font-size:12px;
+  background:rgba(1,8,22,.85);
+}
+
+.top-links{
+  display:flex;
+  gap:25px;
+}
+
+.top-links a{
+  color:#e7f0ff;
+  text-decoration:none;
+}
+
+.top-links a:hover{
+  color:#3e94ff;
+}
+
+/* HEADER */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(2,10,27,.88);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(37,124,255,.25);
+  box-shadow:0 10px 40px rgba(0,0,0,.28);
+}
+
+.header-inner{
+  width:min(1180px,94%);
+  height:84px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  gap:28px;
+}
+
+.logo-area{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-width:250px;
+}
+
+.logo{
+  width:58px;
+  height:58px;
+  border-radius:16px;
+  object-fit:cover;
+}
+
+.brand{
+  font-weight:900;
+  line-height:.9;
+  font-size:27px;
+  letter-spacing:-1px;
+}
+
+.brand span{
+  display:block;
+  color:#197dff;
+  margin-top:5px;
+}
+
+nav{
+  display:flex;
+  align-items:center;
+  gap:30px;
+  flex:1;
+  justify-content:center;
+}
+
+nav a{
+  color:#f5f8ff;
+  text-decoration:none;
+  font-size:15px;
+  font-weight:800;
+  position:relative;
+  padding:31px 0;
+  white-space:nowrap;
+}
+
+nav a:after{
+  content:"";
+  position:absolute;
+  bottom:13px;
+  right:0;
+  left:0;
+  height:2px;
+  background:transparent;
+  border-radius:5px;
+}
+
+nav a:hover{
+  color:#3994ff;
+}
+
+nav a.active:after{
+  background:var(--blue);
+}
+
+.header-actions{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+
+.icon-btn,
+.menu-btn{
+  width:42px;
+  height:42px;
+  border:1px solid rgba(58,143,255,.35);
+  background:rgba(5,20,42,.8);
+  color:white;
+  border-radius:12px;
+  display:grid;
+  place-items:center;
+  font-size:19px;
+  cursor:pointer;
+}
+
+.menu-btn{
+  display:none;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+  position:fixed;
+  top:0;
+  right:-300px;
+  width:285px;
+  height:100%;
+  background:#061226;
+  border-left:1px solid var(--line);
+  padding:28px 20px;
+  transition:.3s;
+  z-index:2000;
+  box-shadow:-20px 0 60px rgba(0,0,0,.45);
+}
+
+.sidebar.show{
+  right:0;
+}
+
+.close-btn{
+  font-size:28px;
+  cursor:pointer;
+  display:block;
+  margin-bottom:20px;
+}
+
+.sidebar a{
+  display:block;
+  color:#fff;
+  text-decoration:none;
+  padding:14px 16px;
+  margin:9px 0;
+  background:#0a1b34;
+  border:1px solid rgba(37,132,255,.18);
+  border-radius:12px;
+  font-weight:bold;
+}
+
+.sidebar a:hover{
+  background:#0c2d57;
+}
+
+/* MAIN */
+
+.container{
+  width:min(1120px,92%);
+  margin:auto;
+}
+
+.hero{
+  width:min(1120px,92%);
+  margin:42px auto 25px;
+  text-align:center;
+  position:relative;
+}
+
+.hero:before{
+  content:"";
+  position:absolute;
+  inset:-60px 10% auto;
+  height:220px;
+  background:radial-gradient(
+    circle,
+    rgba(0,111,255,.17),
+    transparent 68%
+  );
+  z-index:-1;
+}
+
+.breadcrumb{
+  color:#7fa4d8;
+  font-size:12px;
+  margin-bottom:18px;
+}
+
+.breadcrumb a{
+  color:#2184ff;
+  text-decoration:none;
+}
+
+.hero h1{
+  font-size:42px;
+  line-height:1.4;
+  font-weight:900;
+}
+
+.hero h1 span{
+  color:#2084ff;
+}
+
+.hero p{
+  margin-top:10px;
+  color:var(--muted);
+  font-size:15px;
+}
+
+/* GAME BOX */
+
+.game-box{
+  background:
+    linear-gradient(
+      180deg,
+      rgba(7,25,48,.98),
+      rgba(4,17,35,.98)
+    );
+  border:1px solid rgba(37,132,255,.28);
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  margin:30px auto;
+}
+
+.game-image{
+  height:390px;
+  position:relative;
+  overflow:hidden;
+  background:#08182d;
+}
+
+.game-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.game-image:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0,0,0,0) 40%,
+      rgba(2,8,23,.9) 100%
+    );
+  pointer-events:none;
+}
+
+.game-badge{
+  position:absolute;
+  top:18px;
+  right:18px;
+  z-index:2;
+  background:#147dff;
+  color:white;
+  padding:8px 14px;
+  border-radius:10px;
+  font-size:12px;
+  font-weight:bold;
+  box-shadow:0 8px 25px rgba(0,0,0,.3);
+}
+
+.game-content{
+  padding:28px;
+}
+
+.game-content h2{
+  font-size:27px;
+  margin-bottom:12px;
+}
+
+.game-content h2 span{
+  color:#2084ff;
+}
+
+.game-description{
+  color:#aebbd0;
+  line-height:2.2;
+  font-size:13px;
+  margin-bottom:22px;
+}
+
+/* INFO */
+
+.info-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+  margin:20px 0;
+}
+
+.info-item{
+  background:#071a32;
+  border:1px solid rgba(37,132,255,.2);
+  border-radius:12px;
+  padding:16px;
+  text-align:center;
+}
+
+.info-item strong{
+  display:block;
+  color:#fff;
+  font-size:13px;
+  margin-bottom:8px;
+}
+
+.info-item span{
+  color:#8fa2bc;
+  font-size:11px;
+}
+
+/* DOWNLOAD */
+
+.download-area{
+  margin-top:25px;
+  padding-top:22px;
+  border-top:1px solid rgba(255,255,255,.06);
+  text-align:center;
+}
+
+.download-area h3{
+  font-size:18px;
+  margin-bottom:14px;
+}
+
+.download{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  width:min(420px,100%);
+  margin:auto;
+  height:54px;
+  border-radius:12px;
+  background:linear-gradient(
+    180deg,
+    #20dc72,
+    #0cb858
+  );
+  color:white;
+  text-decoration:none;
+  font-size:15px;
+  font-weight:900;
+  transform-origin:center center;
+  transition:
+    transform .12s ease-out,
+    box-shadow .2s ease;
+  will-change:transform;
+  overflow:hidden;
+}
+
+.download:hover{
+  box-shadow:
+    0 10px 35px rgba(24,214,107,.35);
+}
+
+.download:active{
+  filter:brightness(.95);
+}
+
+/* DESCRIPTION */
+
+.section{
+  margin:38px 0 20px;
+}
+
+.section h2{
+  font-size:25px;
+}
+
+.section h2 span{
+  color:#2084ff;
+}
+
+.info-card{
+  background:
+    linear-gradient(
+      180deg,
+      #071a33,
+      #051227
+    );
+  border:1px solid rgba(37,132,255,.24);
+  border-radius:14px;
+  padding:25px;
+  line-height:2.2;
+  color:#b8c5d7;
+  font-size:13px;
+}
+
+.info-card strong{
+  color:white;
+}
+
+/* REQUIREMENTS */
+
+.requirements{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+.requirement-box{
+  background:#071a33;
+  border:1px solid rgba(37,132,255,.23);
+  border-radius:14px;
+  padding:22px;
+}
+
+.requirement-box h3{
+  color:white;
+  font-size:18px;
+  margin-bottom:14px;
+}
+
+.requirement-box ul{
+  list-style:none;
+}
+
+.requirement-box li{
+  color:#aebbd0;
+  padding:9px 0;
+  border-bottom:1px solid rgba(255,255,255,.05);
+  font-size:12px;
+}
+
+.requirement-box li:last-child{
+  border-bottom:0;
+}
+
+.requirement-box li strong{
+  color:#fff;
+}
+
+/* TRUST */
+
+.trust{
+  margin:38px 0;
+  border:1px solid rgba(37,132,255,.38);
+  border-radius:15px;
+  padding:23px 25px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5,25,52,.96),
+      rgba(4,16,34,.96)
+    );
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.trust-icon{
+  font-size:42px;
+  color:#2185ff;
+}
+
+.trust h3{
+  font-size:20px;
+  margin-bottom:7px;
+}
+
+.trust p{
+  color:#a6b6cc;
+  font-size:12px;
+}
+
+.trust a{
+  background:#147dff;
+  color:white;
+  text-decoration:none;
+  padding:13px 22px;
+  border-radius:9px;
+  font-size:12px;
+  font-weight:bold;
+  white-space:nowrap;
+}
+
+/* FOOTER */
+
+footer{
+  margin-top:65px;
+  border-top:1px solid rgba(37,132,255,.2);
+  background:#020a18;
+  padding:40px 0 22px;
+}
+
+.footer-grid{
+  width:min(1120px,92%);
+  margin:auto;
+  display:grid;
+  grid-template-columns:1.5fr repeat(3,1fr);
+  gap:30px;
+}
+
+.footer-brand{
+  font-size:27px;
+  font-weight:900;
+}
+
+.footer-brand span{
+  color:#2183ff;
+}
+
+.footer-col h4{
+  margin-bottom:14px;
+}
+
+.footer-col a{
+  display:block;
+  color:#98a9c0;
+  text-decoration:none;
+  margin:9px 0;
+  font-size:12px;
+}
+
+.footer-col a:hover{
+  color:#288bff;
+}
+
+.footer-about{
+  color:#94a5bd;
+  font-size:12px;
+  line-height:2;
+  margin-top:12px;
+}
+
+.copyright{
+  width:min(1120px,92%);
+  margin:30px auto 0;
+  padding-top:18px;
+  border-top:1px solid rgba(255,255,255,.06);
+  text-align:center;
+  color:#6f819b;
+  font-size:11px;
+}
+
+/* TOP BUTTON */
+
+.top-btn{
+  position:fixed;
+  bottom:22px;
+  left:22px;
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  background:#0a1b34;
+  border:1px solid rgba(37,132,255,.45);
+  color:white;
+  text-decoration:none;
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+  z-index:900;
+}
+
+.top-btn:hover{
+  background:#0d2c52;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+  .header-inner{
+    height:72px;
+  }
+
+  .logo-area{
+    min-width:auto;
+  }
+
+  .brand{
+    font-size:22px;
+  }
+
+  nav{
+    gap:15px;
+  }
+
+  nav a{
+    font-size:12px;
+  }
+
+  .info-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .footer-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:680px){
+
+  .topbar{
+    padding:0 14px;
+  }
+
+  .top-links{
+    gap:12px;
+  }
+
+  .header-inner{
+    height:68px;
+  }
+
+  .logo{
+    width:47px;
+    height:47px;
+  }
+
+  .brand{
+    font-size:20px;
+  }
+
+  .menu-btn{
+    display:grid;
+  }
+
+  nav,
+  .icon-btn{
+    display:none;
+  }
+
+  .hero{
+    margin-top:28px;
+  }
+
+  .hero h1{
+    font-size:29px;
+  }
+
+  .game-image{
+    height:230px;
+  }
+
+  .game-content{
+    padding:20px;
+  }
+
+  .game-content h2{
+    font-size:22px;
+  }
+
+  .info-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .requirements{
+    grid-template-columns:1fr;
+  }
+
+  .trust{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .trust a{
+    width:100%;
+    text-align:center;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr 1fr;
+    gap:22px;
+  }
+
+  .footer-grid>div:first-child{
+    grid-column:1/-1;
+  }
+}
+</style>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6P9EQMMYV0"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){
+  dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+gtag('config', 'G-6P9EQMMYV0');
+</script>
+
+<script>
+            !function(e,t,n){e.yektanetAnalyticsObject=n,e[n]=e[n]||function(){e[n].q.push(arguments)},e[n].q=e[n].q||[];var a=t.getElementsByTagName("head")[0],r=new Date,c="https://cdn.yektanet.com/superscript/2DnuihXn/native-nasimabparvar-netizen.github.io-47823/yn_pub.js?v="+r.getFullYear().toString()+"0"+r.getMonth()+"0"+r.getDate()+"0"+r.getHours(),s=t.createElement("link");s.rel="preload",s.as="script",s.href=c,a.appendChild(s);var l=t.createElement("script");l.async=!0,l.src=c,a.appendChild(l)}(window,document,"yektanet");
+        </script>
+
+
+<meta property="og:title" content="GTA V | Aydin Download">
+<meta property="og:description" content="دانلود GTA V برای ویندوز با لینک مستقیم از Aydin Download">
+<meta property="og:image" content="https://nasimabparvar-netizen.github.io/aydindownload/gta1.jpg">
+<meta property="og:url" content="https://nasimabparvar-netizen.github.io/aydindownload/gta.html">
+<link rel="canonical" href="https://nasimabparvar-netizen.github.io/aydindownload/gta.html">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GTA V | Aydin Download">
+<meta name="twitter:description" content="دانلود GTA V برای ویندوز با لینک مستقیم از Aydin Download">
+<meta name="twitter:image" content="https://nasimabparvar-netizen.github.io/aydindownload/gta1.jpg">
+<meta property="og:type" content="website">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "GTA V",
+  "description": "دانلود GTA V برای ویندوز با لینک مستقیم از Aydin Download",
+  "image": "https://nasimabparvar-netizen.github.io/aydindownload/gta1.jpg",
+  "url": "https://nasimabparvar-netizen.github.io/aydindownload/gta.html",
+  "genre": "Action / Open World",
+  "gamePlatform": "Windows 10 / 11",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Rockstar Games"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "صفحه اصلی",
+      "item": "https://nasimabparvar-netizen.github.io/aydindownload/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "بازی‌ها",
+      "item": "https://nasimabparvar-netizen.github.io/aydindownload/#games"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "GTA V",
+      "item": "https://nasimabparvar-netizen.github.io/aydindownload/gta.html"
+    }
+  ]
+}
+</script>
+
+</head>
+
+<body id="top">
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+
+  <div>
+    به <strong>Aydin Download</strong> خوش آمدید!
+  </div>
+
+  <div class="top-links">
+    <a href="index.html#about">ⓘ درباره ما</a>
+    <a href="index.html#contact">▢ تماس با ما</a>
+  </div>
+
+</div>
+
+
+<!-- SIDEBAR -->
+
+<div class="sidebar" id="sidebar">
+
+  <span class="close-btn" onclick="toggleMenu()">✕</span>
+
+  <a href="index.html">🏠 خانه</a>
+  <a href="index.html#games">🎮 بازی‌ها</a>
+  <a href="index.html#software">💻 نرم‌افزارها</a>
+  <a href="index.html#about">ℹ️ درباره ما</a>
+  <a href="index.html#contact">📞 تماس با ما</a>
+
+</div>
+
+
+<!-- HEADER -->
+
+<header>
+
+  <div class="header-inner">
+
+    <div class="logo-area">
+
+      <img
+        src="logo.pag.png"
+        class="logo"
+        alt="Aydin Download"
+      >
+
+      <div class="brand">
+        Aydin
+        <span>Download</span>
+      </div>
+
+    </div>
+
+
+    <nav id="navMenu">
+
+      <a href="index.html">
+        خانه
+      </a>
+
+      <a class="active" href="index.html#games">
+        بازی‌ها⌄
+      </a>
+
+      <a href="index.html#software">
+        نرم افزارها⌄
+      </a>
+
+      <a href="index.html#software">
+        آموزش‌ها
+      </a>
+
+      <a href="index.html#games">
+        درخواست بازی
+      </a>
+
+    </nav>
+
+
+    <button
+      class="icon-btn"
+      aria-label="جستجو"
+      onclick="window.location.href='index.html#searchInput'"
+    >
+      ⌕
+    </button>
+
+
+    <button
+      class="menu-btn"
+      onclick="toggleMenu()"
+    >
+      ☰
+    </button>
+
+  </div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="breadcrumb">
+    <a href="index.html">Aydin Download</a>
+    /
+    <a href="index.html#games">بازی‌ها</a>
+    /
+    GTA V
+  </div>
+
+  <h1>
+    دانلود
+    <span>GTA V</span>
+  </h1>
+
+  <p>
+    دانلود بازی Grand Theft Auto V برای ویندوز
+  </p>
+
+  <div id="pos-article-display-121919"></div>
+
+</section>
+
+
+<!-- MAIN -->
+
+<div class="container">
+
+
+  <!-- GAME -->
+
+  <article class="game-box">
+
+    <div class="game-image">
+
+      <img
+        src="gta1.jpg"
+        alt="پوستر رسمی بازی GTA V"
+      >
+
+      <span class="game-badge">
+        محبوب
+      </span>
+
+    </div>
+
+
+    <div class="game-content">
+
+      <h2>
+        <span>GTA V</span>
+        - Grand Theft Auto V
+      </h2>
+
+
+      <p class="game-description">
+
+        GTA V یکی از محبوب‌ترین بازی‌های جهان در سبک
+        اکشن و ماجراجویی است.
+        در این بازی می‌توانید در یک دنیای آزاد بزرگ
+        به انجام مأموریت‌های مختلف بپردازید،
+        با خودروها رانندگی کنید و از بخش داستانی
+        و آنلاین بازی لذت ببرید.
+
+      </p>
+
+
+      <!-- GAME INFO -->
+
+      <div class="info-grid">
+
+        <div class="info-item">
+          <strong>نسخه</strong>
+          <span>Latest</span>
+        </div>
+
+        <div class="info-item">
+          <strong>حجم</strong>
+          <span>110 GB</span>
+        </div>
+
+        <div class="info-item">
+          <strong>سیستم عامل</strong>
+          <span>Windows 10 / 11</span>
+        </div>
+
+        <div class="info-item">
+          <strong>زبان</strong>
+          <span>English</span>
+        </div>
+
+      </div>
+
+
+      <!-- DOWNLOAD -->
+
+      <div class="download-area">
+
+        <h3>
+          آماده دانلود GTA V هستید؟
+        </h3>
+
+        <a
+          href="https://www.rockstargames.com/V"
+          class="download"
+          id="downloadButton"
+        >
+          ⬇ دانلود GTA V
+        </a>
+
+      </div>
+
+    </div>
+
+  </article>
+
+
+  <!-- DESCRIPTION -->
+
+  <div class="section">
+
+    <h2>
+      🎮
+      <span>معرفی</span>
+      GTA V
+    </h2>
+
+  </div>
+
+
+  <div class="info-card">
+
+    <h2>
+  🎮
+  <span>معرفی</span>
+  GTA V
+</h2>
+
+<strong>Grand Theft Auto V</strong>
+یک بازی جهان‌باز بسیار محبوب است که توسط
+Rockstar Games ساخته شده است.
+
+در این بازی سه شخصیت اصلی وجود دارند و داستان
+بازی در شهر Los Santos جریان دارد.
+
+بازیکن می‌تواند در محیط بزرگ بازی آزادانه
+حرکت کند، مأموریت انجام دهد، وسایل نقلیه
+مختلف براند و فعالیت‌های متنوعی انجام دهد.
+
+<h2>
+  ⚙️
+  <span>سیستم مورد نیاز</span>
+</h2>
+  </div>
+
+
+  <div class="requirements">
+
+
+    <div class="requirement-box">
+
+      <h3>
+        حداقل سیستم
+      </h3>
+
+      <ul>
+
+        <li>
+          <strong>CPU:</strong>
+          Intel Core 2 Quad Q6600
+        </li>
+
+        <li>
+          <strong>RAM:</strong>
+          4 GB
+        </li>
+
+        <li>
+          <strong>GPU:</strong>
+          NVIDIA 9800 GT / AMD HD 4870
+        </li>
+
+        <li>
+          <strong>Storage:</strong>
+          حدود 110 GB
+        </li>
+
+        <li>
+          <strong>OS:</strong>
+          Windows 10 / 11
+        </li>
+
+      </ul>
+
+    </div>
+
+
+    <div class="requirement-box">
+
+      <h3>
+        سیستم پیشنهادی
+      </h3>
+
+      <ul>
+
+        <li>
+          <strong>CPU:</strong>
+          Intel Core i5
+        </li>
+
+        <li>
+          <strong>RAM:</strong>
+          8 GB
+        </li>
+
+        <li>
+          <strong>GPU:</strong>
+          NVIDIA GTX 1060
+        </li>
+
+        <li>
+          <strong>Storage:</strong>
+          حدود 110 GB
+        </li>
+
+        <li>
+          <strong>OS:</strong>
+          Windows 10 / 11
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+
+  <!-- TRUST -->
+
+  <section class="trust">
+
+    <div class="trust-icon">
+      ♢
+    </div>
+
+    <div>
+
+      <h3>
+        فایل‌ها کاملاً تست شده و سالم هستند
+      </h3>
+
+      <p>
+        تیم Aydin Download تمام فایل‌ها را
+        قبل از انتشار بررسی می‌کند.
+      </p>
+
+    </div>
+
+    <a href="index.html#about">
+      اطلاعات بیشتر
+    </a>
+
+  </section>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="footer-grid">
+
+
+    <div>
+
+      <div class="footer-brand">
+        Aydin
+        <span>Download</span>
+      </div>
+
+      <p class="footer-about">
+
+        بهترین‌ها را از ما بخواهید...
+        <br>
+
+        مرجع دانلود جدیدترین بازی‌ها و
+        نرم‌افزارهای ویندوز با لینک مستقیم
+        و رایگان.
+
+      </p>
+
+    </div>
+
+
+    <div class="footer-col">
+
+      <h4>
+        لینک‌های مفید
+      </h4>
+
+      <a href="index.html#about">
+        درباره ما
+      </a>
+
+      <a href="index.html#contact">
+        تماس با ما
+      </a>
+
+      <a href="index.html">
+        قوانین سایت
+      </a>
+
+      <a href="index.html">
+        حریم خصوصی
+      </a>
+
+    </div>
+
+
+    <div class="footer-col">
+
+      <h4>
+        بازی‌های محبوب
+      </h4>
+
+      <a href="minecraft.html">
+        Minecraft
+      </a>
+
+      <a href="roblox.html">
+        Roblox
+      </a>
+
+      <a href="gta.html">
+        GTA V
+      </a>
+
+    </div>
+
+
+    <div class="footer-col">
+
+      <h4>
+        دسترسی سریع
+      </h4>
+
+      <a href="index.html#games">
+        بازی‌ها
+      </a>
+
+      <a href="index.html#software">
+        نرم‌افزارها
+      </a>
+
+      <a href="index.html#top">
+        آموزش‌ها
+      </a>
+
+      <a href="index.html#games">
+        درخواست بازی
+      </a>
+
+    </div>
+
+
+  </div>
+
+
+  <div class="copyright">
+
+    © 2026 Aydin Download |
+    تمامی حقوق محفوظ است.
+
+  </div>
+
+</footer>
+
+
+<!-- TOP BUTTON -->
+
+<a
+  href="#top"
+  class="top-btn"
+  id="topBtn"
+>
+  ⌃
+</a>
+
+
+<script>
+
+/* =========================================
+   MOUSE FOLLOW STRETCH EFFECT
+========================================= */
+
+const downloadButton =
+  document.getElementById("downloadButton");
+
+
+downloadButton.addEventListener(
+  "mousemove",
+  function(e){
+
+    const rect =
+      downloadButton.getBoundingClientRect();
+
+
+    const x =
+      (e.clientX - rect.left - rect.width / 2)
+      /
+      (rect.width / 2);
+
+
+    const y =
+      (e.clientY - rect.top - rect.height / 2)
+      /
+      (rect.height / 2);
+
+
+    const moveX = x * 9;
+
+    const moveY = y * 6;
+
+
+    const scaleX =
+      1 + Math.abs(x) * 0.16;
+
+
+    const scaleY =
+      1 + Math.abs(y) * 0.16;
+
+
+    const rotate =
+      x * 4;
+
+
+    downloadButton.style.transform =
+      `translate(${moveX}px, ${moveY}px)
+       scale(${scaleX}, ${scaleY})
+       rotate(${rotate}deg)`;
+
+  }
+);
+
+
+downloadButton.addEventListener(
+  "mouseleave",
+  function(){
+
+    downloadButton.style.transform =
+      "translate(0,0) scale(1,1) rotate(0deg)";
+
+  }
+);
+
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+function toggleMenu(){
+
+  document
+    .getElementById("sidebar")
+    .classList
+    .toggle("show");
+
+}
+
+
+/* =========================================
+   TOP BUTTON
+========================================= */
+
+window.addEventListener(
+  "scroll",
+  function(){
+
+    const topBtn =
+      document.getElementById("topBtn");
+
+
+    topBtn.style.display =
+      window.scrollY > 300
+      ? "flex"
+      : "none";
+
+  }
+);
+
+</script>
+
+
+<script>
+(function(){
+  var el_downloadButton = document.getElementById("downloadButton");
+  if (el_downloadButton && window.gtag) {
+    el_downloadButton.addEventListener("click", function(){
+      gtag('event', 'download_click', {
+        item_name: "GTA V",
+        item_type: "game",
+        page_path: window.location.pathname
+      });
+    });
+  }
+})();
+</script>
+</body>
+</html>

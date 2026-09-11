@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>صفحه مورد نظر پیدا نشد (404) | Aydin Download</title>
+
+<meta name="description" content="صفحه‌ی درخواستی شما در Aydin Download پیدا نشد. به صفحه اصلی بازگردید و بازی یا نرم‌افزار مورد نظرتان را پیدا کنید.">
+
+<link rel="icon" href="logo.pag.png">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Tahoma,Arial,sans-serif;
+}
+
+body{
+    background:
+    radial-gradient(circle at 15% 20%,rgba(0,102,255,.13),transparent 28%),
+    radial-gradient(circle at 85% 10%,rgba(0,75,180,.15),transparent 25%),
+    linear-gradient(180deg,#020817 0%,#061126 50%,#020817 100%);
+
+    color:#f8fbff;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+
+/* ================= HEADER ================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:rgba(2,10,27,.90);
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(37,124,255,.25);
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,.28);
+}
+
+.header-inner{
+    width:min(1180px,94%);
+    height:84px;
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    gap:28px;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    min-width:250px;
+}
+
+.logo{
+    width:58px;
+    height:58px;
+
+    border-radius:16px;
+
+    object-fit:cover;
+}
+
+.brand{
+    font-weight:900;
+    line-height:.9;
+
+    font-size:27px;
+    letter-spacing:-1px;
+}
+
+.brand span{
+    display:block;
+
+    color:#197dff;
+
+    margin-top:5px;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+
+    gap:30px;
+
+    flex:1;
+    justify-content:center;
+}
+
+nav a{
+    color:#f5f8ff;
+
+    text-decoration:none;
+
+    font-size:15px;
+    font-weight:800;
+
+    transition:.2s;
+}
+
+nav a:hover{
+    color:#3994ff;
+}
+
+.back-btn{
+    color:white;
+
+    text-decoration:none;
+
+    border:1px solid rgba(58,143,255,.35);
+
+    background:rgba(5,20,42,.8);
+
+    padding:11px 16px;
+
+    border-radius:10px;
+
+    font-size:13px;
+
+    transition:.2s;
+}
+
+.back-btn:hover{
+    background:#0c2d57;
+}
+
+
+/* ================= MAIN ================= */
+
+.container{
+    width:min(1120px,92%);
+
+    margin:45px auto;
+}
+
+.game-card{
+    background:
+    linear-gradient(
+        180deg,
+        rgba(7,25,48,.98),
+        rgba(4,17,35,.98)
+    );
+
+    border:1px solid rgba(37,132,255,.30);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.38);
+}
+
+
+/* ================= IMAGE ================= */
+
+.game-image{
+    width:100%;
+    height:390px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:#07172d;
+}
+
+.game-image img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.5s;
+}
+
+.game-card:hover .game-image img{
+    transform:scale(1.025);
+}
+
+.image-overlay{
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        180deg,
+        rgba(0,0,0,.03),
+        rgba(2,8,23,.92)
+    );
+}
+
+
+/* ================= CONTENT ================= */
+
+.game-content{
+    padding:30px;
+
+    margin-top:-80px;
+
+    position:relative;
+
+    z-index:2;
+}
+
+.badge{
+    display:inline-block;
+
+    background:#167dff;
+
+    color:white;
+
+    padding:7px 13px;
+
+    border-radius:9px;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    margin-bottom:14px;
+}
+
+.game-content h1{
+    font-size:38px;
+
+    margin-bottom:14px;
+}
+
+.game-content h1 span{
+    color:#2084ff;
+}
+
+.description{
+    color:#aebbd0;
+
+    font-size:14px;
+
+    line-height:2.1;
+
+    max-width:850px;
+}
+
+
+/* ================= INFO ================= */
+
+.info-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:14px;
+
+    margin-top:28px;
+}
+
+.info{
+    background:#071a33;
+
+    border:1px solid
+    rgba(37,132,255,.22);
+
+    border-radius:13px;
+
+    padding:17px;
+
+    text-align:center;
+}
+
+.info-title{
+    color:#2185ff;
+
+    font-size:12px;
+
+    margin-bottom:8px;
+}
+
+.info-value{
+    color:#fff;
+
+    font-size:13px;
+}
+
+
+/* ================= DOWNLOAD ================= */
+
+.download-area{
+    margin-top:30px;
+
+    padding:25px;
+
+    background:
+    linear-gradient(
+        180deg,
+        rgba(7,28,55,.92),
+        rgba(4,18,38,.92)
+    );
+
+    border:1px solid
+    rgba(37,132,255,.28);
+
+    border-radius:15px;
+
+    text-align:center;
+}
+
+.download-area h2{
+    font-size:22px;
+
+    margin-bottom:8px;
+}
+
+.download-area p{
+    color:#9eafc5;
+
+    font-size:12px;
+
+    margin-bottom:22px;
+}
+
+
+/* دکمه */
+
+.download-btn{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:9px;
+
+    min-width:300px;
+
+    height:55px;
+
+    background:
+    linear-gradient(
+        180deg,
+        #20dc72,
+        #0cb858
+    );
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:11px;
+
+    font-size:14px;
+
+    font-weight:900;
+
+    box-shadow:
+    0 10px 25px
+    rgba(24,214,107,.20);
+
+    transition:
+    box-shadow .2s,
+    filter .2s;
+
+    will-change:transform;
+}
+
+.download-btn:hover{
+    filter:brightness(1.08);
+
+    box-shadow:
+    0 15px 35px
+    rgba(24,214,107,.40);
+}
+
+.notice{
+    margin-top:18px;
+
+    color:#8296b0;
+
+    font-size:11px;
+}
+
+.notice span{
+    color:#2185ff;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+    margin-top:70px;
+
+    border-top:
+    1px solid rgba(37,132,255,.2);
+
+    background:#020a18;
+
+    padding:35px 0;
+
+    text-align:center;
+}
+
+footer h3{
+    font-size:20px;
+}
+
+footer h3 span{
+    color:#2183ff;
+}
+
+footer p{
+    color:#71839b;
+
+    font-size:11px;
+
+    margin-top:10px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:800px){
+
+    .header-inner{
+        height:70px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .logo{
+        width:47px;
+        height:47px;
+    }
+
+    .brand{
+        font-size:21px;
+    }
+
+    .game-image{
+        height:250px;
+    }
+
+    .game-content{
+        padding:20px;
+
+        margin-top:-45px;
+    }
+
+    .game-content h1{
+        font-size:27px;
+    }
+
+    .info-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .download-btn{
+        width:100%;
+
+        min-width:0;
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media(max-width:500px){
+
+    .info-grid{
+        grid-template-columns:
+        1fr 1fr;
+    }
+
+}
+
+
+
+/* ================= 404 PAGE ================= */
+
+.error-wrap{
+    width:min(720px,92%);
+    margin:90px auto;
+    text-align:center;
+}
+
+.error-code{
+    font-size:120px;
+    font-weight:900;
+    line-height:1;
+    background:linear-gradient(180deg,#2787ff,#0d4fb0);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    margin-bottom:10px;
+}
+
+.error-wrap h1{
+    font-size:28px;
+    margin-bottom:14px;
+}
+
+.error-wrap p{
+    color:#aebbd0;
+    font-size:14px;
+    line-height:2.1;
+    margin-bottom:34px;
+}
+
+.error-actions{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    flex-wrap:wrap;
+}
+
+.error-home-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+    min-width:220px;
+    height:55px;
+    background:linear-gradient(180deg,#20dc72,#0cb858);
+    color:white;
+    text-decoration:none;
+    border-radius:11px;
+    font-size:14px;
+    font-weight:900;
+    box-shadow:0 10px 25px rgba(24,214,107,.20);
+    transition:box-shadow .2s, filter .2s;
+    will-change:transform;
+}
+
+.error-home-btn:hover{
+    filter:brightness(1.08);
+    box-shadow:0 15px 35px rgba(24,214,107,.40);
+}
+
+.error-search-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+    min-width:220px;
+    height:55px;
+    color:#fff;
+    text-decoration:none;
+    border:1px solid rgba(58,143,255,.35);
+    background:#071a33;
+    border-radius:11px;
+    font-size:14px;
+    font-weight:900;
+    transition:.2s;
+}
+
+.error-search-btn:hover{
+    background:#0b2b50;
+}
+
+@media(max-width:600px){
+    .error-code{ font-size:80px; }
+    .error-wrap{ margin:60px auto; }
+    .error-home-btn, .error-search-btn{ width:100%; }
+}
+
+</style>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6P9EQMMYV0"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-6P9EQMMYV0');
+</script>
+
+</head>
+
+<body id="top">
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="header-inner">
+
+
+<div class="logo-area">
+
+<img
+src="logo.pag.png"
+class="logo"
+alt="Aydin Download"
+>
+
+<div class="brand">
+
+Aydin
+
+<span>
+Download
+</span>
+
+</div>
+
+</div>
+
+
+<nav>
+
+<a href="index.html">
+خانه
+</a>
+
+<a href="index.html#games">
+بازی‌ها
+</a>
+
+<a href="index.html#software">
+نرم‌افزارها
+</a>
+
+</nav>
+
+
+<a
+href="index.html"
+class="back-btn"
+>
+← بازگشت
+</a>
+
+
+</div>
+
+</header>
+
+
+
+<!-- ================= 404 CONTENT ================= -->
+
+<div class="error-wrap">
+
+<div class="error-code">404</div>
+
+<h1>صفحه مورد نظر پیدا نشد</h1>
+
+<p>
+متأسفانه صفحه‌ای که دنبالش بودید وجود نداره یا جابه‌جا شده.
+شاید آدرس اشتباه تایپ شده یا لینک قدیمی باشه.
+می‌تونید از دکمه‌های زیر به صفحه اصلی برگردید یا بازی/نرم‌افزار مورد نظرتون رو جستجو کنید.
+</p>
+
+<div class="error-actions">
+
+<a href="index.html" class="error-home-btn">
+🏠 بازگشت به صفحه اصلی
+</a>
+
+<a href="index.html#top" class="error-search-btn">
+🔍 جستجو در سایت
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h3>
+Aydin
+<span>
+Download
+</span>
+</h3>
+
+<p>
+مرجع دانلود بازی و نرم‌افزار
+</p>
+
+<p>
+© 2026 Aydin Download
+</p>
+
+</footer>
+
+
+
+</body>
+</html>

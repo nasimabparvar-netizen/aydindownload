@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nasimabparvar-netizen.github.io/aydindownload/sitemap.xml

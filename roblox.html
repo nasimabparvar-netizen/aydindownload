@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Roblox | Aydin Download</title>
+
+<meta name="description" content="دانلود Roblox، بازی آنلاین محبوب با میلیون‌ها بازی و امکان ساخت دنیای اختصاصی.">
+
+<link rel="icon" href="logo.pag.png">
+
+<style>
+:root{
+ --bg:#020817;--panel:#07172d;--panel2:#0a1d37;--line:rgba(37,132,255,.30);
+ --blue:#147cff;--text:#f8fbff;--muted:#aebbd0;--green:#18d66b;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Tahoma,Arial,sans-serif}
+html{scroll-behavior:smooth}
+body{
+ background:radial-gradient(circle at 15% 20%,rgba(0,102,255,.13),transparent 28%),
+ radial-gradient(circle at 85% 10%,rgba(0,75,180,.15),transparent 25%),
+ linear-gradient(180deg,#020817 0%,#061126 45%,#020817 100%);
+ color:var(--text);min-height:100vh;overflow-x:hidden
+}
+body:before,body:after{content:"";position:fixed;z-index:-1;border:1px solid rgba(0,116,255,.13);pointer-events:none}
+body:before{width:240px;height:130px;left:-80px;top:190px;transform:rotate(-25deg);border-radius:28px}
+body:after{width:260px;height:150px;right:-100px;top:100px;transform:rotate(28deg);border-radius:40px}
+header{
+ position:sticky;top:0;z-index:1000;background:rgba(2,10,27,.88);
+ backdrop-filter:blur(18px);border-bottom:1px solid rgba(37,124,255,.25);
+ box-shadow:0 10px 40px rgba(0,0,0,.28);padding:0
+}
+.header-inner{width:min(1180px,94%);height:84px;margin:auto;display:flex;align-items:center;gap:28px}
+.logo-area{display:flex;align-items:center;gap:12px;min-width:250px}
+.logo{width:58px;height:58px;border-radius:16px;object-fit:cover}
+.brand{font-weight:900;line-height:.9;font-size:27px;letter-spacing:-1px}
+.brand span{display:block;color:#197dff;margin-top:5px}
+nav{display:flex;align-items:center;gap:30px;flex:1;justify-content:center}
+nav a{color:#f5f8ff;text-decoration:none;font-size:15px;font-weight:800;padding:31px 0}
+nav a:hover{color:#3994ff}
+.topbar{height:34px;border-bottom:1px solid rgba(37,124,255,.22);display:flex;align-items:center;justify-content:space-between;padding:0 28px;color:#dce8f8;font-size:12px;background:rgba(1,8,22,.85)}
+.top-links{display:flex;gap:25px}.top-links a{color:#e7f0ff;text-decoration:none}.top-links a:hover{color:#3e94ff}
+.header-actions{display:flex;gap:12px;align-items:center}
+.icon-btn,.menu-btn{width:42px;height:42px;border:1px solid rgba(58,143,255,.35);background:rgba(5,20,42,.8);color:white;border-radius:12px;display:grid;place-items:center;font-size:19px;cursor:pointer}.menu-btn{display:none}
+.sidebar{position:fixed;top:0;right:-300px;width:285px;height:100%;background:#061226;border-left:1px solid var(--line);padding:28px 20px;transition:.3s;z-index:2000;box-shadow:-20px 0 60px rgba(0,0,0,.45)}.sidebar.show{right:0}.close-btn{font-size:28px;cursor:pointer;display:block;margin-bottom:20px}.sidebar a{display:block;color:#fff;text-decoration:none;padding:14px 16px;margin:9px 0;background:#0a1b34;border:1px solid rgba(37,132,255,.18);border-radius:12px;font-weight:bold}.sidebar a:hover{background:#0c2d57}
+@media(max-width:680px){.menu-btn{display:grid}nav,.icon-btn{display:none}.topbar{padding:0 14px}.top-links{gap:12px}}
+.container{width:min(1120px,92%);margin:38px auto}
+.hero-title{text-align:center;margin:30px 0 28px}
+.hero-title h1{font-size:42px;font-weight:900;margin-bottom:10px}
+.hero-title h1 span{color:#2084ff}
+.hero-title p{color:var(--muted);font-size:15px}
+.banner{
+ width:100%;height:430px;object-fit:cover;border-radius:16px;
+ border:1px solid rgba(37,132,255,.28);box-shadow:0 20px 60px rgba(0,0,0,.35)
+}
+.box{
+ background:linear-gradient(180deg,rgba(7,25,48,.98),rgba(4,17,35,.98));
+ border:1px solid rgba(37,132,255,.24);padding:25px;border-radius:15px;
+ margin-top:22px;box-shadow:0 12px 35px rgba(0,0,0,.25)
+}
+.box h3{color:#2084ff;margin-bottom:18px;font-size:23px}
+.box ul{padding-right:25px}.box li{margin:12px 0;font-size:15px;color:#d7e2f0;line-height:1.8}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.download-buttons{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+button,.download,.server,.lite{
+ border:none;padding:13px 22px;font-size:14px;border-radius:10px;cursor:pointer;
+ color:white;text-decoration:none;font-weight:900;display:inline-flex;align-items:center;
+ justify-content:center;min-height:44px
+}
+.download{background:linear-gradient(180deg,#20dc72,#0cb858)}
+.server{background:linear-gradient(180deg,#2489ff,#1264db)}
+.lite{background:linear-gradient(180deg,#ffb52e,#e78b00)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+.gallery img{width:100%;height:190px;object-fit:cover;border-radius:12px;border:1px solid rgba(37,132,255,.22);transition:.25s}
+.gallery img:hover{transform:translateY(-4px);border-color:rgba(40,143,255,.62)}
+footer{margin-top:65px;border-top:1px solid rgba(37,132,255,.2);background:#020a18;padding:35px;text-align:center;color:#6f819b}
+.download,.server,.lite{position:relative;transform-origin:center;transition:transform .12s ease-out,box-shadow .2s ease;will-change:transform}
+.download:hover{box-shadow:0 10px 35px rgba(24,214,107,.35)}
+.server:hover{box-shadow:0 10px 35px rgba(20,124,255,.30)}
+.lite:hover{box-shadow:0 10px 35px rgba(245,158,11,.30)}
+@media(max-width:800px){
+ .header-inner{height:70px}.logo-area{min-width:auto}.brand{font-size:20px}
+ nav{gap:12px}nav a{font-size:11px;padding:27px 0}
+ .banner{height:280px}.hero-title h1{font-size:29px}.info-grid{grid-template-columns:1fr}
+ .gallery{grid-template-columns:1fr}.gallery img{height:210px}
+ .download-buttons{flex-direction:column}.download-buttons a{width:100%}
+}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6P9EQMMYV0"></script>
+
+<script>
+
+window.dataLayer=window.dataLayer||[];
+
+function gtag(){dataLayer.push(arguments);}
+
+gtag('js',new Date());
+
+gtag('config','G-6P9EQMMYV0');
+
+</script>
+<script>
+            !function(e,t,n){e.yektanetAnalyticsObject=n,e[n]=e[n]||function(){e[n].q.push(arguments)},e[n].q=e[n].q||[];var a=t.getElementsByTagName("head")[0],r=new Date,c="https://cdn.yektanet.com/superscript/2DnuihXn/native-nasimabparvar-netizen.github.io-47823/yn_pub.js?v="+r.getFullYear().toString()+"0"+r.getMonth()+"0"+r.getDate()+"0"+r.getHours(),s=t.createElement("link");s.rel="preload",s.as="script",s.href=c,a.appendChild(s);var l=t.createElement("script");l.async=!0,l.src=c,a.appendChild(l)}(window,document,"yektanet");
+        </script>
+
+<meta property="og:title" content="Roblox | Aydin Download">
+<meta property="og:description" content="دانلود Roblox، بازی آنلاین محبوب با میلیون‌ها بازی و امکان ساخت دنیای اختصاصی.">
+<meta property="og:image" content="https://nasimabparvar-netizen.github.io/aydindownload/roblox.jpg">
+<meta property="og:url" content="https://nasimabparvar-netizen.github.io/aydindownload/roblox.html">
+<link rel="canonical" href="https://nasimabparvar-netizen.github.io/aydindownload/roblox.html">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Roblox | Aydin Download">
+<meta name="twitter:description" content="دانلود Roblox، بازی آنلاین محبوب با میلیون‌ها بازی و امکان ساخت دنیای اختصاصی.">
+<meta name="twitter:image" content="https://nasimabparvar-netizen.github.io/aydindownload/roblox.jpg">
+<meta property="og:type" content="website">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "Roblox",
+  "description": "دانلود Roblox، بازی آنلاین محبوب با میلیون‌ها بازی و امکان ساخت دنیای اختصاصی.",
+  "image": "https://nasimabparvar-netizen.github.io/aydindownload/roblox.jpg",
+  "url": "https://nasimabparvar-netizen.github.io/aydindownload/roblox.html",
+  "genre": "Online / Sandbox",
+  "gamePlatform": "Windows 10 / 11",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Roblox Corporation"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "صفحه اصلی",
+      "item": "https://nasimabparvar-netizen.github.io/aydindownload/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "بازی‌ها",
+      "item": "https://nasimabparvar-netizen.github.io/aydindownload/#games"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Roblox",
+      "item": "https://nasimabparvar-netizen.github.io/aydindownload/roblox.html"
+    }
+  ]
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="topbar"><div>به <strong>Aydin Download</strong> خوش آمدید!</div><div class="top-links"><a href="index.html#about">ⓘ درباره ما</a><a href="index.html#contact">▢ تماس با ما</a></div></div>
+<div class="sidebar" id="sidebar"><span class="close-btn" onclick="toggleMenu()">✕</span><a href="index.html">🏠 خانه</a><a href="index.html#games">🎮 بازی‌ها</a><a href="index.html#software">💻 نرم‌افزارها</a><a href="index.html#about">ℹ️ درباره ما</a><a href="index.html#contact">📞 تماس با ما</a></div>
+
+<header>
+<div class="header-inner">
+  <div class="logo-area">
+    <img src="logo.pag.png" class="logo" alt="Aydin Download">
+    <div class="brand">Aydin<span>Download</span></div>
+  </div>
+  <nav>
+    <a href="index.html">خانه</a>
+    <a href="index.html#games">بازی‌ها</a>
+    <a href="index.html#software">نرم‌افزارها</a>
+    <a href="index.html#contact">تماس با ما</a>
+  </nav>
+  <div class="header-actions">
+    <button class="icon-btn" onclick="location.href='index.html'">⌂</button>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </div>
+</div>
+</header>
+
+<div class="container">
+
+<div class="hero-title"><h1><span>Roblox</span> | Aydin Download</h1><p>دانلود و معرفی بازی محبوب Roblox</p></div>
+<img src="roblox.jpg" class="banner" alt="Roblox">
+
+<h2 style="font-size:0;margin:0;"></h2>
+
+<p style="font-size:22px;line-height:42px;">
+
+Roblox یکی از محبوب‌ترین بازی‌های آنلاین جهان است که میلیون‌ها نفر هر روز آن را بازی می‌کنند. در Roblox می‌توانید هزاران بازی مختلف را تجربه کنید یا حتی بازی خودتان را بسازید.
+
+</p>
+
+<div id="pos-article-display-121960"></div>
+
+<div class="box">
+
+<h3>🎮 مشخصات بازی</h3>
+
+<ul>
+
+<li><b>نام:</b> Roblox</li>
+
+<li><b>نسخه:</b> Latest Version</li>
+
+<li><b>حجم:</b> حدود 300 MB</li>
+
+<li><b>سیستم عامل:</b> Windows 10 / 11</li>
+
+<li><b>زبان:</b> چندزبانه</li>
+
+<li><b>سازنده:</b> Roblox Corporation</li>
+
+</ul>
+
+</div>
+
+<div class="box">
+
+<h3>💻 حداقل سیستم موردنیاز</h3>
+
+<ul>
+
+<li>CPU : Intel Core i3</li>
+
+<li>RAM : 4 GB</li>
+
+<li>GPU : Intel HD 4000</li>
+
+<li>Storage : 1 GB</li>
+
+</ul>
+
+</div>
+
+<div class="box">
+
+<h3>🚀 سیستم پیشنهادی</h3>
+
+<ul>
+
+<li>CPU : Intel Core i5</li>
+
+<li>RAM : 8 GB</li>
+
+<li>GPU : GTX 1050</li>
+
+<li>Storage : SSD 2 GB</li>
+
+</ul>
+
+</div><div class="box">
+
+<h3>⭐ ویژگی‌های بازی</h3>
+
+<ul>
+
+<li>✔ میلیون‌ها بازی مختلف</li>
+
+<li>✔ امکان ساخت بازی با Roblox Studio</li>
+
+<li>✔ بازی آنلاین با دوستان</li>
+
+<li>✔ بروزرسانی‌های مداوم</li>
+
+<li>✔ میلیون‌ها بازیکن فعال</li>
+
+<li>✔ رایگان برای شروع</li>
+
+</ul>
+
+</div>
+
+<div class="box">
+
+<h3>📥 دانلود Roblox</h3>
+
+<p>برای دانلود آخرین نسخه Roblox از سایت رسمی استفاده کنید.</p>
+
+<a href="https://www.roblox.com/download" target="_blank" id="downloadBtn">
+<button class="download">🟢 ادامه و دانلود</button>
+</a>
+
+<br><br>
+
+<a href="https://www.roblox.com/download" target="_blank">
+<button class="server">🔵 دانلود از سایت رسمی</button>
+</a>
+
+<br><br>
+
+<a href="https://create.roblox.com/" target="_blank" id="studioBtn">
+<button class="lite">🟠 Roblox Studio</button>
+</a>
+
+</div>
+
+<div class="box">
+
+<h3>🖼️ تصاویر بازی</h3>
+
+<div class="gallery">
+
+<img src="roblox1.jpg" alt="اسکرین‌شات ۱ از محیط Roblox" loading="lazy">
+
+<img src="roblox2.jpg" alt="اسکرین‌شات ۲ از محیط Roblox" loading="lazy">
+
+<img src="roblox3.jpg" alt="اسکرین‌شات ۳ از محیط Roblox" loading="lazy">
+
+</div>
+
+</div>
+
+<div class="box">
+
+<h3>🎮 بازی‌های مشابه</h3>
+
+<ul>
+
+<li>Minecraft</li>
+
+<li>Fortnite</li>
+
+<li>LEGO Worlds</li>
+
+<li>Core</li>
+
+</ul>
+
+</div>
+
+<footer>
+
+<p>© 2026 Aydin Download | تمامی حقوق محفوظ است.</p>
+
+</footer>
+
+</div>
+
+<script>
+document.querySelectorAll('.download,.server,.lite').forEach(function(button){
+  button.addEventListener('mousemove',function(e){
+    const rect=button.getBoundingClientRect();
+    const x=(e.clientX-rect.left-rect.width/2)/(rect.width/2);
+    const y=(e.clientY-rect.top-rect.height/2)/(rect.height/2);
+    const moveX=x*9, moveY=y*6;
+    const scaleX=1+Math.abs(x)*0.16, scaleY=1+Math.abs(y)*0.16;
+    const rotate=x*4;
+    button.style.transform=`translate(${moveX}px,${moveY}px) scale(${scaleX},${scaleY}) rotate(${rotate}deg)`;
+  });
+  button.addEventListener('mouseleave',function(){
+    button.style.transform='translate(0,0) scale(1,1) rotate(0deg)';
+  });
+});
+function toggleMenu(){document.getElementById('sidebar').classList.toggle('show')}
+</script>
+
+
+<script>
+(function(){
+  var el_downloadBtn = document.getElementById("downloadBtn");
+  if (el_downloadBtn && window.gtag) {
+    el_downloadBtn.addEventListener("click", function(){
+      gtag('event', 'download_click', {
+        item_name: "Roblox",
+        item_type: "game",
+        page_path: window.location.pathname
+      });
+    });
+  }
+  var el_studioBtn = document.getElementById("studioBtn");
+  if (el_studioBtn && window.gtag) {
+    el_studioBtn.addEventListener("click", function(){
+      gtag('event', 'download_click', {
+        item_name: "Roblox Studio",
+        item_type: "game",
+        page_path: window.location.pathname
+      });
+    });
+  }
+})();
+</script>
+</body>
+
+</html>

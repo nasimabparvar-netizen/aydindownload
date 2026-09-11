@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aydin Download | دانلود بازی و نرم افزار</title>
+<meta name="description" content="دانلود جدیدترین بازی‌ها و نرم‌افزارهای ویندوز با لینک مستقیم از Aydin Download">
+<meta name="keywords" content="دانلود بازی, دانلود نرم افزار, GTA V, Minecraft, Roblox, Aydin Download">
+<meta name="author" content="Aydin Download">
+<link rel="icon" href="logo.pag.png">
+
+<style>
+:root{
+  --bg:#020817;
+  --bg2:#071329;
+  --panel:#07172d;
+  --panel2:#0a1d37;
+  --line:rgba(37,132,255,.30);
+  --blue:#147cff;
+  --blue2:#0066ff;
+  --text:#f8fbff;
+  --muted:#aebbd0;
+  --green:#18d66b;
+  --green2:#0fb957;
+  --shadow:0 20px 60px rgba(0,0,0,.38);
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Tahoma,Arial,sans-serif}
+html{scroll-behavior:smooth}
+body{
+  background:
+    radial-gradient(circle at 15% 20%,rgba(0,102,255,.13),transparent 28%),
+    radial-gradient(circle at 85% 10%,rgba(0,75,180,.15),transparent 25%),
+    linear-gradient(180deg,#020817 0%,#061126 45%,#020817 100%);
+  color:var(--text);min-height:100vh;overflow-x:hidden;
+}
+body:before,body:after{content:"";position:fixed;z-index:-1;border:1px solid rgba(0,116,255,.13);filter:blur(.2px);pointer-events:none}
+body:before{width:240px;height:130px;left:-80px;top:190px;transform:rotate(-25deg);border-radius:28px}
+body:after{width:260px;height:150px;right:-100px;top:100px;transform:rotate(28deg);border-radius:40px}
+
+.topbar{height:34px;border-bottom:1px solid rgba(37,124,255,.22);display:flex;align-items:center;justify-content:space-between;padding:0 28px;color:#dce8f8;font-size:12px;background:rgba(1,8,22,.85)}
+.top-links{display:flex;gap:25px}.top-links a{color:#e7f0ff;text-decoration:none}.top-links a:hover{color:#3e94ff}
+
+header{position:sticky;top:0;z-index:1000;background:rgba(2,10,27,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(37,124,255,.25);box-shadow:0 10px 40px rgba(0,0,0,.28)}
+.header-inner{width:min(1180px,94%);height:84px;margin:auto;display:flex;align-items:center;gap:28px}
+.logo-area{display:flex;align-items:center;gap:12px;min-width:250px}.logo{width:58px;height:58px;border-radius:16px;object-fit:cover}.brand{font-weight:900;line-height:.9;font-size:27px;letter-spacing:-1px}.brand span{display:block;color:#197dff;margin-top:5px}
+nav{display:flex;align-items:center;gap:30px;flex:1;justify-content:center}nav a{color:#f5f8ff;text-decoration:none;font-size:15px;font-weight:800;position:relative;padding:31px 0;white-space:nowrap}nav a:after{content:"";position:absolute;bottom:13px;right:0;left:0;height:2px;background:transparent;border-radius:5px}nav a:hover{color:#3994ff}nav a.active:after{background:var(--blue)}
+.header-actions{display:flex;gap:12px;align-items:center}.icon-btn,.menu-btn{width:42px;height:42px;border:1px solid rgba(58,143,255,.35);background:rgba(5,20,42,.8);color:white;border-radius:12px;display:grid;place-items:center;font-size:19px;cursor:pointer}.menu-btn{display:none}
+
+.sidebar{position:fixed;top:0;right:-300px;width:285px;height:100%;background:#061226;border-left:1px solid var(--line);padding:28px 20px;transition:.3s;z-index:2000;box-shadow:-20px 0 60px rgba(0,0,0,.45)}.sidebar.show{right:0}.close-btn{font-size:28px;cursor:pointer;display:block;margin-bottom:20px}.sidebar a{display:block;color:#fff;text-decoration:none;padding:14px 16px;margin:9px 0;background:#0a1b34;border:1px solid rgba(37,132,255,.18);border-radius:12px;font-weight:bold}.sidebar a:hover{background:#0c2d57}
+
+.ad-wrap{width:min(1180px,94%);margin:14px auto 0;overflow:hidden;border-radius:14px}
+
+.hero{width:min(1120px,92%);margin:42px auto 32px;text-align:center;position:relative}.hero:before{content:"";position:absolute;inset:-60px 10% auto;height:220px;background:radial-gradient(circle,rgba(0,111,255,.17),transparent 68%);z-index:-1}.eyebrow{font-size:18px;color:#eaf3ff;margin-bottom:10px}.hero h2{font-size:42px;line-height:1.45;font-weight:900}.hero h2 span{color:#1d82ff}.hero p{margin-top:8px;color:var(--muted);font-size:16px}
+
+.search{width:min(700px,92%);margin:30px auto 34px;position:relative}.search input{width:100%;height:60px;border:1.5px solid #1581ff;border-radius:34px;background:rgba(5,20,42,.9);box-shadow:0 0 0 5px rgba(21,129,255,.05),0 0 30px rgba(0,103,255,.16);color:#fff;padding:0 58px 0 24px;font-size:16px;outline:none}.search input::placeholder{color:#98a8c0}.search-icon{position:absolute;right:22px;top:16px;font-size:24px;color:#fff}
+
+.features{width:min(1080px,92%);margin:0 auto 28px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(7,28,55,.92),rgba(4,18,38,.92));border-radius:15px;display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden;box-shadow:var(--shadow)}.feature{padding:20px 18px;display:flex;align-items:center;gap:13px;justify-content:center;border-left:1px solid rgba(37,124,255,.17)}.feature:last-child{border-left:0}.feature .ico{width:45px;height:45px;border:1px solid rgba(37,132,255,.45);border-radius:50%;display:grid;place-items:center;color:#2386ff;font-size:22px}.feature b{display:block;font-size:14px;margin-bottom:5px}.feature small{color:#8fa2bc;font-size:11px}
+
+.container{width:min(1120px,92%);margin:auto}.section{margin:38px 0 22px;display:flex;align-items:center;justify-content:space-between}.section h2{font-size:27px}.section h2 span{color:#2084ff}.section a{font-size:12px;color:#2490ff;text-decoration:none;border:1px solid rgba(37,132,255,.4);padding:8px 14px;border-radius:9px}.section a:hover{background:rgba(22,117,255,.12)}
+.grid-games{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.grid-soft{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:linear-gradient(180deg,rgba(7,25,48,.98),rgba(4,17,35,.98));border:1px solid rgba(37,132,255,.24);border-radius:14px;overflow:hidden;box-shadow:0 12px 35px rgba(0,0,0,.28);transition:.28s;position:relative}.card:hover{transform:translateY(-6px);border-color:rgba(40,143,255,.62);box-shadow:0 18px 45px rgba(0,87,210,.18)}
+.card-media{height:175px;overflow:hidden;position:relative;background:#0a1a31}.card-media img{width:100%;height:100%;object-fit:cover;display:block;transition:.35s}.card:hover .card-media img{transform:scale(1.045)}.badge{position:absolute;top:12px;right:12px;background:#167dff;color:white;border-radius:9px;padding:6px 10px;font-size:11px;font-weight:bold;box-shadow:0 5px 15px rgba(0,0,0,.25)}
+.card-content{padding:16px}.card h3{font-size:20px;margin-bottom:9px}.card p{color:#aab8cc;font-size:12px;line-height:2;min-height:48px}.meta{display:flex;justify-content:space-between;gap:12px;margin-top:14px;color:#d7e2f0;font-size:12px}.download{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:15px;height:40px;border-radius:9px;background:linear-gradient(180deg,#20dc72,#0cb858);color:#fff;text-decoration:none;font-size:13px;font-weight:900;transition:.2s}.download:hover{filter:brightness(1.08);transform:translateY(-2px)}
+
+.soft-card{min-height:240px;text-align:center;padding:18px}.soft-icon{width:88px;height:88px;margin:0 auto 13px;border-radius:20px;display:grid;place-items:center;background:linear-gradient(145deg,#0a2547,#07152a);border:1px solid rgba(37,132,255,.35);overflow:hidden}.soft-icon img{width:70px;height:70px;object-fit:contain}.soft-card h3{font-size:17px}.soft-card p{min-height:42px;margin-top:7px}
+
+.trust{margin:38px 0;border:1px solid rgba(37,132,255,.38);border-radius:15px;padding:23px 25px;background:linear-gradient(90deg,rgba(5,25,52,.96),rgba(4,16,34,.96));display:flex;align-items:center;justify-content:space-between;gap:20px}.trust-icon{font-size:42px;color:#2185ff}.trust h3{font-size:20px;margin-bottom:7px}.trust p{color:#a6b6cc;font-size:12px}.trust a{background:#147dff;color:white;text-decoration:none;padding:13px 22px;border-radius:9px;font-size:12px;font-weight:bold;white-space:nowrap}
+
+.info-card{margin-top:18px;background:linear-gradient(180deg,#071a33,#051227);border:1px solid rgba(37,132,255,.24);border-radius:14px;padding:25px;line-height:2;color:#b8c5d7}.info-card strong{color:white}
+
+footer{margin-top:65px;border-top:1px solid rgba(37,132,255,.2);background:#020a18;padding:40px 0 22px}.footer-grid{width:min(1120px,92%);margin:auto;display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:30px}.footer-brand{font-size:27px;font-weight:900}.footer-brand span{color:#2183ff}.footer-col h4{margin-bottom:14px}.footer-col a{display:block;color:#98a9c0;text-decoration:none;margin:9px 0;font-size:12px}.footer-col a:hover{color:#288bff}.footer-about{color:#94a5bd;font-size:12px;line-height:2;margin-top:12px}.copyright{width:min(1120px,92%);margin:30px auto 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.06);text-align:center;color:#6f819b;font-size:11px}
+
+.top-btn{position:fixed;bottom:22px;left:22px;width:48px;height:48px;border-radius:50%;display:none;align-items:center;justify-content:center;background:#0a1b34;border:1px solid rgba(37,132,255,.45);color:white;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.4);z-index:900}.top-btn:hover{background:#0d2c52}
+
+@media(max-width:900px){.header-inner{height:72px}.logo-area{min-width:auto}.brand{font-size:22px}nav{gap:15px}nav a{font-size:12px}.features{grid-template-columns:repeat(2,1fr)}.feature:nth-child(2){border-left:0}.grid-games,.grid-soft{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.topbar{padding:0 14px}.top-links{gap:12px}.header-inner{height:68px}.logo{width:47px;height:47px}.brand{font-size:20px}.menu-btn{display:grid}nav,.icon-btn{display:none}.hero{margin-top:28px}.hero h2{font-size:29px}.hero p{font-size:13px}.search{margin-top:22px}.search input{height:54px;font-size:13px}.features{grid-template-columns:1fr 1fr;border-radius:12px}.feature{padding:15px 8px;gap:8px}.feature .ico{width:38px;height:38px;font-size:18px}.feature b{font-size:11px}.feature small{font-size:9px}.section{margin-top:30px}.section h2{font-size:21px}.grid-games,.grid-soft{grid-template-columns:1fr;gap:14px}.card-media{height:190px}.soft-card{min-height:220px}.trust{align-items:flex-start;flex-direction:column}.trust a{width:100%;text-align:center}.footer-grid{grid-template-columns:1fr 1fr;gap:22px}.footer-grid>div:first-child{grid-column:1/-1}}
+
+/* ===== MOUSE FOLLOW CARD EFFECT ===== */
+
+.card{
+    transform-origin:center center;
+    transition:transform .12s ease-out, box-shadow .2s ease;
+    will-change:transform;
+}
+</style>
+
+<!-- Google tag (gtag.js) - kept from the current site -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6P9EQMMYV0"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-6P9EQMMYV0');
+</script>
+
+<!-- Yektanet initialization - kept from the current site -->
+<script>
+            !function(e,t,n){e.yektanetAnalyticsObject=n,e[n]=e[n]||function(){e[n].q.push(arguments)},e[n].q=e[n].q||[];var a=t.getElementsByTagName("head")[0],r=new Date,c="https://cdn.yektanet.com/superscript/2DnuihXn/native-nasimabparvar-netizen.github.io-47823/yn_pub.js?v="+r.getFullYear().toString()+"0"+r.getMonth()+"0"+r.getDate()+"0"+r.getHours(),s=t.createElement("link");s.rel="preload",s.as="script",s.href=c,a.appendChild(s);var l=t.createElement("script");l.async=!0,l.src=c,a.appendChild(l)}(window,document,"yektanet");
+        </script>
+
+
+<meta property="og:title" content="Aydin Download | دانلود بازی و نرم افزار">
+<meta property="og:description" content="دانلود جدیدترین بازی‌ها و نرم‌افزارهای ویندوز با لینک مستقیم از Aydin Download">
+<meta property="og:image" content="https://nasimabparvar-netizen.github.io/aydindownload/logo.pag.png">
+<meta property="og:url" content="https://nasimabparvar-netizen.github.io/aydindownload/">
+<link rel="canonical" href="https://nasimabparvar-netizen.github.io/aydindownload/">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aydin Download | دانلود بازی و نرم افزار">
+<meta name="twitter:description" content="دانلود جدیدترین بازی‌ها و نرم‌افزارهای ویندوز با لینک مستقیم از Aydin Download">
+<meta name="twitter:image" content="https://nasimabparvar-netizen.github.io/aydindownload/logo.pag.png">
+<meta property="og:type" content="website">
+
+</head>
+
+<body id="top">
+
+<div class="topbar">
+  <div>به <strong>Aydin Download</strong> خوش آمدید!</div>
+  <div class="top-links"><a href="#about">ⓘ درباره ما</a><a href="#contact">▢ تماس با ما</a></div>
+</div>
+
+<div class="sidebar" id="sidebar">
+  <span class="close-btn" onclick="toggleMenu()">✕</span>
+  <a href="#top">🏠 خانه</a>
+  <a href="#games">🎮 بازی‌ها</a>
+  <a href="#software">💻 نرم‌افزارها</a>
+  <a href="games.html">🎮 همه بازی‌ها</a>
+  <a href="software.html">💻 همه نرم‌افزارها</a>
+  <a href="#about">ℹ️ درباره ما</a>
+  <a href="#contact">📞 تماس با ما</a>
+</div>
+
+<header>
+  <div class="header-inner">
+    <div class="logo-area">
+      <img src="logo.pag.png" class="logo" alt="Aydin Download">
+      <div class="brand">Aydin<span>Download</span></div>
+    </div>
+    <nav id="navMenu">
+      <a class="active" href="#top">خانه</a>
+      <a href="#games">بازی‌ها⌄</a>
+      <a href="#software">نرم افزارها⌄</a>
+      <a href="#software">آموزش‌ها</a>
+      <a href="#games">درخواست بازی</a>
+      <a href="games.html">🎮 همه بازی‌ها</a>
+      <a href="software.html">💻 همه نرم‌افزارها</a>
+    </nav>
+    <button class="icon-btn" aria-label="جستجو" onclick="document.getElementById('searchInput').focus()">⌕</button>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+
+<!-- Existing Yektanet placement: unchanged -->
+<div id="pos-article-display-121903"></div>
+
+<section class="hero">
+  <div class="eyebrow">جدیدترین بازی‌ها و نرم افزارها</div>
+  <h2><span>دانلود</span> جدیدترین بازی ها و نرم افزارها</h2>
+  <p>بهترین‌ها را از <span style="color:#2184ff">Aydin Download</span> دریافت کنید...</p>
+</section>
+
+<div class="search">
+  <span class="search-icon">⌕</span>
+  <input type="text" id="searchInput" placeholder="جستجو برای بازی یا نرم افزار...">
+</div>
+
+<div class="features">
+  <div class="feature"><div class="ico">∞</div><div><b>بدون محدودیت</b><small>دانلود نامحدود و آسان</small></div></div>
+  <div class="feature"><div class="ico">✓</div><div><b>آخرین نسخه</b><small>همیشه به‌روز و آپدیت</small></div></div>
+  <div class="feature"><div class="ico">↓</div><div><b>لینک مستقیم</b><small>دانلود با سریع‌ترین سرورها</small></div></div>
+  <div class="feature"><div class="ico">🎁</div><div><b>کاملاً رایگان</b><small>همه فایل‌ها رایگان هستند</small></div></div>
+</div>
+
+<div class="container">
+
+  <div class="section" id="games">
+    <h2>🎮 <span>بازی‌های</span> جدید</h2>
+    <a href="#games">مشاهده همه</a>
+  </div>
+
+  <div class="grid-games">
+    <article class="card searchable">
+      <div class="card-media"><img src="minecraft.jpg" alt="Minecraft"><span class="badge">محبوب</span></div>
+      <div class="card-content"><h3>Minecraft</h3><p>یکی از محبوب‌ترین بازی‌های جهان با امکان ساخت، بقا و بازی آنلاین.</p><div class="meta"><span>نسخه 1.21</span><span>850 MB</span></div><a href="minecraft.html" class="download">دانلود ↓</a></div>
+    </article>
+    <article class="card searchable">
+      <div class="card-media"><img src="gta.jpg" alt="GTA V"><span class="badge">محبوب</span></div>
+      <div class="card-content"><h3>GTA V</h3><p>تجربه دنیای آزاد، مأموریت‌های هیجان‌انگیز و بخش آنلاین GTA Online.</p><div class="meta"><span>Action</span><span>110 GB</span></div><a href="gta.html" class="download">دانلود ↓</a></div>
+    </article>
+    <article class="card searchable">
+      <div class="card-media"><img src="roblox.jpg" alt="Roblox"><span class="badge">محبوب</span></div>
+      <div class="card-content"><h3>Roblox</h3><p>بازی آنلاین محبوب با میلیون‌ها بازی و امکان ساخت دنیای اختصاصی.</p><div class="meta"><span>Online</span><span>300 MB</span></div><a href="roblox.html" class="download">دانلود ↓</a></div>
+    </article>
+  </div>
+
+  <!-- Yektanet - Native Middle -->
+<div class="ad-wrap">
+    <div id="pos-article-display-121916"></div>
+</div>
+
+<div class="section">
+    <h2>⭐ <span>محبوب‌ترین</span> بازی‌ها</h2>
+    <a href="#games">مشاهده همه</a>
+</div>
+  <div class="grid-games">
+    <article class="card searchable"><div class="card-media"><img src="minecraft1.jpg" alt="Minecraft" loading="lazy"></div><div class="card-content"><h3>Minecraft</h3><p>پرفروش‌ترین بازی جهان با میلیون‌ها بازیکن.</p><a href="minecraft.html" class="download">دانلود ↓</a></div></article>
+    <article class="card searchable"><div class="card-media"><img src="gta1.jpg" alt="GTA V" loading="lazy"></div><div class="card-content"><h3>GTA V</h3><p>یکی از محبوب‌ترین بازی‌های اکشن جهان.</p><a href="gta.html" class="download">دانلود ↓</a></div></article>
+    <article class="card searchable"><div class="card-media"><img src="roblox1.jpg" alt="Roblox" loading="lazy"></div><div class="card-content"><h3>Roblox</h3><p>بازی آنلاین با میلیون‌ها کاربر فعال.</p><a href="roblox.html" class="download">دانلود ↓</a></div></article>
+    <article class="card searchable"><div class="card-media"><img src="forza.jpg" alt="Forza Horizon 5" loading="lazy"></div><div class="card-content"><h3>Forza Horizon 5</h3><p>یکی از محبوب‌ترین بازی‌های مسابقه‌ای جهان با خودروهای متنوع و دنیای آزاد.</p><a href="forza.html" class="download">دانلود ↓</a></div></article>
+    <article class="card searchable"><div class="card-media"><img src="ets2.jpg" alt="Euro Truck Simulator 2" loading="lazy"></div><div class="card-content"><h3>Euro Truck Simulator 2</h3><p>شبیه‌ساز رانندگی کامیون با جاده‌های گسترده و سفرهای هیجان‌انگیز.</p><a href="ets2.html" class="download">دانلود ↓</a></div></article>
+    <article class="card searchable"><div class="card-media"><img src="cs2.jpg" alt="Counter-Strike 2" loading="lazy"></div><div class="card-content"><h3>Counter-Strike 2</h3><p>یکی از محبوب‌ترین بازی‌های تیراندازی رقابتی و آنلاین جهان.</p><a href="cs2.html" class="download">دانلود ↓</a></div></article>
+    <article class="card searchable"><div class="card-media"><img src="fortnite.jpg" alt="Fortnite" loading="lazy"></div><div class="card-content"><h3>Fortnite</h3><p>بازی بتل‌رویال محبوب با ساخت‌وساز و رویدادهای فصلی متنوع.</p><a href="fortnite.html" class="download">دانلود ↓</a></div></article>
+    <article class="card searchable"><div class="card-media"><img src="pubg.jpg" alt="PUBG: BATTLEGROUNDS" loading="lazy"></div><div class="card-content"><h3>PUBG: BATTLEGROUNDS</h3><p>یکی از پیشگامان ژانر بتل‌رویال با رقابت فشرده تا آخرین بازمانده.</p><a href="pubg.html" class="download">دانلود ↓</a></div></article>
+    <article class="card searchable"><div class="card-media"><img src="valorant.jpg" alt="VALORANT" loading="lazy"></div><div class="card-content"><h3>VALORANT</h3><p>تیراندازی تاکتیکی ۵ نفره با قهرمانان و توانایی‌های ویژه.</p><a href="valorant.html" class="download">دانلود ↓</a></div></article>
+    <article class="card searchable"><div class="card-media"><img src="rocketleague.jpg" alt="Rocket League" loading="lazy"></div><div class="card-content"><h3>Rocket League</h3><p>ترکیبی هیجان‌انگیز از فوتبال و مسابقات ماشین‌سواری.</p><a href="rocketleague.html" class="download">دانلود ↓</a></div></article>
+    <article class="card searchable"><div class="card-media"><img src="warzone.jpg" alt="Call of Duty: Warzone" loading="lazy"></div><div class="card-content"><h3>Call of Duty: Warzone</h3><p>نسخه‌ی بتل‌رویال رایگان فرنچایز محبوب Call of Duty.</p><a href="warzone.html" class="download">دانلود ↓</a></div></article>
+    <article class="card searchable"><div class="card-media"><img src="lol.jpg" alt="League of Legends" loading="lazy"></div><div class="card-content"><h3>League of Legends</h3><p>بازی استراتژیک تیمی (MOBA) با ده‌ها قهرمان قابل انتخاب.</p><a href="lol.html" class="download">دانلود ↓</a></div></article>
+    <article class="card searchable"><div class="card-media"><img src="amongus.jpg" alt="Among Us" loading="lazy"></div><div class="card-content"><h3>Among Us</h3><p>بازی کشف اجتماعی محبوب؛ خدمه در برابر ایمپاسترهای مخفی.</p><a href="amongus.html" class="download">دانلود ↓</a></div></article>
+    <article class="card searchable"><div class="card-media"><img src="genshin.jpg" alt="Genshin Impact" loading="lazy"></div><div class="card-content"><h3>Genshin Impact</h3><p>اکشن-نقش‌آفرینی جهان‌باز در دنیای فانتزی Teyvat.</p><a href="genshin.html" class="download">دانلود ↓</a></div></article>
+    <article class="card searchable"><div class="card-media"><img src="eldenring.jpg" alt="Elden Ring" loading="lazy"></div><div class="card-content"><h3>Elden Ring</h3><p>اکشن-نقش‌آفرینی جهان‌باز از سازندگان سری Dark Souls.</p><a href="eldenring.html" class="download">دانلود ↓</a></div></article>
+    <article class="card searchable"><div class="card-media"><img src="fc25.jpg" alt="EA Sports FC 25" loading="lazy"></div><div class="card-content"><h3>EA Sports FC 25</h3><p>پرطرفدارترین فرنچایز شبیه‌ساز فوتبال با گرافیک واقعی.</p><a href="fc25.html" class="download">دانلود ↓</a></div></article>
+    <article class="card searchable"><div class="card-media"><img src="stardewvalley.jpg" alt="Stardew Valley" loading="lazy"></div><div class="card-content"><h3>Stardew Valley</h3><p>شبیه‌ساز آرام کشاورزی و زندگی روستایی.</p><a href="stardewvalley.html" class="download">دانلود ↓</a></div></article>
+    <article class="card searchable"><div class="card-media"><img src="deadbydaylight.jpg" alt="Dead by Daylight" loading="lazy"></div><div class="card-content"><h3>Dead by Daylight</h3><p>بازی ترسناک چندنفره‌ی نامتقارن؛ قاتل در برابر بازماندگان.</p><a href="deadbydaylight.html" class="download">دانلود ↓</a></div></article>
+  </div>
+
+  <div class="section" id="software">
+    <h2>💻 <span>نرم‌افزارهای</span> پرطرفدار</h2>
+    <a href="#software">مشاهده همه</a>
+  </div>
+  <div class="grid-soft">
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="vlc.jpg" alt="VLC" loading="lazy"></div><h3>VLC Media Player</h3><p>پخش‌کننده رایگان و قدرتمند برای اجرای انواع فایل‌های صوتی و تصویری.</p><a href="vlc.html" class="download">دانلود ↓</a></article>
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="chrome.jpg" alt="Google Chrome" loading="lazy"></div><h3>Google Chrome</h3><p>مرورگر سریع، امن و محبوب گوگل برای وب‌گردی و دانلود فایل‌ها.</p><a href="chrome.html" class="download">دانلود ↓</a></article>
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="winrar.jpg" alt="WinRAR" loading="lazy"></div><h3>WinRAR</h3><p>نرم‌افزار محبوب برای فشرده‌سازی و استخراج فایل‌های ZIP و RAR.</p><a href="winrar.html" class="download">دانلود ↓</a></article>
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="firefox.jpg" alt="Mozilla Firefox" loading="lazy"></div><h3>Mozilla Firefox</h3><p>مرورگر سریع، امن و محبوب برای وب‌گردی و استفاده از اینترنت.</p><a href="firefox.html" class="download">دانلود ↓</a></article>
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="7zip.jpg" alt="7-Zip" loading="lazy"></div><h3><bdi>7-Zip</bdi></h3><p>نرم‌افزار رایگان و قدرتمند برای فشرده‌سازی و استخراج فایل‌ها با فرمت‌های مختلف.</p><a href="7zip.html" class="download">دانلود ↓</a></article>
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="acrobat.jpg" alt="Adobe Acrobat Reader" loading="lazy"></div><h3>Adobe Acrobat Reader</h3><p>نرم‌افزار محبوب برای مشاهده، خواندن و کار با فایل‌های PDF.</p><a href="acrobat.html" class="download">دانلود ↓</a></article>
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="notepadpp.jpg" alt="Notepad++" loading="lazy"></div><h3><bdi>Notepad++</bdi></h3><p>ویرایشگر متن و کد سبک، رایگان و متن‌باز با هایلایت نحوی.</p><a href="notepadpp.html" class="download">دانلود ↓</a></article>
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="telegram.jpg" alt="Telegram Desktop" loading="lazy"></div><h3>Telegram Desktop</h3><p>نسخه رایانه‌ای پیام‌رسان محبوب تلگرام با امکانات کامل.</p><a href="telegram.html" class="download">دانلود ↓</a></article>
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="discord.jpg" alt="Discord" loading="lazy"></div><h3>Discord</h3><p>چت متنی، صوتی و تصویری محبوب بین گیمرها و کامیونیتی‌ها.</p><a href="discord.html" class="download">دانلود ↓</a></article>
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="zoom.jpg" alt="Zoom" loading="lazy"></div><h3>Zoom</h3><p>برگزاری جلسات و کلاس‌های آنلاین با تماس تصویری گروهی.</p><a href="zoom.html" class="download">دانلود ↓</a></article>
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="spotify.jpg" alt="Spotify" loading="lazy"></div><h3>Spotify</h3><p>پخش آنلاین موسیقی و پادکست با میلیون‌ها آهنگ.</p><a href="spotify.html" class="download">دانلود ↓</a></article>
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="teamviewer.jpg" alt="TeamViewer" loading="lazy"></div><h3>TeamViewer</h3><p>دسترسی و کنترل از راه دور به کامپیوتر برای پشتیبانی فنی.</p><a href="teamviewer.html" class="download">دانلود ↓</a></article>
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="libreoffice.jpg" alt="LibreOffice" loading="lazy"></div><h3>LibreOffice</h3><p>مجموعه‌ی کامل و رایگان نرم‌افزارهای اداری، جایگزین Word و Excel.</p><a href="libreoffice.html" class="download">دانلود ↓</a></article>
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="obs.jpg" alt="OBS Studio" loading="lazy"></div><h3>OBS Studio</h3><p>نرم‌افزار رایگان ضبط صفحه‌نمایش و پخش زنده (استریم).</p><a href="obs.html" class="download">دانلود ↓</a></article>
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="gimp.jpg" alt="GIMP" loading="lazy"></div><h3>GIMP</h3><p>ویرایشگر حرفه‌ای و رایگان تصاویر، جایگزین Photoshop.</p><a href="gimp.html" class="download">دانلود ↓</a></article>
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="ccleaner.jpg" alt="CCleaner" loading="lazy"></div><h3>CCleaner</h3><p>پاک‌سازی و بهینه‌سازی سیستم برای افزایش سرعت ویندوز.</p><a href="ccleaner.html" class="download">دانلود ↓</a></article>
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="whatsapp.jpg" alt="WhatsApp Desktop" loading="lazy"></div><h3>WhatsApp Desktop</h3><p>نسخه رایانه‌ای پیام‌رسان محبوب واتساپ با همگام‌سازی کامل.</p><a href="whatsapp.html" class="download">دانلود ↓</a></article>
+    <article class="card soft-card searchable"><div class="soft-icon"><img src="idm.jpg" alt="Internet Download Manager" loading="lazy"></div><h3>Internet Download Manager</h3><p>مدیریت و افزایش سرعت دانلود فایل‌ها.</p><a href="idm.html" class="download">دانلود ↓</a></article>
+  </div>
+
+  <section class="trust">
+    <div class="trust-icon">♢</div>
+    <div><h3>فایل‌ها کاملاً تست شده و سالم هستند</h3><p>تیم Aydin Download تمام فایل‌ها را قبل از انتشار بررسی می‌کند.</p></div>
+    <a href="#about">اطلاعات بیشتر</a>
+  </section>
+
+  <div class="section" id="about"><h2>ℹ️ درباره ما</h2></div>
+  <div class="info-card"><strong>Aydin Download</strong> یک وب‌سایت دانلود بازی و نرم‌افزار برای ویندوز است. هدف ما ارائه فایل‌های سالم، لینک‌های مستقیم و آموزش‌های ساده برای کاربران است.</div>
+
+  <div class="section" id="contact"><h2>📞 تماس با ما</h2></div>
+  <div class="info-card"><p>📧 ایمیل: Aydin.k.1403@gmail.com</p><p>🌐 وب‌سایت: Aydin Download</p><p>💬 راه‌های ارتباطی دیگر به‌زودی اضافه می‌شوند.</p></div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div><div class="footer-brand">Aydin <span>Download</span></div><p class="footer-about">بهترین‌ها را از ما بخواهید...<br>مرجع دانلود جدیدترین بازی‌ها و نرم‌افزارهای ویندوز با لینک مستقیم و رایگان.</p></div>
+    <div class="footer-col"><h4>لینک‌های مفید</h4><a href="#about">درباره ما</a><a href="#contact">تماس با ما</a><a href="#top">قوانین سایت</a><a href="#top">حریم خصوصی</a></div>
+    <div class="footer-col"><h4>بازی‌های محبوب</h4><a href="minecraft.html">Minecraft</a><a href="roblox.html">Roblox</a><a href="gta.html">GTA V</a></div>
+    <div class="footer-col"><h4>دسترسی سریع</h4><a href="#games">بازی‌ها</a><a href="#software">نرم‌افزارها</a><a href="#top">آموزش‌ها</a><a href="#games">درخواست بازی</a></div>
+  </div>
+  <div class="copyright">© 2026 Aydin Download | تمامی حقوق محفوظ است.</div>
+</footer>
+
+<a href="#top" class="top-btn" id="topBtn">⌃</a>
+
+<script>
+/* ===== MOUSE FOLLOW CARD STRETCH ===== */
+
+document.querySelectorAll('.card').forEach(function(card) {
+
+    card.addEventListener('mousemove', function(e) {
+
+        const rect = card.getBoundingClientRect();
+
+        const x = (e.clientX - rect.left - rect.width / 2)
+                  / (rect.width / 2);
+
+        const y = (e.clientY - rect.top - rect.height / 2)
+                  / (rect.height / 2);
+
+        /* حرکت در همان جهت موس */
+        const moveX = x * 8;
+        const moveY = y * 8;
+
+        /* کش آمدن */
+        const scaleX = 1 + Math.abs(x) * 0.10;
+        const scaleY = 1 + Math.abs(y) * 0.10;
+
+        /* کج شدن کارت */
+        const rotateX = -y * 5;
+        const rotateY = x * 5;
+
+        card.style.transform =
+            `translate(${moveX}px, ${moveY}px)
+             scale(${scaleX}, ${scaleY})
+             rotateX(${rotateX}deg)
+             rotateY(${rotateY}deg)`;
+    });
+
+    card.addEventListener('mouseleave', function() {
+
+        card.style.transform =
+            'translate(0,0) scale(1,1) rotateX(0deg) rotateY(0deg)';
+    });
+
+});
+</script>
+
+<script>
+const searchInput=document.getElementById('searchInput');
+searchInput.addEventListener('input',function(){
+  const value=this.value.toLowerCase().trim();
+  document.querySelectorAll('.searchable').forEach(card=>{
+    card.style.display=(!value || card.innerText.toLowerCase().includes(value))?'':'none';
+  });
+});
+window.addEventListener('scroll',()=>{document.getElementById('topBtn').style.display=window.scrollY>300?'flex':'none'});
+function toggleMenu(){document.getElementById('sidebar').classList.toggle('show')}
+</script>
+</body>
+</html>
