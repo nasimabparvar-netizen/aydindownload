@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>آموزش‌ها | Aydin Download</title>
+<meta name="description" content="آموزش‌های کاربردی Aydin Download: باز کردن فایل‌های فشرده، نصب نرم‌افزار در ویندوز و رفع مشکلات رایج نصب بازی‌ها.">
+<link rel="icon" href="logo.pag.png">
+
+<meta property="og:title" content="آموزش‌ها | Aydin Download">
+<meta property="og:description" content="آموزش‌های کاربردی Aydin Download: باز کردن فایل‌های فشرده، نصب نرم‌افزار در ویندوز و رفع مشکلات رایج نصب بازی‌ها.">
+<meta property="og:image" content="https://nasimabparvar-netizen.github.io/aydindownload/logo.pag.png">
+<meta property="og:url" content="https://nasimabparvar-netizen.github.io/aydindownload/tutorials.html">
+<link rel="canonical" href="https://nasimabparvar-netizen.github.io/aydindownload/tutorials.html">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="آموزش‌ها | Aydin Download">
+<meta name="twitter:description" content="آموزش‌های کاربردی Aydin Download: باز کردن فایل‌های فشرده، نصب نرم‌افزار در ویندوز و رفع مشکلات رایج نصب بازی‌ها.">
+<meta name="twitter:image" content="https://nasimabparvar-netizen.github.io/aydindownload/logo.pag.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "صفحه اصلی",
+      "item": "https://nasimabparvar-netizen.github.io/aydindownload/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "آموزش‌ها",
+      "item": "https://nasimabparvar-netizen.github.io/aydindownload/tutorials.html"
+    }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --bg:#020817;
+  --bg2:#071329;
+  --panel:#07172d;
+  --panel2:#0a1d37;
+  --line:rgba(37,132,255,.30);
+  --blue:#147cff;
+  --blue2:#0066ff;
+  --text:#f8fbff;
+  --muted:#aebbd0;
+  --green:#18d66b;
+  --green2:#0fb957;
+  --shadow:0 20px 60px rgba(0,0,0,.38);
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Tahoma,Arial,sans-serif}
+html{scroll-behavior:smooth}
+body{
+  background:
+    radial-gradient(circle at 15% 20%,rgba(0,102,255,.13),transparent 28%),
+    radial-gradient(circle at 85% 10%,rgba(0,75,180,.15),transparent 25%),
+    linear-gradient(180deg,#020817 0%,#061126 45%,#020817 100%);
+  color:var(--text);min-height:100vh;overflow-x:hidden;
+}
+body:before,body:after{content:"";position:fixed;z-index:-1;border:1px solid rgba(0,116,255,.13);filter:blur(.2px);pointer-events:none}
+body:before{width:240px;height:130px;left:-80px;top:190px;transform:rotate(-25deg);border-radius:28px}
+body:after{width:260px;height:150px;right:-100px;top:100px;transform:rotate(28deg);border-radius:40px}
+
+.topbar{height:34px;border-bottom:1px solid rgba(37,124,255,.22);display:flex;align-items:center;justify-content:space-between;padding:0 28px;color:#dce8f8;font-size:12px;background:rgba(1,8,22,.85)}
+.top-links{display:flex;gap:25px}.top-links a{color:#e7f0ff;text-decoration:none}.top-links a:hover{color:#3e94ff}
+
+header{position:sticky;top:0;z-index:1000;background:rgba(2,10,27,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(37,124,255,.25);box-shadow:0 10px 40px rgba(0,0,0,.28)}
+.header-inner{width:min(1180px,94%);height:84px;margin:auto;display:flex;align-items:center;gap:28px}
+.logo-area{display:flex;align-items:center;gap:12px;min-width:250px}.logo{width:58px;height:58px;border-radius:16px;object-fit:cover}.brand{font-weight:900;line-height:.9;font-size:27px;letter-spacing:-1px}.brand span{display:block;color:#197dff;margin-top:5px}
+nav{display:flex;align-items:center;gap:30px;flex:1;justify-content:center}nav a{color:#f5f8ff;text-decoration:none;font-size:15px;font-weight:800;position:relative;padding:31px 0;white-space:nowrap}nav a:after{content:"";position:absolute;bottom:13px;right:0;left:0;height:2px;background:transparent;border-radius:5px}nav a:hover{color:#3994ff}nav a.active:after{background:var(--blue)}
+.header-actions{display:flex;gap:12px;align-items:center}.icon-btn,.menu-btn{width:42px;height:42px;border:1px solid rgba(58,143,255,.35);background:rgba(5,20,42,.8);color:white;border-radius:12px;display:grid;place-items:center;font-size:19px;cursor:pointer}.menu-btn{display:none}
+
+.sidebar{position:fixed;top:0;right:-300px;width:285px;height:100%;background:#061226;border-left:1px solid var(--line);padding:28px 20px;transition:.3s;z-index:2000;box-shadow:-20px 0 60px rgba(0,0,0,.45)}.sidebar.show{right:0}.close-btn{font-size:28px;cursor:pointer;display:block;margin-bottom:20px}.sidebar a{display:block;color:#fff;text-decoration:none;padding:14px 16px;margin:9px 0;background:#0a1b34;border:1px solid rgba(37,132,255,.18);border-radius:12px;font-weight:bold}.sidebar a:hover{background:#0c2d57}
+
+.ad-wrap{width:min(1180px,94%);margin:14px auto 0;overflow:hidden;border-radius:14px}
+
+.hero{width:min(1120px,92%);margin:42px auto 32px;text-align:center;position:relative}.hero:before{content:"";position:absolute;inset:-60px 10% auto;height:220px;background:radial-gradient(circle,rgba(0,111,255,.17),transparent 68%);z-index:-1}.eyebrow{font-size:18px;color:#eaf3ff;margin-bottom:10px}.hero h2{font-size:42px;line-height:1.45;font-weight:900}.hero h2 span{color:#1d82ff}.hero p{margin-top:8px;color:var(--muted);font-size:16px}
+
+.search{width:min(700px,92%);margin:30px auto 34px;position:relative}.search input{width:100%;height:60px;border:1.5px solid #1581ff;border-radius:34px;background:rgba(5,20,42,.9);box-shadow:0 0 0 5px rgba(21,129,255,.05),0 0 30px rgba(0,103,255,.16);color:#fff;padding:0 58px 0 24px;font-size:16px;outline:none}.search input::placeholder{color:#98a8c0}.search-icon{position:absolute;right:22px;top:16px;font-size:24px;color:#fff}
+
+.features{width:min(1080px,92%);margin:0 auto 28px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(7,28,55,.92),rgba(4,18,38,.92));border-radius:15px;display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden;box-shadow:var(--shadow)}.feature{padding:20px 18px;display:flex;align-items:center;gap:13px;justify-content:center;border-left:1px solid rgba(37,124,255,.17)}.feature:last-child{border-left:0}.feature .ico{width:45px;height:45px;border:1px solid rgba(37,132,255,.45);border-radius:50%;display:grid;place-items:center;color:#2386ff;font-size:22px}.feature b{display:block;font-size:14px;margin-bottom:5px}.feature small{color:#8fa2bc;font-size:11px}
+
+.container{width:min(1120px,92%);margin:auto}.section{margin:38px 0 22px;display:flex;align-items:center;justify-content:space-between}.section h2{font-size:27px}.section h2 span{color:#2084ff}.section a{font-size:12px;color:#2490ff;text-decoration:none;border:1px solid rgba(37,132,255,.4);padding:8px 14px;border-radius:9px}.section a:hover{background:rgba(22,117,255,.12)}
+.grid-games{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.grid-soft{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:linear-gradient(180deg,rgba(7,25,48,.98),rgba(4,17,35,.98));border:1px solid rgba(37,132,255,.24);border-radius:14px;overflow:hidden;box-shadow:0 12px 35px rgba(0,0,0,.28);transition:.28s;position:relative}.card:hover{transform:translateY(-6px);border-color:rgba(40,143,255,.62);box-shadow:0 18px 45px rgba(0,87,210,.18)}
+.card-media{height:175px;overflow:hidden;position:relative;background:#0a1a31}.card-media img{width:100%;height:100%;object-fit:cover;display:block;transition:.35s}.card:hover .card-media img{transform:scale(1.045)}.badge{position:absolute;top:12px;right:12px;background:#167dff;color:white;border-radius:9px;padding:6px 10px;font-size:11px;font-weight:bold;box-shadow:0 5px 15px rgba(0,0,0,.25)}
+.card-content{padding:16px}.card h3{font-size:20px;margin-bottom:9px}.card p{color:#aab8cc;font-size:12px;line-height:2;min-height:48px}.meta{display:flex;justify-content:space-between;gap:12px;margin-top:14px;color:#d7e2f0;font-size:12px}.download{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:15px;height:40px;border-radius:9px;background:linear-gradient(180deg,#20dc72,#0cb858);color:#fff;text-decoration:none;font-size:13px;font-weight:900;transition:.2s}.download:hover{filter:brightness(1.08);transform:translateY(-2px)}
+
+.soft-card{min-height:240px;text-align:center;padding:18px}.soft-icon{width:88px;height:88px;margin:0 auto 13px;border-radius:20px;display:grid;place-items:center;background:linear-gradient(145deg,#0a2547,#07152a);border:1px solid rgba(37,132,255,.35);overflow:hidden}.soft-icon img{width:70px;height:70px;object-fit:contain}.soft-card h3{font-size:17px}.soft-card p{min-height:42px;margin-top:7px}
+
+.trust{margin:38px 0;border:1px solid rgba(37,132,255,.38);border-radius:15px;padding:23px 25px;background:linear-gradient(90deg,rgba(5,25,52,.96),rgba(4,16,34,.96));display:flex;align-items:center;justify-content:space-between;gap:20px}.trust-icon{font-size:42px;color:#2185ff}.trust h3{font-size:20px;margin-bottom:7px}.trust p{color:#a6b6cc;font-size:12px}.trust a{background:#147dff;color:white;text-decoration:none;padding:13px 22px;border-radius:9px;font-size:12px;font-weight:bold;white-space:nowrap}
+
+.info-card{margin-top:18px;background:linear-gradient(180deg,#071a33,#051227);border:1px solid rgba(37,132,255,.24);border-radius:14px;padding:25px;line-height:2;color:#b8c5d7}.info-card strong{color:white}
+
+footer{margin-top:65px;border-top:1px solid rgba(37,132,255,.2);background:#020a18;padding:40px 0 22px}.footer-grid{width:min(1120px,92%);margin:auto;display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:30px}.footer-brand{font-size:27px;font-weight:900}.footer-brand span{color:#2183ff}.footer-col h4{margin-bottom:14px}.footer-col a{display:block;color:#98a9c0;text-decoration:none;margin:9px 0;font-size:12px}.footer-col a:hover{color:#288bff}.footer-about{color:#94a5bd;font-size:12px;line-height:2;margin-top:12px}.copyright{width:min(1120px,92%);margin:30px auto 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.06);text-align:center;color:#6f819b;font-size:11px}
+
+.top-btn{position:fixed;bottom:22px;left:22px;width:48px;height:48px;border-radius:50%;display:none;align-items:center;justify-content:center;background:#0a1b34;border:1px solid rgba(37,132,255,.45);color:white;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.4);z-index:900}.top-btn:hover{background:#0d2c52}
+
+@media(max-width:900px){.header-inner{height:72px}.logo-area{min-width:auto}.brand{font-size:22px}nav{gap:15px}nav a{font-size:12px}.features{grid-template-columns:repeat(2,1fr)}.feature:nth-child(2){border-left:0}.grid-games,.grid-soft{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.topbar{padding:0 14px}.top-links{gap:12px}.header-inner{height:68px}.logo{width:47px;height:47px}.brand{font-size:20px}.menu-btn{display:grid}nav,.icon-btn{display:none}.hero{margin-top:28px}.hero h2{font-size:29px}.hero p{font-size:13px}.search{margin-top:22px}.search input{height:54px;font-size:13px}.features{grid-template-columns:1fr 1fr;border-radius:12px}.feature{padding:15px 8px;gap:8px}.feature .ico{width:38px;height:38px;font-size:18px}.feature b{font-size:11px}.feature small{font-size:9px}.section{margin-top:30px}.section h2{font-size:21px}.grid-games,.grid-soft{grid-template-columns:1fr;gap:14px}.card-media{height:190px}.soft-card{min-height:220px}.trust{align-items:flex-start;flex-direction:column}.trust a{width:100%;text-align:center}.footer-grid{grid-template-columns:1fr 1fr;gap:22px}.footer-grid>div:first-child{grid-column:1/-1}}
+
+/* ===== MOUSE FOLLOW CARD EFFECT ===== */
+
+.card{
+    transform-origin:center center;
+    transition:transform .12s ease-out, box-shadow .2s ease;
+    will-change:transform;
+}
+</style>
+
+<style>
+.tutorial-card{margin-top:22px;background:linear-gradient(180deg,#071a33,#051227);border:1px solid rgba(37,132,255,.24);border-radius:14px;padding:28px}
+.tutorial-card h3{font-size:22px;margin-bottom:6px;color:#fff}
+.tutorial-card h3 span{color:#2084ff}
+.tutorial-card .tut-desc{color:#9eafc5;font-size:13px;margin-bottom:18px}
+.tutorial-steps{padding-right:0;list-style:none;counter-reset:step}
+.tutorial-steps li{counter-increment:step;position:relative;padding:12px 46px 12px 0;margin-bottom:6px;color:#d8e3f0;font-size:14px;line-height:1.9}
+.tutorial-steps li::before{content:counter(step);position:absolute;right:0;top:10px;width:28px;height:28px;border-radius:50%;background:#147cff;color:#fff;font-size:13px;font-weight:900;display:flex;align-items:center;justify-content:center}
+.tutorial-steps li b{color:#fff}
+.tutorial-steps a{color:#2787ff}
+</style>
+
+</head>
+
+<body id="top">
+
+<div class="topbar">
+  <div>به <strong>Aydin Download</strong> خوش آمدید!</div>
+  <div class="top-links"><a href="about.html">ⓘ درباره ما</a><a href="contact.html">▢ تماس با ما</a></div>
+</div>
+
+<div class="sidebar" id="sidebar">
+  <span class="close-btn" onclick="toggleMenu()">✕</span>
+  <a href="index.html">🏠 خانه</a>
+  <a href="index.html#games">🎮 بازی‌ها</a>
+  <a href="index.html#software">💻 نرم‌افزارها</a>
+  <a href="games.html">🎮 همه بازی‌ها</a>
+  <a href="software.html">💻 همه نرم‌افزارها</a>
+  <a href="android.html">📱 اپلیکیشن‌های اندروید</a>
+  <a href="tutorials.html">📚 آموزش‌ها</a>
+  <a href="about.html">ℹ️ درباره ما</a>
+  <a href="contact.html">📞 تماس با ما</a>
+</div>
+
+<header>
+  <div class="header-inner">
+    <div class="logo-area">
+      <img src="logo.pag.png" class="logo" alt="Aydin Download">
+      <div class="brand">Aydin<span>Download</span></div>
+    </div>
+    <nav id="navMenu">
+      <a href="index.html">خانه</a>
+      <a href="index.html#games">بازی‌ها⌄</a>
+      <a href="index.html#software">نرم افزارها⌄</a>
+      <a href="games.html">🎮 همه بازی‌ها</a>
+      <a href="software.html">💻 همه نرم‌افزارها</a>
+      <a href="android.html">📱 اندروید</a>
+      <a href="tutorials.html">📚 آموزش‌ها</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" onclick="location.href='index.html'">⌂</button>
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </div>
+  </div>
+</header>
+
+
+<div class="container">
+
+<h2 class="page-title">📚 آموزش‌ها</h2>
+<p class="desc">چند آموزش کاربردی و کوتاه برای رفع رایج‌ترین سوال‌های کاربران Aydin Download.</p>
+
+<div class="tutorial-card">
+<h3>📦 آموزش باز کردن فایل <span>ZIP / RAR</span></h3>
+<p class="tut-desc">خیلی از بازی‌ها و نرم‌افزارهای سایت به‌صورت فایل فشرده (ZIP یا RAR) ارائه می‌شوند. برای باز کردن آن‌ها مراحل زیر را دنبال کنید:</p>
+<ol class="tutorial-steps">
+<li>ابتدا یک نرم‌افزار فشرده‌ساز نصب کنید؛ می‌توانید <a href="winrar.html">WinRAR</a> یا <a href="7zip.html">7-Zip</a> را از همین سایت دانلود کنید.</li>
+<li>روی فایل فشرده‌شده (ZIP یا RAR) <b>راست‌کلیک</b> کنید.</li>
+<li>از منوی باز شده گزینه‌ی <b>Extract Here</b> (استخراج در همین مکان) یا <b>Extract to...</b> (استخراج به پوشه‌ی دلخواه) را انتخاب کنید.</li>
+<li>چند لحظه صبر کنید تا فرآیند استخراج فایل‌ها تمام شود.</li>
+<li>پوشه‌ی استخراج‌شده را باز کنید؛ فایل نصب یا اجرایی برنامه معمولاً همان‌جاست.</li>
+</ol>
+</div>
+
+<div class="tutorial-card">
+<h3>💻 آموزش نصب نرم‌افزار در ویندوز</h3>
+<p class="tut-desc">مراحل کلی نصب اکثر نرم‌افزارهای ویندوزی معمولاً مشابه هم است:</p>
+<ol class="tutorial-steps">
+<li>فایل نصب (معمولاً با پسوند <b>exe.</b> یا <b>msi.</b>) را از صفحه‌ی رسمی همان نرم‌افزار در سایت دانلود کنید.</li>
+<li>روی فایل دانلودشده <b>دوبار کلیک</b> کنید تا اجرا شود.</li>
+<li>اگر ویندوز پیام هشدار امنیتی نشان داد، روی <b>Run as Administrator</b> (اجرا به‌عنوان مدیر) کلیک کنید.</li>
+<li>مراحل نصب را با زدن <b>Next</b> ادامه دهید تا به دکمه‌ی <b>Install</b> برسید.</li>
+<li>پس از پایان نصب، دکمه‌ی <b>Finish</b> را بزنید و در صورت نیاز سیستم را ری‌استارت کنید.</li>
+</ol>
+</div>
+
+<div class="tutorial-card">
+<h3>🎮 رفع مشکلات رایج نصب <span>GTA V</span></h3>
+<p class="tut-desc">اگر هنگام نصب یا اجرای GTA V با مشکل مواجه شدید، این موارد را بررسی کنید:</p>
+<ol class="tutorial-steps">
+<li><b>فضای خالی دیسک را بررسی کنید:</b> GTA V به فضای خالی قابل‌توجهی نیاز دارد؛ مطمئن شوید هارد شما فضای کافی دارد.</li>
+<li><b>درایور گرافیک را به‌روزرسانی کنید:</b> از سایت رسمی سازنده کارت گرافیک (NVIDIA یا AMD) آخرین نسخه‌ی درایور را نصب کنید.</li>
+<li><b>نرم‌افزارهای پیش‌نیاز را نصب کنید:</b> بسته‌های Microsoft Visual C++ Redistributable و DirectX را از سایت رسمی مایکروسافت نصب کنید.</li>
+<li><b>لانچر را با دسترسی مدیر اجرا کنید:</b> روی فایل اجرایی راست‌کلیک کرده و <b>Run as Administrator</b> را انتخاب کنید.</li>
+<li><b>آنتی‌ویروس و فایروال را بررسی کنید:</b> گاهی این برنامه‌ها به‌اشتباه فایل‌های بازی را مسدود می‌کنند؛ در صورت نیاز یک استثنا (Exception) برای پوشه‌ی بازی اضافه کنید.</li>
+<li><b>اتصال اینترنت پایدار داشته باشید:</b> برای فعال‌سازی و اجرای اولیه‌ی بازی، اتصال اینترنت لازم است.</li>
+</ol>
+<p style="margin-top:16px;font-size:12px;color:#8296b0;">برای دانلود و اطلاعات بیشتر بازی به <a href="gta.html">صفحه‌ی GTA V</a> مراجعه کنید.</p>
+</div>
+
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div><div class="footer-brand">Aydin <span>Download</span></div><p class="footer-about">بهترین‌ها را از ما بخواهید...<br>مرجع دانلود جدیدترین بازی‌ها و نرم‌افزارهای ویندوز با لینک مستقیم و رایگان.</p></div>
+    <div class="footer-col"><h4>لینک‌های مفید</h4><a href="about.html">درباره ما</a><a href="contact.html">تماس با ما</a><a href="tutorials.html">آموزش‌ها</a></div>
+    <div class="footer-col"><h4>دسترسی سریع</h4><a href="games.html">همه بازی‌ها</a><a href="software.html">همه نرم‌افزارها</a><a href="android.html">اپلیکیشن‌های اندروید</a></div>
+    <div class="footer-col"><h4>بازی‌های محبوب</h4><a href="minecraft.html">Minecraft</a><a href="roblox.html">Roblox</a><a href="gta.html">GTA V</a></div>
+  </div>
+  <div class="copyright">© 2026 Aydin Download | تمامی حقوق محفوظ است.</div>
+</footer>
+
+<a href="#top" class="top-btn" id="topBtn">⌃</a>
+
+
+<script>
+document.querySelectorAll('.download').forEach(function(btn){
+  btn.addEventListener('mousemove', function(e){
+    const r = btn.getBoundingClientRect();
+    const x = (e.clientX - r.left - r.width/2) / (r.width/2);
+    const y = (e.clientY - r.top - r.height/2) / (r.height/2);
+    btn.style.transform = `translate(${x*6}px,${y*4}px) scale(${1+Math.abs(x)*.08},${1+Math.abs(y)*.08})`;
+  });
+  btn.addEventListener('mouseleave', function(){
+    btn.style.transform = 'translate(0,0) scale(1,1)';
+  });
+});
+window.addEventListener('scroll', function(){
+  var btn = document.getElementById('topBtn');
+  if (btn) btn.style.display = window.scrollY > 300 ? 'flex' : 'none';
+});
+function toggleMenu(){document.getElementById('sidebar').classList.toggle('show')}
+</script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-6P9EQMMYV0');
+</script>
+
+
+</body>
+</html>
