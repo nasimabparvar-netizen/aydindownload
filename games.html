@@ -234,13 +234,25 @@ footer{margin-top:65px;border-top:1px solid rgba(37,132,255,.2);background:#020a
 }
 </script>
 
+
+<style>
+.genre-filters{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 26px}
+.genre-btn{background:#071a33;border:1px solid rgba(37,132,255,.28);color:#cddbee;padding:9px 16px;border-radius:10px;font-size:13px;font-weight:800;cursor:pointer;transition:.2s}
+.genre-btn:hover{background:#0b2b50}
+.genre-btn.active{background:#147cff;border-color:#147cff;color:#fff}
+</style>
+
+<style>
+.new-badge{position:absolute;top:12px;right:12px;background:#18d66b!important;color:#fff;border-radius:9px;padding:6px 10px;font-size:11px;font-weight:bold;box-shadow:0 5px 15px rgba(0,0,0,.25)}
+.card-media,.soft-icon{position:relative}
+</style>
 </head>
 
 <body id="top">
 
 <div class="topbar">
   <div>به <strong>Aydin Download</strong> خوش آمدید!</div>
-  <div class="top-links"><a href="index.html#about">ⓘ درباره ما</a><a href="index.html#contact">▢ تماس با ما</a></div>
+  <div class="top-links"><a href="about.html">ⓘ درباره ما</a><a href="contact.html">▢ تماس با ما</a></div>
 </div>
 
 <div class="sidebar" id="sidebar">
@@ -250,8 +262,8 @@ footer{margin-top:65px;border-top:1px solid rgba(37,132,255,.2);background:#020a
   <a href="index.html#software">💻 نرم‌افزارها</a>
   <a href="games.html">🎮 همه بازی‌ها</a>
   <a href="software.html">💻 همه نرم‌افزارها</a>
-  <a href="index.html#about">ℹ️ درباره ما</a>
-  <a href="index.html#contact">📞 تماس با ما</a>
+  <a href="about.html">ℹ️ درباره ما</a>
+  <a href="contact.html">📞 تماس با ما</a>
 </div>
 
 <header>
@@ -280,25 +292,27 @@ footer{margin-top:65px;border-top:1px solid rgba(37,132,255,.2);background:#020a
 <h2 class="page-title">🎮 همه بازی‌ها</h2>
 <p class="desc">لیست کامل تمام بازی‌های موجود در Aydin Download — روی هر بازی بزنید تا وارد صفحه دانلود آن شوید.</p>
 
+<div class="genre-filters"><button class="genre-btn active" data-filter="all">همه</button><button class="genre-btn" data-filter="sandbox">🧱 سندباکس</button><button class="genre-btn" data-filter="action">🔫 اکشن</button><button class="genre-btn" data-filter="sports">🏆 ورزشی</button><button class="genre-btn" data-filter="simulation">🚛 شبیه‌ساز</button><button class="genre-btn" data-filter="battle-royale">🪂 بتل‌رویال</button><button class="genre-btn" data-filter="strategy">♟️ استراتژی</button><button class="genre-btn" data-filter="party">🎭 اجتماعی</button><button class="genre-btn" data-filter="rpg">⚔️ نقش‌آفرینی</button><button class="genre-btn" data-filter="horror">👻 ترسناک</button></div>
+
 <div class="grid-games">
-<article class="card searchable"><div class="card-media"><img src="minecraft1.jpg" alt="Minecraft" loading="lazy"></div><div class="card-content"><h3>Minecraft</h3><p>پرفروش‌ترین بازی جهان با میلیون‌ها بازیکن.</p><a href="minecraft.html" class="download">دانلود ↓</a></div></article>
-<article class="card searchable"><div class="card-media"><img src="gta1.jpg" alt="GTA V" loading="lazy"></div><div class="card-content"><h3>GTA V</h3><p>یکی از محبوب‌ترین بازی‌های اکشن جهان.</p><a href="gta.html" class="download">دانلود ↓</a></div></article>
-<article class="card searchable"><div class="card-media"><img src="roblox1.jpg" alt="Roblox" loading="lazy"></div><div class="card-content"><h3>Roblox</h3><p>بازی آنلاین با میلیون‌ها کاربر فعال.</p><a href="roblox.html" class="download">دانلود ↓</a></div></article>
-<article class="card searchable"><div class="card-media"><img src="forza.jpg" alt="Forza Horizon 5" loading="lazy"></div><div class="card-content"><h3>Forza Horizon 5</h3><p>یکی از محبوب‌ترین بازی‌های مسابقه‌ای جهان با خودروهای متنوع و دنیای آزاد.</p><a href="forza.html" class="download">دانلود ↓</a></div></article>
-<article class="card searchable"><div class="card-media"><img src="ets2.jpg" alt="Euro Truck Simulator 2" loading="lazy"></div><div class="card-content"><h3>Euro Truck Simulator 2</h3><p>شبیه‌ساز رانندگی کامیون با جاده‌های گسترده و سفرهای هیجان‌انگیز.</p><a href="ets2.html" class="download">دانلود ↓</a></div></article>
-<article class="card searchable"><div class="card-media"><img src="cs2.jpg" alt="Counter-Strike 2" loading="lazy"></div><div class="card-content"><h3>Counter-Strike 2</h3><p>یکی از محبوب‌ترین بازی‌های تیراندازی رقابتی و آنلاین جهان.</p><a href="cs2.html" class="download">دانلود ↓</a></div></article>
-<article class="card searchable"><div class="card-media"><img src="fortnite.jpg" alt="Fortnite" loading="lazy"></div><div class="card-content"><h3>Fortnite</h3><p>بازی بتل‌رویال محبوب با ساخت‌وساز و رویدادهای فصلی متنوع.</p><a href="fortnite.html" class="download">دانلود ↓</a></div></article>
-<article class="card searchable"><div class="card-media"><img src="pubg.jpg" alt="PUBG: BATTLEGROUNDS" loading="lazy"></div><div class="card-content"><h3>PUBG: BATTLEGROUNDS</h3><p>یکی از پیشگامان ژانر بتل‌رویال با رقابت فشرده تا آخرین بازمانده.</p><a href="pubg.html" class="download">دانلود ↓</a></div></article>
-<article class="card searchable"><div class="card-media"><img src="valorant.jpg" alt="VALORANT" loading="lazy"></div><div class="card-content"><h3>VALORANT</h3><p>تیراندازی تاکتیکی ۵ نفره با قهرمانان و توانایی‌های ویژه.</p><a href="valorant.html" class="download">دانلود ↓</a></div></article>
-<article class="card searchable"><div class="card-media"><img src="rocketleague.jpg" alt="Rocket League" loading="lazy"></div><div class="card-content"><h3>Rocket League</h3><p>ترکیبی هیجان‌انگیز از فوتبال و مسابقات ماشین‌سواری.</p><a href="rocketleague.html" class="download">دانلود ↓</a></div></article>
-<article class="card searchable"><div class="card-media"><img src="warzone.jpg" alt="Call of Duty: Warzone" loading="lazy"></div><div class="card-content"><h3>Call of Duty: Warzone</h3><p>نسخه‌ی بتل‌رویال رایگان فرنچایز محبوب Call of Duty.</p><a href="warzone.html" class="download">دانلود ↓</a></div></article>
-<article class="card searchable"><div class="card-media"><img src="lol.jpg" alt="League of Legends" loading="lazy"></div><div class="card-content"><h3>League of Legends</h3><p>بازی استراتژیک تیمی (MOBA) با ده‌ها قهرمان قابل انتخاب.</p><a href="lol.html" class="download">دانلود ↓</a></div></article>
-<article class="card searchable"><div class="card-media"><img src="amongus.jpg" alt="Among Us" loading="lazy"></div><div class="card-content"><h3>Among Us</h3><p>بازی کشف اجتماعی محبوب؛ خدمه در برابر ایمپاسترهای مخفی.</p><a href="amongus.html" class="download">دانلود ↓</a></div></article>
-<article class="card searchable"><div class="card-media"><img src="genshin.jpg" alt="Genshin Impact" loading="lazy"></div><div class="card-content"><h3>Genshin Impact</h3><p>اکشن-نقش‌آفرینی جهان‌باز در دنیای فانتزی Teyvat.</p><a href="genshin.html" class="download">دانلود ↓</a></div></article>
-<article class="card searchable"><div class="card-media"><img src="eldenring.jpg" alt="Elden Ring" loading="lazy"></div><div class="card-content"><h3>Elden Ring</h3><p>اکشن-نقش‌آفرینی جهان‌باز از سازندگان سری Dark Souls.</p><a href="eldenring.html" class="download">دانلود ↓</a></div></article>
-<article class="card searchable"><div class="card-media"><img src="fc25.jpg" alt="EA Sports FC 25" loading="lazy"></div><div class="card-content"><h3>EA Sports FC 25</h3><p>پرطرفدارترین فرنچایز شبیه‌ساز فوتبال با گرافیک واقعی.</p><a href="fc25.html" class="download">دانلود ↓</a></div></article>
-<article class="card searchable"><div class="card-media"><img src="stardewvalley.jpg" alt="Stardew Valley" loading="lazy"></div><div class="card-content"><h3>Stardew Valley</h3><p>شبیه‌ساز آرام کشاورزی و زندگی روستایی.</p><a href="stardewvalley.html" class="download">دانلود ↓</a></div></article>
-<article class="card searchable"><div class="card-media"><img src="deadbydaylight.jpg" alt="Dead by Daylight" loading="lazy"></div><div class="card-content"><h3>Dead by Daylight</h3><p>بازی ترسناک چندنفره‌ی نامتقارن؛ قاتل در برابر بازماندگان.</p><a href="deadbydaylight.html" class="download">دانلود ↓</a></div></article>
+<article class="card searchable" data-genre="sandbox"><div class="card-media"><img src="minecraft1.jpg" alt="Minecraft" loading="lazy"></div><div class="card-content"><h3>Minecraft</h3><p>پرفروش‌ترین بازی جهان با میلیون‌ها بازیکن.</p><a href="minecraft.html" class="download">دانلود ↓</a></div></article>
+<article class="card searchable" data-genre="action"><div class="card-media"><img src="gta1.jpg" alt="GTA V" loading="lazy"></div><div class="card-content"><h3>GTA V</h3><p>یکی از محبوب‌ترین بازی‌های اکشن جهان.</p><a href="gta.html" class="download">دانلود ↓</a></div></article>
+<article class="card searchable" data-genre="sandbox"><div class="card-media"><img src="roblox1.jpg" alt="Roblox" loading="lazy"></div><div class="card-content"><h3>Roblox</h3><p>بازی آنلاین با میلیون‌ها کاربر فعال.</p><a href="roblox.html" class="download">دانلود ↓</a></div></article>
+<article class="card searchable" data-genre="sports"><div class="card-media"><img src="forza.jpg" alt="Forza Horizon 5" loading="lazy"></div><div class="card-content"><h3>Forza Horizon 5</h3><p>یکی از محبوب‌ترین بازی‌های مسابقه‌ای جهان با خودروهای متنوع و دنیای آزاد.</p><a href="forza.html" class="download">دانلود ↓</a></div></article>
+<article class="card searchable" data-genre="simulation"><div class="card-media"><img src="ets2.jpg" alt="Euro Truck Simulator 2" loading="lazy"></div><div class="card-content"><h3>Euro Truck Simulator 2</h3><p>شبیه‌ساز رانندگی کامیون با جاده‌های گسترده و سفرهای هیجان‌انگیز.</p><a href="ets2.html" class="download">دانلود ↓</a></div></article>
+<article class="card searchable" data-genre="action"><div class="card-media"><img src="cs2.jpg" alt="Counter-Strike 2" loading="lazy"></div><div class="card-content"><h3>Counter-Strike 2</h3><p>یکی از محبوب‌ترین بازی‌های تیراندازی رقابتی و آنلاین جهان.</p><a href="cs2.html" class="download">دانلود ↓</a></div></article>
+<article class="card searchable" data-genre="battle-royale"><div class="card-media"><img src="fortnite.jpg" alt="Fortnite" loading="lazy"></div><div class="card-content"><h3>Fortnite</h3><p>بازی بتل‌رویال محبوب با ساخت‌وساز و رویدادهای فصلی متنوع.</p><a href="fortnite.html" class="download">دانلود ↓</a></div></article>
+<article class="card searchable" data-genre="battle-royale"><div class="card-media"><img src="pubg.jpg" alt="PUBG: BATTLEGROUNDS" loading="lazy"></div><div class="card-content"><h3>PUBG: BATTLEGROUNDS</h3><p>یکی از پیشگامان ژانر بتل‌رویال با رقابت فشرده تا آخرین بازمانده.</p><a href="pubg.html" class="download">دانلود ↓</a></div></article>
+<article class="card searchable" data-genre="action"><div class="card-media"><img src="valorant.jpg" alt="VALORANT" loading="lazy"></div><div class="card-content"><h3>VALORANT</h3><p>تیراندازی تاکتیکی ۵ نفره با قهرمانان و توانایی‌های ویژه.</p><a href="valorant.html" class="download">دانلود ↓</a></div></article>
+<article class="card searchable" data-genre="sports"><div class="card-media"><img src="rocketleague.jpg" alt="Rocket League" loading="lazy"></div><div class="card-content"><h3>Rocket League</h3><p>ترکیبی هیجان‌انگیز از فوتبال و مسابقات ماشین‌سواری.</p><a href="rocketleague.html" class="download">دانلود ↓</a></div></article>
+<article class="card searchable" data-genre="battle-royale"><div class="card-media"><img src="warzone.jpg" alt="Call of Duty: Warzone" loading="lazy"></div><div class="card-content"><h3>Call of Duty: Warzone</h3><p>نسخه‌ی بتل‌رویال رایگان فرنچایز محبوب Call of Duty.</p><a href="warzone.html" class="download">دانلود ↓</a></div></article>
+<article class="card searchable" data-genre="strategy"><div class="card-media"><img src="lol.jpg" alt="League of Legends" loading="lazy"></div><div class="card-content"><h3>League of Legends</h3><p>بازی استراتژیک تیمی (MOBA) با ده‌ها قهرمان قابل انتخاب.</p><a href="lol.html" class="download">دانلود ↓</a></div></article>
+<article class="card searchable" data-genre="party"><div class="card-media"><img src="amongus.jpg" alt="Among Us" loading="lazy"><span class="badge new-badge">🆕 جدید</span></div><div class="card-content"><h3>Among Us</h3><p>بازی کشف اجتماعی محبوب؛ خدمه در برابر ایمپاسترهای مخفی.</p><a href="amongus.html" class="download">دانلود ↓</a></div></article>
+<article class="card searchable" data-genre="rpg"><div class="card-media"><img src="genshin.jpg" alt="Genshin Impact" loading="lazy"><span class="badge new-badge">🆕 جدید</span></div><div class="card-content"><h3>Genshin Impact</h3><p>اکشن-نقش‌آفرینی جهان‌باز در دنیای فانتزی Teyvat.</p><a href="genshin.html" class="download">دانلود ↓</a></div></article>
+<article class="card searchable" data-genre="rpg"><div class="card-media"><img src="eldenring.jpg" alt="Elden Ring" loading="lazy"><span class="badge new-badge">🆕 جدید</span></div><div class="card-content"><h3>Elden Ring</h3><p>اکشن-نقش‌آفرینی جهان‌باز از سازندگان سری Dark Souls.</p><a href="eldenring.html" class="download">دانلود ↓</a></div></article>
+<article class="card searchable" data-genre="sports"><div class="card-media"><img src="fc25.jpg" alt="EA Sports FC 25" loading="lazy"><span class="badge new-badge">🆕 جدید</span></div><div class="card-content"><h3>EA Sports FC 25</h3><p>پرطرفدارترین فرنچایز شبیه‌ساز فوتبال با گرافیک واقعی.</p><a href="fc25.html" class="download">دانلود ↓</a></div></article>
+<article class="card searchable" data-genre="simulation"><div class="card-media"><img src="stardewvalley.jpg" alt="Stardew Valley" loading="lazy"><span class="badge new-badge">🆕 جدید</span></div><div class="card-content"><h3>Stardew Valley</h3><p>شبیه‌ساز آرام کشاورزی و زندگی روستایی.</p><a href="stardewvalley.html" class="download">دانلود ↓</a></div></article>
+<article class="card searchable" data-genre="horror"><div class="card-media"><img src="deadbydaylight.jpg" alt="Dead by Daylight" loading="lazy"><span class="badge new-badge">🆕 جدید</span></div><div class="card-content"><h3>Dead by Daylight</h3><p>بازی ترسناک چندنفره‌ی نامتقارن؛ قاتل در برابر بازماندگان.</p><a href="deadbydaylight.html" class="download">دانلود ↓</a></div></article>
   </div>
 
 </div>
@@ -306,7 +320,7 @@ footer{margin-top:65px;border-top:1px solid rgba(37,132,255,.2);background:#020a
 <footer>
   <div class="footer-grid">
     <div><div class="footer-brand">Aydin <span>Download</span></div><p class="footer-about">بهترین‌ها را از ما بخواهید...<br>مرجع دانلود جدیدترین بازی‌ها و نرم‌افزارهای ویندوز با لینک مستقیم و رایگان.</p></div>
-    <div class="footer-col"><h4>لینک‌های مفید</h4><a href="index.html#about">درباره ما</a><a href="index.html#contact">تماس با ما</a></div>
+    <div class="footer-col"><h4>لینک‌های مفید</h4><a href="about.html">درباره ما</a><a href="contact.html">تماس با ما</a></div>
     <div class="footer-col"><h4>دسترسی سریع</h4><a href="games.html">همه بازی‌ها</a><a href="software.html">همه نرم‌افزارها</a><a href="index.html">صفحه اصلی</a></div>
     <div class="footer-col"><h4>بازی‌های محبوب</h4><a href="minecraft.html">Minecraft</a><a href="roblox.html">Roblox</a><a href="gta.html">GTA V</a></div>
   </div>
@@ -344,5 +358,22 @@ gtag('config', 'G-6P9EQMMYV0');
 </script>
 
 
+
+<script>
+document.querySelectorAll('.genre-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('.genre-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    var filter = btn.getAttribute('data-filter');
+    document.querySelectorAll('.grid-games > article').forEach(function(card){
+      if (filter === 'all' || card.getAttribute('data-genre') === filter) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+</script>
 </body>
 </html>
